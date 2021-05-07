@@ -135,7 +135,7 @@
         </li>
     </ul>
     <div class="clear"></div>
-    <a class="button button-primary button-large popover-box-save"><?php _e("SAVE SETTINGS","hc") ?></a>
+    <a class="button button-primary button-large popover-box-save"><?php _e("GUARDAR CAMBIOS","hc") ?></a>
 </div>
 <div id="cnt_hc_grid_table">
     <div data-hc-id="_ID" data-hc-component="hc_grid_table" data-hc-setting="main_content" class="hc-grid-table hc-cnt-component">
@@ -1963,7 +1963,7 @@
         </li>
     </ul>
     <div class="clear"></div>
-    <a class="button button-primary button-large popover-box-save"><?php _e("SAVE SETTINGS","hc") ?></a>
+    <a class="button button-primary button-large popover-box-save"><?php _e("GUARDAR CAMBIOS","hc") ?></a>
 </div>
 <div id="cnt_hc_album">
     <div data-hc-id="_ID" data-hc-component="hc_album" data-hc-setting="main_content" class="hc-album hc-cnt-component">

@@ -878,7 +878,7 @@
         </li>
     </ul>
     <div class="clear"></div>
-    <a class="button button-primary button-large popover-box-save"><?php _e("SAVE SETTINGS","hc") ?></a>
+    <a class="button button-primary button-large popover-box-save"><?php _e("GUARDAR CAMBIOS","hc") ?></a>
 </div>
 <div id="cnt_hc_timeline">
     <div data-hc-id="_ID" data-hc-component="hc_timeline" data-hc-setting="main_content" class="hc-timeline hc-cnt-component">
@@ -1103,7 +1103,7 @@
         </li>
     </ul>
     <div class="clear"></div>
-    <a class="button button-primary button-large popover-box-save"><?php _e("SAVE SETTINGS","hc") ?></a>
+    <a class="button button-primary button-large popover-box-save"><?php _e("GUARDAR CAMBIOS","hc") ?></a>
 </div>
 <div id="popover-box-social-feeds-tw" class="popover-box popover-list" style="display: none">
     <input type="hidden" class="file_require" value="progress_counter">
@@ -1131,7 +1131,7 @@
         </li>
     </ul>
     <div class="clear"></div>
-    <a class="button button-primary button-large popover-box-save"><?php _e("SAVE SETTINGS","hc") ?></a>
+    <a class="button button-primary button-large popover-box-save"><?php _e("GUARDAR CAMBIOS","hc") ?></a>
 </div>
 <div id="cnt_hc_social_share_buttons">
     <div data-hc-id="_ID" data-hc-component="hc_social_share_buttons" data-hc-setting="main_content" class="hc-social-share-buttons hc-cnt-component">
@@ -1745,7 +1745,7 @@
         </li>
     </ul>
     <div class="clear"></div>
-    <a class="button button-primary button-large popover-box-save"><?php _e("SAVE SETTINGS","hc") ?></a>
+    <a class="button button-primary button-large popover-box-save"><?php _e("GUARDAR CAMBIOS","hc") ?></a>
 </div>
 <div id="cnt_hc_full_page_menu">
     <div data-hc-id="fullpage_menu" data-hc-component="hc_full_page_menu" class="hc-icon-list hc_full_page_menu">
@@ -1881,7 +1881,7 @@
         </li>
     </ul>
     <div class="clear"></div>
-    <a class="button button-primary button-large popover-box-save"><?php _e("SAVE SETTINGS","hc") ?></a>
+    <a class="button button-primary button-large popover-box-save"><?php _e("GUARDAR CAMBIOS","hc") ?></a>
 </div>
 <div id="cnt_hc_inner_menu">
     <div data-hc-id="_ID" data-hc-component="hc_inner_menu" data-hc-setting="main_content" class="hc-inner-menu hc-cnt-component">

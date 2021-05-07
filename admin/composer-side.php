@@ -302,7 +302,7 @@ function hc_block_composer_side() {
             </li>
         </ul>
         <hr class="space s" />
-        <a class="button button-primary settings-save-btn" onclick="indipendentSaveSystem(this, ''); jQuery('.mfp-close').click();"><?php _e("Save settings","hc") ?></a>
+        <a class="button button-primary settings-save-btn" onclick="indipendentSaveSystem(this, ''); jQuery('.mfp-close').click();"><?php _e("GUARDAR CAMBIOS","hc") ?></a>
     </div>
     <div class="clear"></div>
 </div>

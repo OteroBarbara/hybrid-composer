@@ -79,7 +79,7 @@
                         <input type="text" data-hc-setting="caption_img_box" />
                     </li>
                     <li class="input-row input-text">
-                        <p><?php _e("Texto Alternativo","hc") ?></p>
+                        <p><?php _e("Alt text","hc") ?></p>
                         <input type="text" data-hc-setting="alt" />
                     </li>
                 </ul>
@@ -171,7 +171,7 @@
             <i class="button-icon input-row icon-gear-setting-2"></i>
             <ul>
                 <li class="input-row input-text">
-                    <p><?php _e("Texto Alternativo","hc") ?></p>
+                    <p><?php _e("Alt text","hc") ?></p>
                     <input type="text" data-hc-setting="alt" />
                 </li>
                 <li class="input-row input-select">

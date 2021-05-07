@@ -348,20 +348,24 @@
 <div id="cnt_hc_niche_content_box_call">
     <div data-hc-id="_ID" data-hc-component="hc_niche_content_box_call" data-hc-setting="main_content" class="hc-content-box hc-call-content-box hc-cnt-component">
         <input type="hidden" class="file_require" value="content_box">
-        <?php hc_e_composer_item_menu("Botón de acceso a interpretación en Lengua de Señas.") ?>
+        <?php hc_e_composer_item_menu("Incorporación de botón para Intérprete de Lengua de Señas") ?>
         <div class="flex-box">
-        <div class="input-row input-select">
-                        <p><?php _e("Elige aquí el tipo de interpretación en Lengua de Señas:","hc") ?></p>
-                        <select data-hc-setting="button_text" class="animations-list">
-                            <?php hc_html_interpretionLS(); ?>
-                        </select>
-        </div>          
+            <div class="input-text input-row full-only-input">
+                <input type="text" placeholder="<?php esc_attr_e("Content ...","hc") ?>" data-hc-setting="content" />
+            </div>
+            <div class="flex-sub-box">
+                <i class="input-row button-icons-list button-icon icon-plus-add-2" data-hc-setting="icon" data-hc-component="value" data-value=""></i>
+                <div class="button-inner-options" data-width="330">
+                    <i class="button-icon input-row icon-gear-setting-2"></i>
+                    <ul>
+                        <li class="input-row input-text">
+                            <p><?php esc_attr_e("Button text","hc") ?></p>
+                            <input type="text" data-hc-setting="button_text" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div>
         <?php hc_get_link_engine(); ?>
-        <p>
-        *Aquí puedes enlazar a una plataforma de videoconferencia para interpretación en tiempo real (ejemplo: Zoom o Skype) o enlazar a un contenido de vídeo en Lengua de Señas pre grabado (Ejemplo: YouTube o Google Drive).
-        </p>
-        </div>
     </div>
 </div>

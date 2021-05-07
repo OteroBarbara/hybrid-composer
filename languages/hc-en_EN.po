@@ -1760,7 +1760,7 @@ msgid "Inner caption"
 msgstr ""
 
 #: admin/components/image_box.php:78 admin/components/image_box.php:163
-msgid "Texto Alternativo"
+msgid "Alt text"
 msgstr ""
 
 #: admin/components/image_box.php:111
@@ -1825,10 +1825,6 @@ msgstr ""
 
 #: admin/components/others.php:63
 msgid "Lightbox caption"
-msgstr ""
-
-#: admin/components/others.php:75
-msgid "Descripción"
 msgstr ""
 
 #: admin/components/others.php:133 admin/composer-side.php:197
@@ -3144,7 +3140,7 @@ msgid "Pricing table"
 msgstr ""
 
 #: admin/composer.php:250
-msgid "Botón para intérprete de Lengua de Señas"
+msgid "Call to action"
 msgstr ""
 
 #: admin/composer.php:257
