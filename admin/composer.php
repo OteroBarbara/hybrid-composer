@@ -314,34 +314,10 @@ COMPOSER POPOVER BOXES
                 <!--CONTAINERS-->
                 <li class="divider li-container">Contenedores</li>
                 <?php hc_custom_components("container") ?>
-                <li class="li-container component-hc-grid-table">
-                    <div class="component-box" data-hc-target="hc_grid_table">
-                        <i class="icon-icomoon-43"></i>
-                        <span class="sch"><?php _e("Grid table","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-container component-hc-scroll-box">
-                    <div class="component-box" data-hc-target="hc_scroll_box">
-                        <i class="icon-icomoon-41"></i>
-                        <span class="sch"><?php _e("Scroll box","hc") ?></span>
-                    </div>
-                </li>
                 <li class="li-container component-hc-image-slider">
                     <div class="component-box" data-hc-target="hc_image_slider">
                         <i class="icon-icomoon-20" "></i>
                         <span class="sch"><?php _e("Image slider","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-container component-hc-slider">
-                    <div class="component-box" data-hc-target="hc_slider">
-                        <i class="icon-icomoon-20" "></i>
-                        <span class="sch"><?php _e("Slider","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-container component-hc-adv-slider">
-                    <div class="component-box" data-hc-target="hc_adv_slider">
-                        <i class="icon-icomoon-20" "></i>
-                        <span class="sch"><?php _e("Advanced slider","hc") ?></span>
                     </div>
                 </li>
                 <li class="li-container component-hc-image-coverflow">
@@ -350,64 +326,10 @@ COMPOSER POPOVER BOXES
                         <span class="sch"><?php _e("Image Coverflow","hc") ?></span>
                     </div>
                 </li>
-                <li class="li-container component-hc-coverflow">
-                    <div class="component-box" data-hc-target="hc_coverflow">
-                        <i class="icon-icomoon-46"></i>
-                        <span class="sch"><?php _e("Coverflow","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-container component-hc-tab">
-                    <div class="component-box" data-hc-target="hc_tab">
-                        <i class="icon-icomoon-45"></i>
-                        <span class="sch"><?php _e("Tabs","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-container component-hc-collapse">
-                    <div class="component-box" data-hc-target="hc_collapse">
-                        <i class="icon-icomoon-44"></i>
-                        <span class="sch"><?php _e("Collapse","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-container component-hc-accordion">
-                    <div class="component-box" data-hc-target="hc_accordion">
-                        <i class="icon-icomoon-47"></i>
-                        <span class="sch"><?php _e("Accordion","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-container component-hc-popover">
-                    <div class="component-box" data-hc-target="hc_popover">
-                        <i class="icon-icomoon-56"></i>
-                        <span class="sch"><?php _e("Popover","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-component component-hc-grid-list">
-                    <div class="component-box" data-hc-target="hc_grid_list">
-                        <i class="icon-icomoon-48"></i>
-                        <span class="sch"><?php _e("Grid list","hc") ?></span>
-                    </div>
-                </li>
                 <li class="li-container component-hc-masonry-list">
                     <div class="component-box" data-hc-target="hc_masonry_list">
                         <i class="icon-icomoon-48"></i>
                         <span class="sch"><?php _e("Masonry list","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-container component-hc-album">
-                    <div class="component-box" data-hc-target="hc_album">
-                        <i class="icon-icomoon-49"></i>
-                        <span class="sch"><?php _e("Album","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-container component-hc-fixed-area">
-                    <div class="component-box" data-hc-target="hc_fixed_area">
-                        <i class="icon-icomoon-50"></i>
-                        <span class="sch"><?php _e("Fixed area","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-container component-hc-steps">
-                    <div class="component-box" data-hc-target="hc_steps">
-                        <i class="icon-icomoon-51"></i>
-                        <span class="sch"><?php _e("Steps","hc") ?></span>
                     </div>
                 </li>
                 <!--POST TYPES-->
@@ -419,34 +341,10 @@ COMPOSER POPOVER BOXES
                         <span class="sch"><?php _e("Grid list","hc") ?></span>
                     </div>
                 </li>
-                <li class="li-post-type component-hc-pt-masonry-list">
-                    <div class="component-box" data-hc-target="hc_pt_masonry_list">
-                        <i class="icon-icomoon-48"></i>
-                        <span class="sch"><?php _e("Masonry list","hc") ?></span>
-                    </div>
-                </li>
                 <li class="li-post-type component-hc-pt-slider">
                     <div class="component-box" data-hc-target="hc_pt_slider">
                         <i class="icon-icomoon-20"></i>
                         <span class="sch"><?php _e("Slider","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-post-type component-hc-pt-coverflow">
-                    <div class="component-box" data-hc-target="hc_pt_coverflow">
-                        <i class="icon-icomoon-46"></i>
-                        <span class="sch"><?php _e("Coverflow","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-post-type component-hc-pt-menu">
-                    <div class="component-box" data-hc-target="hc_pt_menu">
-                        <i class="icon-icomoon-58"></i>
-                        <span class="sch"><?php _e("Category menu","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-post-type component-hc-pt-tag-cloud">
-                    <div class="component-box" data-hc-target="hc_pt_tag_cloud">
-                        <i class="icon-icomoon-52"></i>
-                        <span class="sch"><?php _e("Tag cloud","hc") ?></span>
                     </div>
                 </li>
                 <li class="li-post-type component-hc-pt-post-informations">
