@@ -242,12 +242,6 @@ COMPOSER POPOVER BOXES
                         <span class="sch"><?php _e("Cuadro de Imágenes","hc") ?></span>
                     </div>
                 </li>
-                <li class="li-component component-hc-niche-content-box-call">
-                    <div class="component-box" data-hc-target="hc_niche_content_box_call">
-                        <i class="icon-icomoon-17"></i>
-                        <span class="sch"><?php _e("Intérprete en lengua de señas","hc") ?></span>
-                    </div>
-                </li>
                 <li class="li-component component-hc-icon-links">
                     <div class="component-box" data-hc-target="hc_icon_links">
                         <i class="icon-icomoon-23"></i>
@@ -342,6 +336,12 @@ COMPOSER POPOVER BOXES
                     <div class="component-box" data-hc-target="hc_pt_navigation">
                         <i class="icon-icomoon-53"></i>
                         <span class="sch"><?php _e("Navigation","hc") ?></span>
+                    </div>
+                </li>
+                <li class="li-component component-hc-niche-content-box-call">
+                    <div class="component-box" data-hc-target="hc_niche_content_box_call">
+                        <i class="icon-icomoon-17"></i>
+                        <span class="sch"><?php _e("Intérprete en lengua de señas","hc") ?></span>
                     </div>
                 </li>
                 <!--COLUMNS-->
