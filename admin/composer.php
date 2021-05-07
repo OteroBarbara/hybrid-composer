@@ -221,12 +221,6 @@ COMPOSER POPOVER BOXES
                         <span class="sch"><?php _e("Título H1-H6","hc") ?></span>
                     </div>
                 </li>
-                <li class="li-component component-hc-subtitle">
-                    <div class="component-box" data-hc-target="hc_subtitle">
-                        <i class="icon-icomoon-10"></i>
-                        <span class="sch"><?php _e("Título","hc") ?></span>
-                    </div>
-                </li>
                 <li class="li-component component-hc-text-block">
                     <div class="component-box" data-hc-target="hc_text_block">
                         <i class="icon-icomoon-9"></i>
@@ -245,18 +239,6 @@ COMPOSER POPOVER BOXES
                         <span class="sch"><?php _e("Botón","hc") ?></span>
                     </div>
                 </li>
-                <li class="li-component component-hc-wp-editor">
-                    <div class="component-box" data-hc-target="hc_wp_editor">
-                        <i class="icon-icomoon-11"></i>
-                        <span class="sch"><?php _e("Editor de WordPress","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-component component-hc-code-block">
-                    <div class="component-box" data-hc-target="hc_code_block">
-                        <i class="icon-icomoon-4"></i>
-                        <span class="sch"><?php _e("Bloque de Código","hc") ?></span>
-                    </div>
-                </li>
                 <li class="li-component component-hc-image">
                     <div class="component-box" data-hc-target="hc_image">
                         <i class="icon-icomoon-14"></i>
@@ -269,58 +251,10 @@ COMPOSER POPOVER BOXES
                         <span class="sch"><?php _e("Cuadro de Imágenes","hc") ?></span>
                     </div>
                 </li>
-                <li class="li-component component-hc-adv-image-box">
-                    <div class="component-box" data-hc-target="hc_adv_image_box">
-                        <i class="icon-icomoon-13"></i>
-                        <span class="sch"><?php _e("Cuadro de Imágenes avanzado","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-component component-hc-content-box">
-                    <div class="component-box" data-hc-target="hc_content_box">
-                        <i class="icon-icomoon-12"></i>
-                        <span class="sch"><?php _e("Cuadro de contenido","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-component component-hc-niche-content-box-blog">
-                    <div class="component-box" data-hc-target="hc_niche_content_box_blog">
-                        <i class="icon-icomoon-16"></i>
-                        <span class="sch"><?php _e("Cuadro de Blog","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-component component-hc-niche-content-box-testimonials">
-                    <div class="component-box" data-hc-target="hc_niche_content_box_testimonials">
-                        <i class="icon-icomoon-18"></i>
-                        <span class="sch"><?php _e("Caja de testimonios","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-component component-hc-niche-content-box-team">
-                    <div class="component-box" data-hc-target="hc_niche_content_box_team">
-                        <i class="icon-icomoon-21"></i>
-                        <span class="sch"><?php _e("Cuadro de equipo","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-component component-hc-niche-content-box-pricing-table">
-                    <div class="component-box" data-hc-target="hc_niche_content_box_pricing_table">
-                        <i class="icon-icomoon-19"></i>
-                        <span class="sch"><?php _e("Tabla de precios","hc") ?></span>
-                    </div>
-                </li>
                 <li class="li-component component-hc-niche-content-box-call">
                     <div class="component-box" data-hc-target="hc_niche_content_box_call">
                         <i class="icon-icomoon-17"></i>
                         <span class="sch"><?php _e("Intérprete en lengua de señas","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-component component-hc-icon-list">
-                    <div class="component-box" data-hc-target="hc_icon_list">
-                        <i class="icon-icomoon-26"></i>
-                        <span class="sch"><?php _e("Lista de íconos avanzada","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-component component-hc-text-list">
-                    <div class="component-box" data-hc-target="hc_text_list">
-                        <i class="icon-icomoon-33"></i>
-                        <span class="sch"><?php _e("Lista de texto","hc") ?></span>
                     </div>
                 </li>
                 <li class="li-component component-hc-icon-links">
@@ -329,58 +263,10 @@ COMPOSER POPOVER BOXES
                         <span class="sch"><?php _e("Enlace de íconos","hc") ?></span>
                     </div>
                 </li>
-                <li class="li-component component-hc-icon-box">
-                    <div class="component-box" data-hc-target="hc_icon_box">
-                        <i class="icon-icomoon-24"></i>
-                        <span class="sch"><?php _e("Caja de íconos","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-component component-hc-counter">
-                    <div class="component-box" data-hc-target="hc_counter">
-                        <i class="icon-icomoon-25"></i>
-                        <span class="sch"><?php _e("Contador","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-component component-hc-countdown">
-                    <div class="component-box" data-hc-target="hc_countdown">
-                        <i class="icon-icomoon-22"></i>
-                        <span class="sch"><?php _e("Cuenta regresiva","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-component component-hc-progress-bar">
-                    <div class="component-box" data-hc-target="hc_progress_bar">
-                        <i class="icon-icomoon-39"></i>
-                        <span class="sch"><?php _e("Barra de progreso","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-component component-hc-circle-progress-bar">
-                    <div class="component-box" data-hc-target="hc_circle_progress_bar">
-                        <i class="icon-icomoon-28"></i>
-                        <span class="sch"><?php _e("Barra de progreso circular","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-component component-hc-timeline">
-                    <div class="component-box" data-hc-target="hc_timeline">
-                        <i class="icon-icomoon-27"></i>
-                        <span class="sch"><?php _e("Cronología","hc") ?></span>
-                    </div>
-                </li>
                 <li class="li-component component-hc-google-map">
                     <div class="component-box" data-hc-target="hc_google_map">
                         <i class="icon-icomoon-1"></i>
                         <span class="sch"><?php _e("Google map","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-component component-hc-social-feeds">
-                    <div class="component-box" data-hc-target="hc_social_feeds">
-                        <i class="icon-icomoon-31"></i>
-                        <span class="sch"><?php _e("Redes Sociales","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-component component-hc-social-share-buttons">
-                    <div class="component-box" data-hc-target="hc_social_share_buttons">
-                        <i class="icon-icomoon-30"></i>
-                        <span class="sch"><?php _e("Botones Sociales","hc") ?></span>
                     </div>
                 </li>
                 <li class="li-component component-hc-quote">
@@ -393,12 +279,6 @@ COMPOSER POPOVER BOXES
                     <div class="component-box" data-hc-target="hc_space">
                         <i class="icon-icomoon-35"></i>
                         <span class="sch"><?php _e("Espaciador","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-component component-hc-separator">
-                    <div class="component-box" data-hc-target="hc_separator">
-                        <i class="icon-icomoon-36"></i>
-                        <span class="sch"><?php _e("Separador","hc") ?></span>
                     </div>
                 </li>
                 <li class="li-component component-hc-table">
