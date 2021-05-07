@@ -311,9 +311,6 @@ COMPOSER POPOVER BOXES
                         <span class="sch"><?php _e("Migas de pan","hc") ?></span>
                     </div>
                 </li>
-                <!--CONTAINERS-->
-                <li class="divider li-container">Contenedores</li>
-                <?php hc_custom_components("container") ?>
                 <li class="li-container component-hc-image-slider">
                     <div class="component-box" data-hc-target="hc_image_slider">
                         <i class="icon-icomoon-20" "></i>
@@ -332,9 +329,6 @@ COMPOSER POPOVER BOXES
                         <span class="sch"><?php _e("Masonry list","hc") ?></span>
                     </div>
                 </li>
-                <!--POST TYPES-->
-                <li class="divider li-post-type">Lists - Post Types</li>
-                <?php hc_custom_components("lists") ?>
                 <li class="li-post-type component-hc-pt-masonry-list">
                     <div class="component-box" data-hc-target="hc_pt_grid_list">
                         <i class="icon-icomoon-48"></i>
