@@ -202,15 +202,6 @@ COMPOSER POPOVER BOXES
     <div id="popover-box-components" class="popover-box search-filter" data-search-class="sch" style="display: none">
         <span class="close-button"></span>
         <div class="popover-title"><h4><?php _e("Gestor de contenidos web accesibles - Beta.","hc") ?></h4></div>
-        <div class="popover-header">
-            <div class="input-text input-row">
-                <p><?php _e("Buscar","hc") ?></p>
-                <input class="search" placeholder="<?php _e("Buscar","hc") ?>..." />
-            </div>
-            <div class="composer-item-paste item-add input-icon">
-                <i class="icon-send-to-back"></i>
-            </div>
-        </div>
         <div class="scroll-content" data-height="325">
             <ul class="list">
                 <li class="divider li-component"><?php _e("Componentes","hc") ?></li>
@@ -460,12 +451,6 @@ COMPOSER POPOVER BOXES
     <div id="popover-box-anima" class="popover-box popover-list" data-search-class="sch" style="display: none">
         <span class="close-button"></span>
         <div class="popover-title"><h4><?php _e("Animations engine","hc") ?></h4></div>
-        <div class="popover-header">
-            <div class="input-row input-text small-input">
-                <h4><?php _e("Animation speed","hc") ?></h4>
-                <input id="animation-speed" type="text" data-default="500" placeholder="500ms" data-mask="number" value="" />
-            </div>
-        </div>
         <div class="timeline-box">
             <h4><?php _e("Timeline","hc") ?></h4>
             <div class="input-row input-checkbox">
@@ -532,19 +517,6 @@ COMPOSER POPOVER BOXES
     <div id="popover-box-code" class="popover-box popover-list search-filter" data-search-class="sch" style="display: none">
         <span class="close-button"></span>
         <div class="popover-title"><h4><?php _e("Settings","hc") ?></h4></div>
-        <div class="popover-header">
-            <div class="input-text input-row">
-                <p><?php _e("Search","hc") ?></p>
-                <input class="search" placeholder="<?php _e("Search...","hc") ?>" />
-            </div>
-            <div id="composer-item-id" class="input-text input-row">
-                <span>ID</span>
-                <input type="text" value="" />
-            </div>
-            <div class="composer-item-copy input-icon">
-                <i class="icon-send-to-front"></i>
-            </div>
-        </div>
         <div class="scroll-content" data-height="300">
             <ul class="list css-class-list">
                 <?php
@@ -579,12 +551,6 @@ COMPOSER POPOVER BOXES
     <div id="popover-box-flexslider" class="popover-box popover-list search-filter" data-search-class="sch" style="display: none">
         <span class="close-button"></span>
         <div class="popover-title"><h4><?php _e("Flex Slider options","hc") ?></h4></div>
-        <div class="popover-header">
-            <div class="input-text input-row">
-                <p><?php _e("Search","hc") ?></p>
-                <input class="search" placeholder="Search..." />
-            </div>
-        </div>
         <ul class="list">
             <li class="input-row input-select">
                 <p class="sch"><?php _e("Animation","hc") ?></p>
