@@ -335,7 +335,7 @@ COMPOSER POPOVER BOXES
                 <li class="li-post-type component-hc-pt-navigation">
                     <div class="component-box" data-hc-target="hc_pt_navigation">
                         <i class="icon-icomoon-53"></i>
-                        <span class="sch"><?php _e("Navigation","hc") ?></span>
+                        <span class="sch"><?php _e("Navegación","hc") ?></span>
                     </div>
                 </li>
                 <li class="li-component component-hc-niche-content-box-call">
