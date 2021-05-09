@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Y Theme\n"
 "POT-Creation-Date: 2017-01-14 20:09+0100\n"
-"PO-Revision-Date: 2021-05-08 12:19+0000\n"
+"PO-Revision-Date: 2021-05-09 09:06+0000\n"
 "Last-Translator: \n"
 "Language-Team: Español\n"
 "Language: es_ES\n"
@@ -69,7 +69,7 @@ msgstr "Logotipo"
 
 #: admin/admin-settings-page.php:118
 msgid "Select an image file for your main logo."
-msgstr ""
+msgstr "Seleccione un archivo de imagen para su logotipo principal."
 
 #: admin/admin-settings-page.php:133
 msgid "Secondary logo"
@@ -189,6 +189,7 @@ msgstr "Márgenes de columna"
 #: admin/admin-settings-page.php:357
 msgid "Controls the top \\ bottom margins for all column sizes."
 msgstr ""
+"Controla los márgenes superior e inferior de todos los tamaños de columna."
 
 #: admin/admin-settings-page.php:369
 msgid "Title and elements margins"
@@ -327,6 +328,8 @@ msgstr ""
 msgid ""
 "Set full width sizes for the dropdown mega menu. *Only for horizontal menus."
 msgstr ""
+"Establezca tamaños de ancho completo para el mega menú desplegable. * Solo "
+"para menús horizontales."
 
 #: admin/admin-settings-page.php:616
 msgid "Columns top padding"
@@ -662,16 +665,19 @@ msgstr ""
 #: admin/admin-settings-page.php:1119
 msgid "Video background"
 msgstr ""
+"Fondo de video\n"
 
 #: admin/admin-settings-page.php:1120
 msgid "Set background video. *Supported only for video title type."
 msgstr ""
+"Establecer video de fondo. * Compatible solo con el tipo de título de video."
 
 #: admin/admin-settings-page.php:1124 admin/components/content_box.php:118
 #: admin/components/sections.php:165 admin/components/sections.php:428
 #: admin/components/titles.php:137
 msgid "Youtube or MP4 video link"
 msgstr ""
+"Enlace de video de Youtube o MP4\n"
 
 #: admin/admin-settings-page.php:1125 admin/composer-side.php:587
 msgid "Upload"
@@ -707,7 +713,7 @@ msgstr ""
 #: admin/components/titles.php:118 admin/components/titles.php:163
 #: admin/composer-side.php:116 admin/composer.php:668
 msgid "None"
-msgstr ""
+msgstr "Ninguno"
 
 #: admin/admin-settings-page.php:1152 admin/components/sections.php:101
 #: admin/components/titles.php:69
@@ -731,7 +737,7 @@ msgstr ""
 
 #: admin/admin-settings-page.php:1162
 msgid "Set the height of the title to full screen size."
-msgstr ""
+msgstr "Establezca la altura del título en tamaño de pantalla completa."
 
 #: admin/admin-settings-page.php:1172 admin/components/sections.php:107
 #: admin/components/sections.php:144 admin/components/sections.php:185
@@ -777,6 +783,8 @@ msgid ""
 "Javascript block loaded in every page. Insert the code without <script>"
 "</script> tags. Use '' for text values."
 msgstr ""
+"Bloque de Javascript cargado en cada página. Inserte el código sin etiquetas "
+"<script> </script>. Utilice \"\" para valores de texto."
 
 #: admin/admin-settings-page.php:1231
 msgid "CSS global"
@@ -785,6 +793,7 @@ msgstr ""
 #: admin/admin-settings-page.php:1232
 msgid "CSS block loaded in every page."
 msgstr ""
+"Bloque CSS cargado en cada página.\n"
 
 #: admin/admin-settings-page.php:1243
 msgid "Custom css"
@@ -830,7 +839,7 @@ msgstr ""
 
 #: admin/admin-settings-page.php:1280
 msgid "Export all settings of your website in a json file."
-msgstr ""
+msgstr "Exporte todas las configuraciones de su sitio web en un archivo json"
 
 #: admin/admin-settings-page.php:1289
 msgid "Import settings"
@@ -841,6 +850,8 @@ msgid ""
 "Import settings by paste here the text of demo json file or your exported "
 "json file."
 msgstr ""
+"mporte la configuración pegando aquí el texto del archivo json de "
+"demostración o su archivo json exportado"
 
 #: admin/admin-settings-page.php:1304
 msgid "Social channels"
@@ -848,7 +859,7 @@ msgstr ""
 
 #: admin/admin-settings-page.php:1305
 msgid "Insert the links to your social channels account and pages."
-msgstr ""
+msgstr "Inserte los enlaces a su cuenta y páginas de canales sociales."
 
 #: admin/admin-settings-page.php:1343
 msgid "Google maps key"
@@ -880,7 +891,7 @@ msgstr ""
 
 #: admin/admin-settings-page.php:1723
 msgid "SAVE ALL SETTINGS"
-msgstr ""
+msgstr "GUARDAR TODOS LOS CAMBIOS"
 
 #: admin/autoimporter.php:381
 #, php-format
@@ -921,16 +932,16 @@ msgstr ""
 
 #: admin/autoimporter.php:877
 msgid "Remote file is incorrect size"
-msgstr ""
+msgstr "El archivo remoto tiene un tamaño incorrecto"
 
 #: admin/autoimporter.php:882
 msgid "Zero size file downloaded"
-msgstr ""
+msgstr "Archivo de tamaño cero descargado"
 
 #: admin/autoimporter.php:888
 #, php-format
 msgid "Remote file is too large, limit is %s"
-msgstr ""
+msgstr "El archivo remoto es demasiado grande, el límite es% s"
 
 #: admin/components/containers.php:36 admin/components/containers.php:71
 #: admin/components/containers.php:1012 admin/components/others.php:161
@@ -971,7 +982,7 @@ msgstr "Todas las opciones"
 #: admin/components/containers.php:1743 admin/components/others.php:392
 #: admin/components/others.php:763
 msgid "Size"
-msgstr ""
+msgstr "Tamaño"
 
 #: admin/components/containers.php:88 admin/components/containers.php:270
 #: admin/components/containers.php:997 admin/components/others.php:211
@@ -1049,13 +1060,14 @@ msgstr ""
 #: admin/components/containers.php:181
 msgid "On click link"
 msgstr ""
+"Al hacer clic en el enlace\n"
 
 #: admin/components/containers.php:185 admin/components/containers.php:358
 #: admin/components/containers.php:411 admin/components/containers.php:1922
 #: admin/components/others.php:937 admin/components/others.php:1798
 #: admin/components/post_types.php:480 admin/components/post_types.php:689
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 #: admin/components/containers.php:187
 msgid "Media"
@@ -1075,6 +1087,7 @@ msgstr ""
 #: admin/components/containers.php:196 admin/components/others.php:86
 msgid "Lightbox size"
 msgstr ""
+"Tamaño de la caja de luz\n"
 
 #: admin/components/containers.php:198 admin/components/containers.php:1163
 #: admin/components/containers.php:1745 admin/components/others.php:88
@@ -1086,7 +1099,7 @@ msgstr ""
 #: admin/components/others.php:680 admin/components/others.php:1013
 #: admin/components/post_types.php:139 admin/components/post_types.php:327
 msgid "Small"
-msgstr ""
+msgstr "Pequeña"
 
 #: admin/components/containers.php:199 admin/components/others.php:89
 #: admin/components/others.php:345 admin/components/others.php:356
@@ -1095,7 +1108,7 @@ msgstr ""
 #: admin/components/others.php:581 admin/components/others.php:593
 #: admin/components/others.php:667 admin/components/others.php:679
 msgid "Medium"
-msgstr ""
+msgstr "Mediano"
 
 #: admin/components/containers.php:200 admin/components/containers.php:1165
 #: admin/components/containers.php:1747 admin/components/others.php:90
@@ -1107,7 +1120,7 @@ msgstr ""
 #: admin/components/others.php:678 admin/components/others.php:1015
 #: admin/components/post_types.php:141 admin/components/post_types.php:329
 msgid "Large"
-msgstr ""
+msgstr "Grande"
 
 #: admin/components/containers.php:205 admin/components/others.php:95
 #: admin/components/others.php:950 admin/composer.php:381
@@ -1123,6 +1136,7 @@ msgstr ""
 #: admin/components/others.php:57
 msgid "Lightbox animation"
 msgstr ""
+"Animación caja de luz\n"
 
 #: admin/components/containers.php:227
 msgid "Page popup"
@@ -1132,7 +1146,7 @@ msgstr ""
 #: admin/components/others.php:238 admin/components/others.php:696
 #: admin/components/others.php:742 admin/composer.php:166
 msgid "Title"
-msgstr ""
+msgstr "Título"
 
 #: admin/components/containers.php:244
 msgid "Main text"
@@ -1226,7 +1240,7 @@ msgstr ""
 #: admin/components/containers.php:534 admin/components/others.php:918
 #: admin/components/post_types.php:88
 msgid "Auto"
-msgstr ""
+msgstr "Automático"
 
 #: admin/components/containers.php:351 admin/components/containers.php:404
 #: admin/components/containers.php:535 admin/components/containers.php:1942
@@ -1266,11 +1280,12 @@ msgstr ""
 #: admin/components/post_types.php:698 admin/composer-side.php:17
 #: admin/composer-side.php:115
 msgid "Classic"
-msgstr ""
+msgstr "Clásico"
 
 #: admin/components/containers.php:751
 msgid "Classic bottom"
 msgstr ""
+"Fondo clásico\n"
 
 #: admin/components/containers.php:752
 msgid "Justified"
@@ -1335,7 +1350,7 @@ msgstr ""
 #: admin/components/post_types.php:736 admin/components/sections.php:347
 #: admin/composer-side.php:149
 msgid "Default"
-msgstr ""
+msgstr "Defecto"
 
 #: admin/components/containers.php:968 admin/composer.php:429
 msgid "Accordion"
@@ -1425,7 +1440,7 @@ msgstr ""
 
 #: admin/components/containers.php:1133 admin/components/containers.php:1719
 msgid "Thumbnail"
-msgstr ""
+msgstr "Miniatura"
 
 #: admin/components/containers.php:1139 admin/components/containers.php:1725
 #: admin/components/post_types.php:121 admin/components/post_types.php:309
@@ -1463,21 +1478,21 @@ msgstr ""
 #: admin/components/containers.php:1764 admin/components/containers.php:1781
 #: admin/components/post_types.php:232 admin/components/post_types.php:444
 msgid "Load more"
-msgstr ""
+msgstr "Cargar más"
 
 #: admin/components/containers.php:1188 admin/components/post_types.php:225
 #: admin/components/post_types.php:437
 msgid "Load more options"
-msgstr ""
+msgstr "Cargar más opciones"
 
 #: admin/components/containers.php:1190 admin/components/containers.php:1772
 msgid "Items per load"
-msgstr ""
+msgstr "Elementos por carga"
 
 #: admin/components/containers.php:1194 admin/components/containers.php:1776
 #: admin/components/post_types.php:227 admin/components/post_types.php:439
 msgid "Lazy load"
-msgstr ""
+msgstr "Carga lenta"
 
 #: admin/components/containers.php:1228 admin/components/containers.php:1247
 #: admin/components/containers.php:1266 admin/components/containers.php:1285
@@ -1533,7 +1548,7 @@ msgstr "Primero"
 
 #: admin/components/containers.php:1811
 msgid "Prev button text"
-msgstr ""
+msgstr "Texto del botón anterior"
 
 #: admin/components/containers.php:1812 admin/components/post_types.php:219
 #: admin/components/post_types.php:431
@@ -1549,8 +1564,7 @@ msgstr ""
 #: admin/components/post_types.php:435 admin/components/post_types.php:776
 #: admin/composer-side.php:136
 msgid "Next"
-msgstr ""
-"Next\n"
+msgstr "Siguiente"
 
 #: admin/components/containers.php:1819
 msgid "Last button text"
@@ -1591,7 +1605,7 @@ msgstr ""
 
 #: admin/components/containers.php:1941
 msgid "Click"
-msgstr ""
+msgstr "Hacer clic"
 
 #: admin/components/containers.php:1950 admin/components/image_box.php:145
 #: admin/components/others.php:543 admin/components/others.php:611
@@ -1620,7 +1634,7 @@ msgstr ""
 #: admin/components/others.php:257 admin/components/others.php:499
 #: admin/components/others.php:514 admin/components/others.php:824
 msgid "Title ..."
-msgstr ""
+msgstr "Título ..."
 
 #: admin/components/content_box.php:43 admin/components/image_box.php:109
 msgid "Box style"
@@ -1681,7 +1695,7 @@ msgstr ""
 #: admin/components/content_box.php:119 admin/components/sections.php:166
 #: admin/components/sections.php:429 admin/components/titles.php:138
 msgid "Upload video"
-msgstr ""
+msgstr "Upload video"
 
 #: admin/components/content_box.php:125 admin/components/sections.php:61
 #: admin/components/sections.php:399 admin/components/titles.php:30
@@ -1693,7 +1707,7 @@ msgstr "Imagen"
 #: admin/components/sections.php:401 admin/components/titles.php:32
 #: admin/composer.php:366
 msgid "Video"
-msgstr ""
+msgstr "Video"
 
 #: admin/components/content_box.php:138 admin/components/content_box.php:191
 #: admin/components/image_box.php:39 admin/components/others.php:194
@@ -1714,7 +1728,7 @@ msgstr ""
 #: admin/components/post_types.php:699 admin/components/post_types.php:700
 #: admin/composer.php:848 admin/widgets.php:165 admin/widgets.php:166
 msgid "Style"
-msgstr ""
+msgstr "Estilo"
 
 #: admin/components/content_box.php:140
 msgid "Side"
@@ -1734,7 +1748,7 @@ msgstr ""
 #: admin/components/content_box.php:193 admin/components/others.php:531
 #: admin/components/others.php:1808
 msgid "Style 1"
-msgstr ""
+msgstr "Estilo 1"
 
 #: admin/components/content_box.php:220
 msgid "Name ..."
@@ -1760,11 +1774,12 @@ msgstr "Contenido ..."
 #: admin/components/others.php:408 admin/components/others.php:798
 #: admin/components/others.php:1897 admin/composer.php:854
 msgid "Square"
-msgstr ""
+msgstr "Cuadrado"
 
 #: admin/components/image_box.php:42
 msgid "Square thumbnail"
 msgstr ""
+"Miniatura cuadrada\n"
 
 #: admin/components/image_box.php:43 admin/components/others.php:196
 #: admin/components/others.php:1895 admin/composer-side.php:150
@@ -1834,6 +1849,7 @@ msgstr "Texto hacia abajo"
 #: admin/components/image_box.php:116
 msgid "Classic box"
 msgstr ""
+"Caja clásica\n"
 
 #: admin/components/image_box.php:117
 msgid "Circle center"
@@ -1880,14 +1896,17 @@ msgstr ""
 #: admin/components/others.php:63
 msgid "Lightbox caption"
 msgstr ""
+"Título de la caja de luz\n"
 
 #: admin/components/others.php:133 admin/composer-side.php:197
 msgid "Video link"
 msgstr ""
+"Enlace de video\n"
 
 #: admin/components/others.php:150
 msgid "Youtube or MP4 link"
 msgstr ""
+"Enlace de Youtube o MP4\n"
 
 #: admin/components/others.php:157
 msgid "Width"
@@ -1913,6 +1932,7 @@ msgstr ""
 #: admin/components/others.php:681
 msgid "Extra small"
 msgstr ""
+"Extra Pequeño\n"
 
 #: admin/components/others.php:216
 msgid "Full"
@@ -1933,7 +1953,7 @@ msgstr "Base 2"
 
 #: admin/components/others.php:272
 msgid "Base small"
-msgstr "Base pequeña"
+msgstr "Base pequeño"
 
 #: admin/components/others.php:273 admin/components/others.php:559
 #: admin/components/others.php:630 admin/composer-side.php:112
@@ -1969,7 +1989,7 @@ msgstr ""
 #: admin/components/others.php:341 admin/components/others.php:486
 #: admin/components/others.php:674
 msgid "Text size"
-msgstr ""
+msgstr "Tamaño del texto"
 
 #: admin/components/others.php:343 admin/components/others.php:354
 #: admin/components/others.php:394 admin/components/others.php:467
@@ -1977,7 +1997,7 @@ msgstr ""
 #: admin/components/others.php:579 admin/components/others.php:591
 #: admin/components/others.php:665 admin/components/others.php:677
 msgid "Extra large"
-msgstr ""
+msgstr "Extra grande"
 
 #: admin/components/others.php:405
 msgid "Icons"
@@ -2020,11 +2040,11 @@ msgstr ""
 #: admin/components/others.php:590 admin/components/others.php:664
 #: admin/components/others.php:676
 msgid "Ultra large"
-msgstr ""
+msgstr "Ultra grande"
 
 #: admin/components/others.php:475
 msgid "Title size"
-msgstr ""
+msgstr "Tamaño del título"
 
 #: admin/components/others.php:520
 msgid "Extra"
@@ -2110,7 +2130,7 @@ msgstr ""
 
 #: admin/components/others.php:712
 msgid "Title position"
-msgstr ""
+msgstr "Posición del título"
 
 #: admin/components/others.php:721
 msgid "Progress position"
@@ -2268,7 +2288,7 @@ msgstr ""
 
 #: admin/components/others.php:1001 admin/composer.php:750
 msgid "Fade"
-msgstr ""
+msgstr "Desaparecer"
 
 #: admin/components/others.php:1006
 msgid "Locale"
@@ -2372,7 +2392,7 @@ msgstr "Bordeado"
 
 #: admin/components/others.php:1563
 msgid "Condensed"
-msgstr ""
+msgstr "Condensado"
 
 #: admin/components/others.php:1567
 msgid "Advanced table"
@@ -2575,7 +2595,7 @@ msgstr ""
 
 #: admin/components/others.php:1898
 msgid "Square animation"
-msgstr ""
+msgstr "Animación cuadrada"
 
 #: admin/components/others.php:1902
 msgid "Button position"
@@ -2612,7 +2632,7 @@ msgstr ""
 #: admin/components/post_types.php:680 admin/components/post_types.php:725
 #: admin/components/post_types.php:762 admin/components/post_types.php:788
 msgid "Post type"
-msgstr ""
+msgstr "Tipo de publicación"
 
 #: admin/components/post_types.php:68
 msgid "Grid options"
@@ -2660,7 +2680,7 @@ msgstr ""
 
 #: admin/components/post_types.php:123 admin/components/post_types.php:311
 msgid "HTML Load more"
-msgstr ""
+msgstr "HTML Cargar más"
 
 #: admin/components/post_types.php:137 admin/components/post_types.php:325
 msgid "Button size"
@@ -2771,7 +2791,7 @@ msgstr "Contenido"
 #: admin/components/post_types.php:565 admin/components/post_types.php:664
 #: admin/components/post_types.php:713
 msgid "All"
-msgstr "Tutti"
+msgstr "Todas"
 
 #: admin/components/post_types.php:199 admin/components/post_types.php:411
 #: admin/components/post_types.php:567 admin/components/post_types.php:666
@@ -2780,13 +2800,12 @@ msgstr "Descripción"
 
 #: admin/components/post_types.php:218 admin/components/post_types.php:430
 msgid "Prev text"
-msgstr ""
+msgstr "Texto anterior"
 
 #: admin/components/post_types.php:222 admin/components/post_types.php:434
 #: admin/components/post_types.php:775
 msgid "Next text"
-msgstr ""
-"Texto siguiente\n"
+msgstr "Texto siguiente"
 
 #: admin/components/post_types.php:256
 msgid "Masonry options"
@@ -2811,8 +2830,7 @@ msgstr "Todo el texto del botón"
 
 #: admin/components/post_types.php:727
 msgid "Posts"
-msgstr ""
-"Publicaciones\n"
+msgstr "Publicaciones"
 
 #: admin/components/post_types.php:734
 msgid "Order by"
@@ -2825,7 +2843,7 @@ msgstr "Contador"
 
 #: admin/components/post_types.php:742 admin/composer.php:659
 msgid "Order"
-msgstr ""
+msgstr "Ordenar"
 
 #: admin/components/post_types.php:744
 msgid "Asc"
@@ -2838,6 +2856,7 @@ msgstr "Desc"
 #: admin/components/post_types.php:771
 msgid "Previous text"
 msgstr ""
+"Texto anterior\n"
 
 #: admin/components/post_types.php:772
 msgid "Previous"
@@ -2865,7 +2884,7 @@ msgstr "Vacío"
 #: admin/components/sections.php:177 admin/components/titles.php:54
 #: admin/components/titles.php:104 admin/components/titles.php:149
 msgid "Fullscreen"
-msgstr ""
+msgstr "Pantalla completa"
 
 #: admin/components/sections.php:90 admin/components/sections.php:140
 #: admin/components/sections.php:181 admin/components/titles.php:58
@@ -2924,7 +2943,7 @@ msgstr ""
 #: admin/components/sections.php:195 admin/components/titles.php:85
 #: admin/components/titles.php:126 admin/components/titles.php:171
 msgid "Squares"
-msgstr ""
+msgstr "Cuadrícula"
 
 #: admin/components/sections.php:192
 msgid "Transparent-dark"
@@ -2947,12 +2966,12 @@ msgstr "Imagen de animación"
 #: admin/components/sections.php:233 admin/components/sections.php:242
 #: admin/components/titles.php:209
 msgid "Clouds 1"
-msgstr ""
+msgstr "Nubes 1"
 
 #: admin/components/sections.php:234 admin/components/sections.php:243
 #: admin/components/titles.php:210
 msgid "Clouds 2"
-msgstr ""
+msgstr "Nubes 2"
 
 #: admin/components/sections.php:235 admin/components/sections.php:244
 #: admin/components/titles.php:211
@@ -2991,7 +3010,7 @@ msgstr ""
 
 #: admin/components/titles.php:218 admin/components/titles.php:219
 msgid "Clouds"
-msgstr ""
+msgstr "Nubes"
 
 #: admin/components/titles.php:220 admin/components/titles.php:221
 msgid "Fog"
@@ -3137,6 +3156,9 @@ msgid ""
 "without contents, and you're done. Every item of your list will use this "
 "template."
 msgstr ""
+"Cree la plantilla de un solo elemento aquí. Agregue los componentes que "
+"desee, generalmente sin contenido, y listo. Cada elemento de su lista "
+"utilizará esta plantilla."
 
 #: admin/composer-side.php:494
 msgid "Featured image"
@@ -3167,6 +3189,7 @@ msgstr "Añadir al menú"
 #: admin/composer-side.php:565
 msgid "Small width dropdown"
 msgstr ""
+"Menú desplegable de ancho pequeño\n"
 
 #: admin/composer-side.php:573
 msgid "Background image link"
@@ -3182,11 +3205,11 @@ msgstr "Componentes"
 
 #: admin/composer.php:160
 msgid "Title H1-H6"
-msgstr ""
+msgstr "Título H1-H6"
 
 #: admin/composer.php:172
 msgid "Text block"
-msgstr ""
+msgstr "Bloque de texto"
 
 #: admin/composer.php:178
 msgid "Icon list"
@@ -3244,6 +3267,7 @@ msgstr ""
 #: admin/composer.php:264
 msgid "Text list"
 msgstr ""
+"Lista de texto\n"
 
 #: admin/composer.php:270
 msgid "Icon links"
@@ -3337,7 +3361,7 @@ msgstr ""
 
 #: admin/composer.php:423
 msgid "Collapse"
-msgstr ""
+msgstr "Colapsar"
 
 #: admin/composer.php:441 admin/composer.php:474
 msgid "Grid list"
@@ -3451,27 +3475,31 @@ msgstr ""
 
 #: admin/composer.php:670
 msgid "Fade in"
-msgstr ""
+msgstr "Aparecer gradualmente"
 
 #: admin/composer.php:672
 msgid "Fade left"
 msgstr ""
+"Desvanecerse a la izquierda\n"
 
 #: admin/composer.php:674
 msgid "Fade right"
 msgstr ""
+"Desvanecerse a la derecha\n"
 
 #: admin/composer.php:676
 msgid "Fade top"
 msgstr ""
+"Desvanecimiento superior\n"
 
 #: admin/composer.php:678
 msgid "Fade bottom"
 msgstr ""
+"Desvanecimiento inferior\n"
 
 #: admin/composer.php:680
 msgid "Show scale"
-msgstr ""
+msgstr "Mostrar escala"
 
 #: admin/composer.php:682
 msgid "Pulse"
@@ -3536,6 +3564,7 @@ msgstr ""
 #: admin/composer.php:789
 msgid "Control navigation"
 msgstr ""
+"Controlar la navegación\n"
 
 #: admin/composer.php:793
 msgid "Direction arrows"
@@ -3590,11 +3619,11 @@ msgstr "Icono de imagen circular"
 
 #: admin/composer.php:855
 msgid "Square image"
-msgstr ""
+msgstr "Imagen cuadrada"
 
 #: admin/composer.php:856
 msgid "Square image icon"
-msgstr ""
+msgstr "Icono de imagen cuadrada"
 
 #: admin/composer.php:926
 msgid "SAVE"
@@ -3622,11 +3651,12 @@ msgstr "Lista de categorias."
 
 #: admin/widgets.php:50 admin/widgets.php:147 admin/widgets.php:209
 msgid "Title:"
-msgstr ""
+msgstr "Título:"
 
 #: admin/widgets.php:54 admin/widgets.php:151
 msgid "Post Type:"
 msgstr ""
+"Tipo de publicación:\n"
 
 #: admin/widgets.php:72
 msgid "Your site&#8217;s most recent Posts."
@@ -3635,6 +3665,7 @@ msgstr ""
 #: admin/widgets.php:75
 msgid "Recent Post Types"
 msgstr ""
+"Tipos de publicaciones recientes\n"
 
 #: admin/widgets.php:84
 msgid "Recent Posts"
@@ -3642,7 +3673,7 @@ msgstr ""
 
 #: admin/widgets.php:163
 msgid "Style:"
-msgstr ""
+msgstr "Estilo:"
 
 #: admin/widgets.php:170
 msgid "Number of posts to show:"
@@ -3710,7 +3741,7 @@ msgstr ""
 
 #: index.php:167
 msgid "Preview Changes"
-msgstr ""
+msgstr "Vista previa de cambios"
 
 #: index.php:173
 msgid "Save Changes"
@@ -3720,7 +3751,7 @@ msgstr ""
 #: index.php:543
 msgctxt "Google font: on or off"
 msgid "on"
-msgstr ""
+msgstr "encendido"
 
 #: index.php:632
 msgid " archive with tag "
@@ -3728,7 +3759,7 @@ msgstr "archivo con etiqueta"
 
 #: index.php:633 index.php:637
 msgid "All "
-msgstr "Tutti"
+msgstr "Todas"
 
 #: index.php:636
 msgid " archive with date "
