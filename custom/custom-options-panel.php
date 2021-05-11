@@ -23,10 +23,10 @@ Documentation: wordpress.framework-y.com/advanced-api-documentation/#custom-them
 global $HC_CUSTOM_PANEL;
 
 $HC_CUSTOM_PANEL = array(
-	'name'    => 'Signflow',
+	'name'    => 'Mercurio',
 	'version' => '1.4.6',
     'colors'  => array("#5584ff","#0e1a35"),
-    'demos' => array(array('id' => 'signflow','name' => 'All demos')),
+    'demos' => array(array('id' => 'Mercurio','name' => 'All demos')),
     'demos_url' => 'http://themes.framework-y.com/demo-import/'
 );
 
