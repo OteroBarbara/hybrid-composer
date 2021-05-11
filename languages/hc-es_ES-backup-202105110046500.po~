@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Y Theme\n"
 "POT-Creation-Date: 2017-01-14 20:09+0100\n"
-"PO-Revision-Date: 2021-05-09 08:51+0000\n"
+"PO-Revision-Date: 2021-05-11 00:45+0000\n"
 "Last-Translator: \n"
 "Language-Team: Español\n"
 "Language: es_ES\n"
@@ -572,7 +572,7 @@ msgstr "Zona derecha"
 
 #: admin/admin-settings-page.php:952
 msgid "Copyright text"
-msgstr ""
+msgstr "Texto de Copyright"
 
 #: admin/admin-settings-page.php:953
 msgid ""
@@ -835,7 +835,7 @@ msgstr ""
 
 #: admin/admin-settings-page.php:1279
 msgid "Export settings"
-msgstr ""
+msgstr "Exportar ajustes"
 
 #: admin/admin-settings-page.php:1280
 msgid "Export all settings of your website in a json file."
@@ -843,7 +843,7 @@ msgstr "Exporte todas las configuraciones de su sitio web en un archivo json"
 
 #: admin/admin-settings-page.php:1289
 msgid "Import settings"
-msgstr ""
+msgstr "Importar ajustes"
 
 #: admin/admin-settings-page.php:1290
 msgid ""
@@ -1255,7 +1255,7 @@ msgstr ""
 #: admin/components/sections.php:400 admin/components/titles.php:31
 #: admin/composer.php:393 admin/composer.php:486
 msgid "Slider"
-msgstr ""
+msgstr "Carrusel"
 
 #: admin/components/containers.php:361 admin/components/containers.php:414
 #: admin/components/others.php:952 admin/components/post_types.php:483
@@ -1548,7 +1548,7 @@ msgstr "Primero"
 
 #: admin/components/containers.php:1811
 msgid "Prev button text"
-msgstr ""
+msgstr "Texto del botón anterior"
 
 #: admin/components/containers.php:1812 admin/components/post_types.php:219
 #: admin/components/post_types.php:431
@@ -1774,7 +1774,7 @@ msgstr "Contenido ..."
 #: admin/components/others.php:408 admin/components/others.php:798
 #: admin/components/others.php:1897 admin/composer.php:854
 msgid "Square"
-msgstr ""
+msgstr "Cuadrado"
 
 #: admin/components/image_box.php:42
 msgid "Square thumbnail"
@@ -2595,7 +2595,7 @@ msgstr ""
 
 #: admin/components/others.php:1898
 msgid "Square animation"
-msgstr ""
+msgstr "Animación cuadrada"
 
 #: admin/components/others.php:1902
 msgid "Button position"
@@ -2800,7 +2800,7 @@ msgstr "Descripción"
 
 #: admin/components/post_types.php:218 admin/components/post_types.php:430
 msgid "Prev text"
-msgstr ""
+msgstr "Texto anterior"
 
 #: admin/components/post_types.php:222 admin/components/post_types.php:434
 #: admin/components/post_types.php:775
@@ -2884,7 +2884,7 @@ msgstr "Vacío"
 #: admin/components/sections.php:177 admin/components/titles.php:54
 #: admin/components/titles.php:104 admin/components/titles.php:149
 msgid "Fullscreen"
-msgstr ""
+msgstr "Pantalla completa"
 
 #: admin/components/sections.php:90 admin/components/sections.php:140
 #: admin/components/sections.php:181 admin/components/titles.php:58
@@ -2943,7 +2943,7 @@ msgstr ""
 #: admin/components/sections.php:195 admin/components/titles.php:85
 #: admin/components/titles.php:126 admin/components/titles.php:171
 msgid "Squares"
-msgstr ""
+msgstr "Cuadrícula"
 
 #: admin/components/sections.php:192
 msgid "Transparent-dark"
@@ -3281,7 +3281,7 @@ msgstr ""
 
 #: admin/composer.php:282
 msgid "Counter"
-msgstr ""
+msgstr "Contador"
 
 #: admin/composer.php:288
 msgid "Countdown"
@@ -3303,7 +3303,7 @@ msgstr ""
 
 #: admin/composer.php:312
 msgid "Google map"
-msgstr ""
+msgstr "Mapa de Google"
 
 #: admin/composer.php:318
 msgid "Social feeds"
@@ -3439,7 +3439,7 @@ msgstr "Columna 2"
 
 #: admin/composer.php:584
 msgid "Sections"
-msgstr ""
+msgstr "Secciones"
 
 #: admin/composer.php:594
 msgid "Two blocks"
@@ -3741,7 +3741,7 @@ msgstr ""
 
 #: index.php:167
 msgid "Preview Changes"
-msgstr ""
+msgstr "Vista previa de cambios"
 
 #: index.php:173
 msgid "Save Changes"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Y Theme\n"
 "POT-Creation-Date: 2017-01-14 20:09+0100\n"
-"PO-Revision-Date: 2021-05-09 09:09+0000\n"
+"PO-Revision-Date: 2021-05-11 00:46+0000\n"
 "Last-Translator: \n"
 "Language-Team: Español\n"
 "Language: es_ES\n"
@@ -572,7 +572,7 @@ msgstr "Zona derecha"
 
 #: admin/admin-settings-page.php:952
 msgid "Copyright text"
-msgstr ""
+msgstr "Texto de Copyright"
 
 #: admin/admin-settings-page.php:953
 msgid ""
@@ -1255,7 +1255,7 @@ msgstr ""
 #: admin/components/sections.php:400 admin/components/titles.php:31
 #: admin/composer.php:393 admin/composer.php:486
 msgid "Slider"
-msgstr ""
+msgstr "Carrusel"
 
 #: admin/components/containers.php:361 admin/components/containers.php:414
 #: admin/components/others.php:952 admin/components/post_types.php:483
@@ -1611,7 +1611,7 @@ msgstr "Hacer clic"
 #: admin/components/others.php:543 admin/components/others.php:611
 #: admin/components/others.php:1085 admin/components/others.php:1834
 msgid "Text"
-msgstr ""
+msgstr "Texto"
 
 #: admin/components/containers.php:1976 admin/components/others.php:352
 #: admin/components/others.php:464
@@ -2715,7 +2715,7 @@ msgstr "Blog de ancho completo 2"
 #: admin/components/post_types.php:156 admin/components/post_types.php:368
 #: admin/components/post_types.php:518 admin/components/post_types.php:617
 msgid "Team"
-msgstr ""
+msgstr "Equipo"
 
 #: admin/components/post_types.php:157 admin/components/post_types.php:369
 #: admin/components/post_types.php:519 admin/components/post_types.php:618
@@ -3281,7 +3281,7 @@ msgstr ""
 
 #: admin/composer.php:282
 msgid "Counter"
-msgstr ""
+msgstr "Contador"
 
 #: admin/composer.php:288
 msgid "Countdown"
@@ -3303,7 +3303,7 @@ msgstr ""
 
 #: admin/composer.php:312
 msgid "Google map"
-msgstr ""
+msgstr "Mapa de Google"
 
 #: admin/composer.php:318
 msgid "Social feeds"
@@ -3323,7 +3323,7 @@ msgstr ""
 
 #: admin/composer.php:348
 msgid "Table"
-msgstr ""
+msgstr "Tabla"
 
 #: admin/composer.php:354
 msgid "Inner menu"

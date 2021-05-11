@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Y Theme\n"
 "POT-Creation-Date: 2017-01-14 20:09+0100\n"
-"PO-Revision-Date: 2021-05-09 09:09+0000\n"
+"PO-Revision-Date: 2021-05-11 00:34+0000\n"
 "Last-Translator: \n"
 "Language-Team: Español\n"
 "Language: es_ES\n"
@@ -1255,7 +1255,7 @@ msgstr ""
 #: admin/components/sections.php:400 admin/components/titles.php:31
 #: admin/composer.php:393 admin/composer.php:486
 msgid "Slider"
-msgstr ""
+msgstr "Carrusel"
 
 #: admin/components/containers.php:361 admin/components/containers.php:414
 #: admin/components/others.php:952 admin/components/post_types.php:483
@@ -3281,7 +3281,7 @@ msgstr ""
 
 #: admin/composer.php:282
 msgid "Counter"
-msgstr ""
+msgstr "Contador"
 
 #: admin/composer.php:288
 msgid "Countdown"
@@ -3439,7 +3439,7 @@ msgstr "Columna 2"
 
 #: admin/composer.php:584
 msgid "Sections"
-msgstr ""
+msgstr "Secciones"
 
 #: admin/composer.php:594
 msgid "Two blocks"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Y Theme\n"
 "POT-Creation-Date: 2017-01-14 20:09+0100\n"
-"PO-Revision-Date: 2021-05-09 08:59+0000\n"
+"PO-Revision-Date: 2021-05-11 00:31+0000\n"
 "Last-Translator: \n"
 "Language-Team: Español\n"
 "Language: es_ES\n"
@@ -835,7 +835,7 @@ msgstr ""
 
 #: admin/admin-settings-page.php:1279
 msgid "Export settings"
-msgstr ""
+msgstr "Exportar ajustes"
 
 #: admin/admin-settings-page.php:1280
 msgid "Export all settings of your website in a json file."
@@ -843,7 +843,7 @@ msgstr "Exporte todas las configuraciones de su sitio web en un archivo json"
 
 #: admin/admin-settings-page.php:1289
 msgid "Import settings"
-msgstr ""
+msgstr "Importar ajustes"
 
 #: admin/admin-settings-page.php:1290
 msgid ""
@@ -1548,7 +1548,7 @@ msgstr "Primero"
 
 #: admin/components/containers.php:1811
 msgid "Prev button text"
-msgstr ""
+msgstr "Texto del botón anterior"
 
 #: admin/components/containers.php:1812 admin/components/post_types.php:219
 #: admin/components/post_types.php:431
@@ -2800,7 +2800,7 @@ msgstr "Descripción"
 
 #: admin/components/post_types.php:218 admin/components/post_types.php:430
 msgid "Prev text"
-msgstr ""
+msgstr "Texto anterior"
 
 #: admin/components/post_types.php:222 admin/components/post_types.php:434
 #: admin/components/post_types.php:775
@@ -3281,7 +3281,7 @@ msgstr ""
 
 #: admin/composer.php:282
 msgid "Counter"
-msgstr ""
+msgstr "Contador"
 
 #: admin/composer.php:288
 msgid "Countdown"
@@ -3439,7 +3439,7 @@ msgstr "Columna 2"
 
 #: admin/composer.php:584
 msgid "Sections"
-msgstr ""
+msgstr "Secciones"
 
 #: admin/composer.php:594
 msgid "Two blocks"
@@ -3741,7 +3741,7 @@ msgstr ""
 
 #: index.php:167
 msgid "Preview Changes"
-msgstr ""
+msgstr "Vista previa de cambios"
 
 #: index.php:173
 msgid "Save Changes"
