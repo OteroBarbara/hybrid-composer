@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Y Theme\n"
 "POT-Creation-Date: 2017-01-14 20:09+0100\n"
-"PO-Revision-Date: 2021-05-11 00:46+0000\n"
+"PO-Revision-Date: 2021-05-11 07:19+0000\n"
 "Last-Translator: \n"
 "Language-Team: Español\n"
 "Language: es_ES\n"
@@ -32,7 +32,7 @@ msgstr "Ajustes principales"
 
 #: admin/admin-settings-page.php:104 admin/admin-settings-page.php:279
 msgid "Layout"
-msgstr "Estructura"
+msgstr "Diseño"
 
 #: admin/admin-settings-page.php:105 components/containers.php:368
 #: components/post_types.php:454
@@ -1228,13 +1228,13 @@ msgstr ""
 #: admin/components/containers.php:1101 admin/components/containers.php:1687
 msgid "Images size"
 msgstr ""
-"Tamaño de las imágenes\n"
+"Tamaño de imágenes\n"
 
 #: admin/components/containers.php:348 admin/components/containers.php:401
 #: admin/components/containers.php:532 admin/components/containers.php:1938
 #: admin/components/others.php:916
 msgid "Trigger"
-msgstr ""
+msgstr "Disparador "
 
 #: admin/components/containers.php:350 admin/components/containers.php:403
 #: admin/components/containers.php:534 admin/components/others.php:918
@@ -1350,7 +1350,7 @@ msgstr ""
 #: admin/components/post_types.php:736 admin/components/sections.php:347
 #: admin/composer-side.php:149
 msgid "Default"
-msgstr "Defecto"
+msgstr "Por defecto"
 
 #: admin/components/containers.php:968 admin/composer.php:429
 msgid "Accordion"
@@ -1680,7 +1680,7 @@ msgstr "Contenedor"
 #: admin/components/post_types.php:175 admin/components/post_types.php:387
 #: admin/components/post_types.php:537 admin/components/post_types.php:636
 msgid "Boxed inverse"
-msgstr "Contenedor inverso"
+msgstr "Encajonado inverso"
 
 #: admin/components/content_box.php:65 admin/components/content_box.php:158
 msgid "Extra content"
@@ -2182,7 +2182,7 @@ msgstr "Extremo"
 
 #: admin/components/others.php:797
 msgid "Round"
-msgstr ""
+msgstr "Redondo"
 
 #: admin/components/others.php:802
 msgid "Fill"
@@ -2202,19 +2202,19 @@ msgstr "Etiqueta"
 
 #: admin/components/others.php:863 admin/components/sections.php:290
 msgid "Map coordinates"
-msgstr ""
+msgstr "Coordenadas del mapa"
 
 #: admin/components/others.php:870 admin/components/sections.php:307
 msgid "Map height"
-msgstr ""
+msgstr "Altura del mapa"
 
 #: admin/components/others.php:874 admin/components/sections.php:311
 msgid "Map address"
-msgstr ""
+msgstr "Dirección del mapa"
 
 #: admin/components/others.php:878 admin/components/sections.php:316
 msgid "Map zoom"
-msgstr ""
+msgstr "Zoom del mapa"
 
 #: admin/components/others.php:882 admin/components/sections.php:320
 msgid "Marker image"
@@ -2223,7 +2223,7 @@ msgstr ""
 
 #: admin/components/others.php:889 admin/components/sections.php:327
 msgid "Marker position"
-msgstr ""
+msgstr "Posición del marcador"
 
 #: admin/components/others.php:894 admin/components/sections.php:331
 msgid "Center top"
@@ -2235,11 +2235,11 @@ msgstr "Parte inferior central"
 
 #: admin/components/others.php:899 admin/components/sections.php:337
 msgid "Marker top offset"
-msgstr ""
+msgstr "Desplazamiento superior del marcador"
 
 #: admin/components/others.php:903 admin/components/sections.php:341
 msgid "Marker left offset"
-msgstr ""
+msgstr "Desplazamiento izquierdo del marcador"
 
 #: admin/components/others.php:907 admin/components/sections.php:345
 msgid "Map skin"
@@ -2339,7 +2339,7 @@ msgstr "Autor"
 
 #: admin/components/others.php:1140
 msgid "Single quote"
-msgstr ""
+msgstr "Comillas simples"
 
 #: admin/components/others.php:1141
 msgid "Double quote"
@@ -2347,23 +2347,23 @@ msgstr "Comillas dobles"
 
 #: admin/components/others.php:1177 admin/composer.php:336
 msgid "Space"
-msgstr ""
+msgstr "Espacio"
 
 #: admin/components/others.php:1178
 msgid "Space l"
-msgstr ""
+msgstr "Espacio l"
 
 #: admin/components/others.php:1179
 msgid "Space m"
-msgstr ""
+msgstr "Espacio m"
 
 #: admin/components/others.php:1180
 msgid "Space s"
-msgstr ""
+msgstr "Espacio s"
 
 #: admin/components/others.php:1181
 msgid "Space xs"
-msgstr ""
+msgstr "Espacio xs"
 
 #: admin/components/others.php:1194 admin/components/others.php:1214
 #: admin/components/others.php:1217 admin/components/others.php:1244
@@ -3394,7 +3394,7 @@ msgstr ""
 
 #: admin/composer.php:510
 msgid "Post informations"
-msgstr ""
+msgstr "Información de publicaciones"
 
 #: admin/composer.php:525
 msgid "Column 12"

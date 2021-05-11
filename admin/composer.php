@@ -209,43 +209,43 @@ COMPOSER POPOVER BOXES
                 <li class="li-component component-hc-title-tag">
                     <div class="component-box" data-hc-target="hc_title_tag">
                         <i class="icon-icomoon-10"></i>
-                        <span class="sch"><?php _e("Título H1-H6","hc") ?></span>
+                        <span class="sch"><?php _e("Title H1-H6","hc") ?></span>
                     </div>
                 </li>
                 <li class="li-component component-hc-text-block">
                     <div class="component-box" data-hc-target="hc_text_block">
                         <i class="icon-icomoon-9"></i>
-                        <span class="sch"><?php _e("Bloque de texto","hc") ?></span>
+                        <span class="sch"><?php _e("Text block","hc") ?></span>
                     </div>
                 </li>
                 <li class="li-component component-hc-iconicons-mind-line-simple">
                     <div class="component-box" data-hc-target="hc_icon_list_simple">
                         <i class="icon-icomoon-7"></i>
-                        <span class="sch"><?php _e("Lista de Iconos","hc") ?></span>
+                        <span class="sch"><?php _e("Icon list","hc") ?></span>
                     </div>
                 </li>
                 <li class="li-component component-hc-button">
                     <div class="component-box" data-hc-target="hc_button">
                         <i class="icon-icomoon-8"></i>
-                        <span class="sch"><?php _e("Botón","hc") ?></span>
+                        <span class="sch"><?php _e("Button","hc") ?></span>
                     </div>
                 </li>
                 <li class="li-component component-hc-image">
                     <div class="component-box" data-hc-target="hc_image">
                         <i class="icon-icomoon-14"></i>
-                        <span class="sch"><?php _e("Imágen","hc") ?></span>
+                        <span class="sch"><?php _e("Image","hc") ?></span>
                     </div>
                 </li>
                 <li class="li-component component-hc-image-box">
                     <div class="component-box" data-hc-target="hc_image_box">
                         <i class="icon-icomoon-14"></i>
-                        <span class="sch"><?php _e("Cuadro de Imágenes","hc") ?></span>
+                        <span class="sch"><?php _e("Image box","hc") ?></span>
                     </div>
                 </li>
                 <li class="li-component component-hc-icon-links">
                     <div class="component-box" data-hc-target="hc_icon_links">
                         <i class="icon-icomoon-23"></i>
-                        <span class="sch"><?php _e("Enlace de íconos","hc") ?></span>
+                        <span class="sch"><?php _e("Icon links","hc") ?></span>
                     </div>
                 </li>
                 <li class="li-component component-hc-google-map">
@@ -257,31 +257,31 @@ COMPOSER POPOVER BOXES
                 <li class="li-component component-hc-quote">
                     <div class="component-box" data-hc-target="hc_quote">
                         <i class="icon-icomoon-34"></i>
-                        <span class="sch"><?php _e("Cita","hc") ?></span>
+                        <span class="sch"><?php _e("Quote","hc") ?></span>
                     </div>
                 </li>
                 <li class="li-component component-hc-space">
                     <div class="component-box" data-hc-target="hc_space">
                         <i class="icon-icomoon-35"></i>
-                        <span class="sch"><?php _e("Espaciador","hc") ?></span>
+                        <span class="sch"><?php _e("Space","hc") ?></span>
                     </div>
                 </li>
                 <li class="li-component component-hc-table">
                     <div class="component-box" data-hc-target="hc_table">
                         <i class="icon-icomoon-37"></i>
-                        <span class="sch"><?php _e("Tabla","hc") ?></span>
+                        <span class="sch"><?php _e("Table","hc") ?></span>
                     </div>
                 </li>
                 <li class="li-component component-hc-inner-menu">
                     <div class="component-box" data-hc-target="hc_inner_menu">
                         <i class="icon-icomoon-40"></i>
-                        <span class="sch"><?php _e("Menú interior","hc") ?></span>
+                        <span class="sch"><?php _e("Inner menu","hc") ?></span>
                     </div>
                 </li>
                 <li class="li-component component-hc-contact-form">
                     <div class="component-box" data-hc-target="hc_contact_form">
                         <i class="icon-icomoon-42"></i>
-                        <span class="sch"><?php _e("Formulario de contacto","hc") ?></span>
+                        <span class="sch"><?php _e("Contact form","hc") ?></span>
                     </div>
                 </li>
                 <li class="li-component component-hc-video">
@@ -293,12 +293,12 @@ COMPOSER POPOVER BOXES
                 <li class="li-component component-hc-breadcrumbs">
                     <div class="component-box" data-hc-target="hc_breadcrumbs">
                         <i class="icon-icomoon-38"></i>
-                        <span class="sch"><?php _e("Migas de pan","hc") ?></span>
+                        <span class="sch"><?php _e("Breadcrumbs","hc") ?></span>
                     </div>
                 </li>
                 <li class="li-container component-hc-image-slider">
                     <div class="component-box" data-hc-target="hc_image_slider">
-                        <i class="icon-icomoon-20" "></i>
+                        <i class="icon-icomoon-20"></i>
                         <span class="sch"><?php _e("Image slider","hc") ?></span>
                     </div>
                 </li>
@@ -335,7 +335,7 @@ COMPOSER POPOVER BOXES
                 <li class="li-post-type component-hc-pt-navigation">
                     <div class="component-box" data-hc-target="hc_pt_navigation">
                         <i class="icon-icomoon-53"></i>
-                        <span class="sch"><?php _e("Navegación","hc") ?></span>
+                        <span class="sch"><?php _e("Navigation","hc") ?></span>
                     </div>
                 </li>
                 <li class="li-component component-hc-niche-content-box-call">
