@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Hybrid Composer\n"
-"POT-Creation-Date: 2021-05-19 01:24+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2017-11-04 16:28+0100\n"
+"PO-Revision-Date: 2017-11-04 16:27+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Loco https://localise.biz/\n"
+"X-Generator: Poedit 2.0.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: index.php\n"
@@ -20,8 +20,6 @@ msgstr ""
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
-"\n"
-"Language: "
 
 #: admin/admin-settings-page.php:197 admin/composer-side.php:833
 msgid "Documentation"
@@ -116,9 +114,8 @@ msgid "Margin top of the logo."
 msgstr ""
 
 #: admin/admin-settings-page.php:309
-msgctxt "Familia tipográfica"
 msgid "Font family"
-msgstr "Familia tipografica"
+msgstr ""
 
 #: admin/admin-settings-page.php:311
 msgid ""
@@ -837,8 +834,8 @@ msgstr ""
 
 #: admin/admin-settings-page.php:1533
 msgid ""
-"Javascript block loaded in every page. Insert the code without <script>"
-"</script> tags. Use '' for text values."
+"Javascript block loaded in every page. Insert the code without <script></"
+"script> tags. Use '' for text values."
 msgstr ""
 
 #: admin/admin-settings-page.php:1544

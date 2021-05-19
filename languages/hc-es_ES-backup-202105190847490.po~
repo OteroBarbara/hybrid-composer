@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Y Theme\n"
 "POT-Creation-Date: 2017-01-14 20:09+0100\n"
-"PO-Revision-Date: 2021-05-19 08:49+0000\n"
+"PO-Revision-Date: 2021-05-19 08:44+0000\n"
 "Last-Translator: \n"
 "Language-Team: Español\n"
 "Language: es_ES\n"
@@ -779,7 +779,7 @@ msgstr "Establezca la altura del título en tamaño de pantalla completa."
 #: admin/components/titles.php:75 admin/components/titles.php:116
 #: admin/components/titles.php:161
 msgid "Overlay"
-msgstr "Superposición"
+msgstr ""
 
 #: admin/admin-settings-page.php:1173
 msgid "Add a overlay pattern over the title background."
@@ -2930,7 +2930,7 @@ msgstr "Desbordamiento de altura"
 
 #: admin/components/sections.php:98 admin/components/titles.php:66
 msgid "Ken-burn animation"
-msgstr "Animación Ken-burn"
+msgstr ""
 
 #: admin/components/sections.php:110 admin/components/sections.php:147
 #: admin/components/sections.php:188 admin/components/titles.php:78
