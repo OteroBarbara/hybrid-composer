@@ -91,9 +91,7 @@ $HC_INCLUDE_ARR = array(
     "hc_pt_slider" => "components/post_types.php",
     "hc_pt_coverflow" => "components/post_types.php",
     "hc_pt_menu" => "components/post_types.php",
-    "hc_pt_tag_cloud" => "components/post_types.php",
-    "hc_pt_navigation" => "components/post_types.php",
-    "hc_pt_post_informations" => "components/post_types.php"
+    "hc_pt_tag_cloud" => "components/post_types.php"
     );
 if (HC_IS_CUSTOM_HC) {
     include(HC_PLUGIN_PATH . "/custom/custom-components.php");

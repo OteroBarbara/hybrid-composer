@@ -41,7 +41,6 @@ $home_url = home_url();
                 <div class="navbar-header">
                     <a class="navbar-brand" href="<?php echo home_url() ?>">
                         <img class="logo-default" src="<?php echo esc_url($logo) ?>" alt="" style="<?php echo esc_attr($hc_logo_margin_top) ?>" />
-                        <img class="logo-retina" src="<?php echo esc_url($logo_retina) ?>" alt="" style="<?php echo esc_attr($hc_logo_margin_top) ?>" />
                     </a>
                     <button type="button" class="navbar-toggle">
                         <i class="fa fa-bars"></i>

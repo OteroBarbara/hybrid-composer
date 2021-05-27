@@ -29,10 +29,6 @@
             </div>
             <ul class="nav nav-tabs">
                 <li class="tab-title-image"><a href="#hc_title_image"><?php esc_attr_e("Image","hc") ?></a></li>
-                <li class="tab-title-slider"><a href="#hc_title_slider"><?php esc_attr_e("Slider","hc") ?></a></li>
-                <li class="tab-title-video"><a href="#hc_title_video"><?php esc_attr_e("Video","hc") ?></a></li>
-                <li class="tab-title-animation"><a href="#hc_title_animation"><?php esc_attr_e("Animation","hc") ?></a></li>
-                <li class="tab-title-base"><a href="#hc_title_base"><?php esc_attr_e("Base","hc") ?></a></li>
                 <li class="tab-title-empty"><a href="#hc_title_empty"><?php esc_attr_e("Empty","hc") ?></a></li>
             </ul>
             <div class="clear"></div>

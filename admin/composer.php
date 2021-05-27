@@ -54,6 +54,12 @@ function hc_html_animations() {
 <option value="rotate-20">Rotate 20</option>
 <?php
 }
+function hc_html_interpretionLS() {
+    ?>
+    <option selected="selected" value="Acceder a la versión en Lengua de Señas Uruguaya (LSU).">Video con la interpretación a Lengua de Señas correspondiente.</option>
+    <option value="Contactar a Intérprete de Lengua de Señas Uruguaya (LSU).">Interpretación en tiempo real mediante plataforma de videoconferencia.</option>
+    <?php
+    }
 function hc_html_image_animations() {
 ?>
 <option selected="selected" value="">None</option>
@@ -82,9 +88,9 @@ function hc_e_composer_item_menu($name) {
 <i class="button-move-complete button-move-down"></i>
 <div class="hc-menu-component">
     <p><?php echo esc_attr($name) ?></p>
-    <i title="Duplicar" class="button-copy icon-files"></i>
-    <i title="Mover" class="button-move icon-arrow-move"></i>
-    <i title="Ajustes" class="button-css fa icon-gear-setting-2" data-hc-setting="css_classes" data-hc-component="value" data-value="">
+    <i title="Duplicate" class="button-copy icon-files"></i>
+    <i title="Move" class="button-move icon-arrow-move"></i>
+    <i title="Settings" class="button-css fa icon-gear-setting-2" data-hc-setting="css_classes" data-hc-component="value" data-value="">
         <input type="hidden" data-hc-setting="custom_css_classes" class="custom-css-classes" value="">
         <input type="hidden" data-hc-setting="custom_css_styles" class="custom-css-styles" value="">
     </i>
@@ -314,6 +320,12 @@ COMPOSER POPOVER BOXES
                         <span class="sch"><?php _e("Masonry list","hc") ?></span>
                     </div>
                 </li>
+                <li class="li-component component-hc-niche-content-box-call">
+                    <div class="component-box" data-hc-target="hc_niche_content_box_call">
+                        <i class="icon-icomoon-17"></i>
+                        <span class="sch"><?php _e("Intérprete en lengua de señas","hc") ?></span>
+                    </div>
+                </li>
                 <li class="li-post-type component-hc-pt-masonry-list">
                     <div class="component-box" data-hc-target="hc_pt_grid_list">
                         <i class="icon-icomoon-48"></i>
@@ -324,24 +336,6 @@ COMPOSER POPOVER BOXES
                     <div class="component-box" data-hc-target="hc_pt_slider">
                         <i class="icon-icomoon-20"></i>
                         <span class="sch"><?php _e("Slider","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-post-type component-hc-pt-post-informations">
-                    <div class="component-box" data-hc-target="hc_pt_post_informations">
-                        <i class="icon-icomoon-54"></i>
-                        <span class="sch"><?php _e("Post informations","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-post-type component-hc-pt-navigation">
-                    <div class="component-box" data-hc-target="hc_pt_navigation">
-                        <i class="icon-icomoon-53"></i>
-                        <span class="sch"><?php _e("Navigation","hc") ?></span>
-                    </div>
-                </li>
-                <li class="li-component component-hc-niche-content-box-call">
-                    <div class="component-box" data-hc-target="hc_niche_content_box_call">
-                        <i class="icon-icomoon-17"></i>
-                        <span class="sch"><?php _e("Intérprete en lengua de señas","hc") ?></span>
                     </div>
                 </li>
                 <!--COLUMNS-->
@@ -595,7 +589,7 @@ COMPOSER POPOVER BOXES
                 <input data-option-id="pauseOnHover" data-default="false" type="checkbox">
             </li>
             <li class="input-row input-checkbox">
-                <p class="sch"><?php _e("Control navigation","hc") ?></p>
+                <p class="sch"><?php _e("Control ","hc") ?></p>
                 <input data-option-id="controlNav" data-default="true" checked type="checkbox">
             </li>
             <li class="input-row input-checkbox">

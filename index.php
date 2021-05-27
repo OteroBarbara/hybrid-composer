@@ -191,25 +191,6 @@ add_action( 'admin_enqueue_scripts', 'hc_load_wp_media_files' );
 add_action("admin_menu", function () { add_theme_page("Theme options", "Theme options", "manage_options", "theme-panel", function() {  include(HC_PLUGIN_PATH. "/admin/admin-settings-page.php"); }, null, 99); });
 add_action( 'admin_notices', function () { include_once(HC_PLUGIN_PATH. "/admin/other.php"); });
 
-if (hc_is_setted("disable-gutenberg")) {
-    add_filter('use_block_editor_for_post', '__return_false', 10);
-    add_filter('use_block_editor_for_post_type', '__return_false', 10);
-    function hc_toolbar_preview_link( $wp_admin_bar ) {
-        $wp_admin_bar->add_node(array(
-            'id'    => 'hc_page_preview',
-            'title' => esc_attr__('Preview Changes','hc'),
-            'href'  => '#',
-            'meta'  => array( 'onclick' => 'jQuery("#post-preview").click();','class' => 'hc-post-preview-button')
-        ));
-        $wp_admin_bar->add_node(array(
-            'id'    => 'hc_page_save',
-            'title' => esc_attr__('Save Changes','hc'),
-            'href'  => '#',
-            'meta'  => array( 'onclick' => 'jQuery("#publish").click();','class' => 'hc-post-save-button')
-        ));
-    }
-    add_action( 'admin_bar_menu', 'hc_toolbar_preview_link', 999 );
-}
 
 add_action('init', function () {
     add_post_type_support( 'page', 'excerpt' );

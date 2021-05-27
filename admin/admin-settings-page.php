@@ -239,38 +239,6 @@ $content_settings = get_option('framework_y_theme_settings');
                 <hr />
                 <div class="row item-row">
                     <div class="col-md-6 yinfo-bar">
-                        <h4><?php _e("Retina logo","hc") ?></h4>
-                        <p><?php _e("Retina logo is showed only on high resolution displays.","hc") ?></p>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="upload-box upload-row float-left">
-                            <span class="close-button"></span>
-                            <?php $tmp = hc_get_setting('logo-retina') ?>
-                            <div class="upload-container">
-                                <div id="logo-retina" class="upload-btn <?php if (strlen($tmp) > 0) echo "setted"?>" data-save="upload" style='<?php if (strlen($tmp) > 0) echo "background-image:url(" . esc_attr($tmp) . ")"; ?>'></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr />
-                <div class="row item-row">
-                    <div class="col-md-6 yinfo-bar">
-                        <h4><?php _e("Secondary retina logo","hc") ?></h4>
-                        <p><?php _e("Retina logo is showed only on high resolution displays.","hc") ?></p>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="upload-box upload-row float-left">
-                            <span class="close-button"></span>
-                            <?php $tmp = hc_get_setting('logo-2-retina') ?>
-                            <div class="upload-container">
-                                <div id="logo-2-retina" class="upload-btn <?php if (strlen($tmp) > 0) echo "setted"?>" data-save="upload" style='<?php if (strlen($tmp) > 0) echo "background-image:url(" . esc_attr($tmp) . ")"; ?>'></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr />
-                <div class="row item-row">
-                    <div class="col-md-6 yinfo-bar">
                         <h4><?php _e("Favicon","hc") ?></h4>
                         <p><?php _e("Favicon top browser tab at 16px x 16px.","hc") ?></p>
                     </div>
@@ -438,34 +406,6 @@ $content_settings = get_option('framework_y_theme_settings');
                 <hr />
                 <div class="row item-row">
                     <div class="col-md-6 yinfo-bar">
-                        <h4><?php _e("Color","hc") ?> 3</h4>
-                        <p><?php _e("Additional color, used in some skin.","hc") ?></p>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="input-color input-row">
-                            <?php $tmp = hc_get_setting('color-3') ?>
-                            <input id="color-3" type="text" data-save="color" value="<?php echo esc_attr($tmp); ?>" />
-                            <span class="color-preview" style='<?php if (strlen($tmp) > 0) echo "background-color:" . esc_attr($tmp); ?>'></span>
-                        </div>
-                    </div>
-                </div>
-                <hr />
-                <div class="row item-row">
-                    <div class="col-md-6 yinfo-bar">
-                        <h4><?php _e("Color","hc") ?> 4</h4>
-                        <p><?php _e("Additional color, used in some skin.","hc") ?></p>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="input-color input-row">
-                            <?php $tmp = hc_get_setting('color-4') ?>
-                            <input id="color-4" type="text" data-save="color" value="<?php echo esc_attr($tmp); ?>" />
-                            <span class="color-preview" style='<?php if (strlen($tmp) > 0) echo "background-color:" . esc_attr($tmp); ?>'></span>
-                        </div>
-                    </div>
-                </div>
-                <hr />
-                <div class="row item-row">
-                    <div class="col-md-6 yinfo-bar">
                         <h4><?php _e("Smooth scroll","hc") ?></h4>
                         <p><?php _e("Add a nice moving scroll effect on page scroll.","hc") ?></p>
                     </div>
@@ -475,18 +415,7 @@ $content_settings = get_option('framework_y_theme_settings');
                         </div>
                     </div>
                 </div>
-                <hr />
-                <div class="row item-row">
-                    <div class="col-md-6 yinfo-bar">
-                        <h4><?php _e("Disable Gutenberg","hc") ?></h4>
-                        <p><?php _e("Disable the Gutenberg page builder and restore the classic editor.","hc") ?></p>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="input-checkbox input-row">
-                            <input id="disable-gutenberg" data-save="checkbox" type="checkbox" <?php hc_echo_setting('disable-gutenberg'); ?>>
-                        </div>
-                    </div>
-                </div>
+                
                 <div class="clear"></div>
             </div>
             <div class="panel">
@@ -552,18 +481,6 @@ $content_settings = get_option('framework_y_theme_settings');
                     <div class="col-md-6">
                         <div class="input-text input-row small-input">
                             <input id="section-padding-y" type="text" data-save="text" placeholder="px" data-mask="number" value="<?php hc_echo_setting('section-padding-y'); ?>" />
-                        </div>
-                    </div>
-                </div>
-                <hr />
-                <div class="row item-row">
-                    <div class="col-md-6 yinfo-bar">
-                        <h4><?php _e("section top \ bottom padding (mobile only)","hc") ?></h4>
-                        <p><?php _e("Set the top \ bottom padding for page sections, this setting is applied only to smartphones and tablets.","hc") ?></p>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="input-text input-row small-input">
-                            <input id="mobile-section-padding-y" type="text" data-save="text" placeholder="px" data-mask="number" value="<?php hc_echo_setting('mobile-section-padding-y'); ?>" />
                         </div>
                     </div>
                 </div>
@@ -642,18 +559,6 @@ $content_settings = get_option('framework_y_theme_settings');
                                 <option <?php if ($tmp == "col-md-5") echo "selected"; ?> value="col-md-5">41% col-md-5</option>
                                 <option <?php if ($tmp == "col-md-6") echo "selected"; ?> value="col-md-6">50% col-md-6</option>
                             </select>
-                        </div>
-                    </div>
-                </div>
-                <hr />
-                <div class="row item-row">
-                    <div class="col-md-6 yinfo-bar">
-                        <h4><?php _e("RTL - Right To Left","hc") ?></h4>
-                        <p><?php _e("Enable the right to left layout.","hc") ?></p>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="input-checkbox input-row">
-                            <input id="rtl" data-save="checkbox" type="checkbox" <?php hc_echo_setting('rtl'); ?>>
                         </div>
                     </div>
                 </div>
@@ -869,18 +774,6 @@ $content_settings = get_option('framework_y_theme_settings');
                     <div class="col-md-6">
                         <div class="input-text input-row small-input">
                             <input id="menu-mega-padding" type="text" data-save="text" data-mask="number" placeholder="px" value="<?php hc_echo_setting('menu-mega-padding'); ?>" />
-                        </div>
-                    </div>
-                </div>
-                <hr />
-                <div class="row item-row">
-                    <div class="col-md-6 yinfo-bar">
-                        <h4><?php _e("WPML Lan menu","hc") ?></h4>
-                        <p><?php _e("Show the WPML language selector on the menu. You musy install and activate the WPML plugin.","hc") ?></p>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="input-checkbox input-row">
-                            <input id="menu-language" data-save="checkbox" type="checkbox" <?php hc_echo_setting('menu-language'); ?>>
                         </div>
                     </div>
                 </div>

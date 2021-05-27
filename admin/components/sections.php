@@ -30,17 +30,17 @@
                     <option value="full-width"><?php _e("Full width","hc") ?></option>
                 </select>
             </div>
-            <i title="Animación" class="button-anima button-anima-section icon-eye-view" data-hc-setting="animation" data-hc-component="value" data-value="">
+            <i title="Animation" class="button-anima button-anima-section icon-eye-view" data-hc-setting="animation" data-hc-component="value" data-value="">
                 <input type="hidden" data-hc-setting="animation_time" class="animation-time" value="">
                 <input type="hidden" data-hc-setting="timeline_animation" class="timeline-animation" value="">
                 <input type="hidden" data-hc-setting="timeline_delay" class="timeline-delay" value="">
                 <input type="hidden" data-hc-setting="timeline_order" class="timeline-order" value="">
             </i>
-            <i title="Duplicar" class="button-copy icon-files"></i>
-            <i title="Centrado horizontal" class="button-vertical-row horizontal-row icon-navicon-round" data-hc-setting="vertical_row" data-hc-component="value" data-value=""></i>
-            <i title="Centrado vertical" class="button-vertical-row icon-navicon-round" data-hc-setting="box_middle" data-hc-component="value" data-value=""></i>
-            <i title="Mover" class="button-move icon-arrow-move"></i>
-            <i title="Ajustes" class="button-css icon-gear-setting-2" data-hc-setting="css_classes" data-hc-component="value" data-value="">
+            <i title="Duplicate" class="button-copy icon-files"></i>
+            <i title="Horizontal center" class="button-vertical-row horizontal-row icon-navicon-round" data-hc-setting="vertical_row" data-hc-component="value" data-value=""></i>
+            <i title="Vertical center" class="button-vertical-row icon-navicon-round" data-hc-setting="box_middle" data-hc-component="value" data-value=""></i>
+            <i title="Move" class="button-move icon-arrow-move"></i>
+            <i title="Settings" class="button-css icon-gear-setting-2" data-hc-setting="css_classes" data-hc-component="value" data-value="">
                 <input type="hidden" data-hc-setting="custom_css_classes" class="custom-css-classes" value="">
                 <input type="hidden" data-hc-setting="custom_css_styles" class="custom-css-styles" value="">
             </i>

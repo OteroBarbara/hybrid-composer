@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Y Theme\n"
 "POT-Creation-Date: 2017-01-14 20:09+0100\n"
-"PO-Revision-Date: 2021-05-11 09:31+0000\n"
+"PO-Revision-Date: 2021-05-18 23:32+0000\n"
 "Last-Translator: \n"
 "Language-Team: Español\n"
 "Language: es_ES\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
-"X-Loco-Version: 2.5.2; wp-5.7.1"
+"X-Loco-Version: 2.5.2; wp-5.7.2"
 
 #: admin/admin-settings-page.php:99 admin/composer-side.php:483
 msgid "Documentation"
@@ -79,6 +79,8 @@ msgstr "Logotipo secundario"
 msgid ""
 "Secondary logo is used on fixed menu, transparent menu and middle logo menus."
 msgstr ""
+"El logotipo secundario se utiliza en el menú fijo, el menú transparente y "
+"los menús del logotipo intermedio."
 
 #: admin/admin-settings-page.php:149
 msgid "Favicon"
@@ -118,11 +120,11 @@ msgstr ""
 
 #: admin/admin-settings-page.php:221
 msgid "Main color"
-msgstr ""
+msgstr "Color principal"
 
 #: admin/admin-settings-page.php:222
 msgid "Main color of your website."
-msgstr ""
+msgstr "Color principal de tu sitio web."
 
 #: admin/admin-settings-page.php:235
 msgid "Hover color"
@@ -239,7 +241,7 @@ msgstr "Animación al pasar el mouse por los elementos del menú desplegable."
 
 #: admin/admin-settings-page.php:481
 msgid "Transparent menu"
-msgstr ""
+msgstr "Menú transparente"
 
 #: admin/admin-settings-page.php:482
 msgid "Set transparent style for your menu."
@@ -263,10 +265,11 @@ msgstr ""
 #: admin/admin-settings-page.php:506
 msgid "Lateral dropdown layout for side menus. *Only for side menus."
 msgstr ""
+"Diseño desplegable lateral para menús laterales. * Solo para menús laterales."
 
 #: admin/admin-settings-page.php:517
 msgid "Wide menu"
-msgstr ""
+msgstr "Menú amplio"
 
 #: admin/admin-settings-page.php:518
 msgid "Full width menu layout. *Only for horizontal menus."
@@ -307,7 +310,7 @@ msgstr ""
 #: admin/admin-settings-page.php:579 admin/admin-settings-page.php:782
 #: admin/admin-settings-page.php:842
 msgid "Social icons"
-msgstr ""
+msgstr "Iconos sociales"
 
 #: admin/admin-settings-page.php:580
 msgid "Show the social icons, you can set the icons on Social and API tab."
@@ -539,7 +542,7 @@ msgstr ""
 
 #: admin/admin-settings-page.php:866
 msgid "Wide"
-msgstr ""
+msgstr "Amplio"
 
 #: admin/admin-settings-page.php:867
 msgid "Set full width footer."
@@ -551,7 +554,7 @@ msgstr "Diseño de columnas"
 
 #: admin/admin-settings-page.php:879
 msgid "Set the layout of the footer."
-msgstr ""
+msgstr "Establece el diseño del pie de página."
 
 #: admin/admin-settings-page.php:900
 msgid "Footer background"
@@ -587,7 +590,7 @@ msgstr ""
 
 #: admin/admin-settings-page.php:966
 msgid "What are the lists ?"
-msgstr ""
+msgstr "¿Qué son las listas?"
 
 #: admin/admin-settings-page.php:978
 msgid "Blog"
@@ -654,7 +657,7 @@ msgstr ""
 
 #: admin/admin-settings-page.php:1090
 msgid "Title background"
-msgstr ""
+msgstr "Fondo del título"
 
 #: admin/admin-settings-page.php:1091
 msgid ""
@@ -686,7 +689,7 @@ msgstr ""
 
 #: admin/admin-settings-page.php:1125 admin/composer-side.php:587
 msgid "Upload"
-msgstr ""
+msgstr "Subir"
 
 #: admin/admin-settings-page.php:1131 admin/components/sections.php:94
 #: admin/components/sections.php:249 admin/components/sections.php:412
@@ -723,17 +726,17 @@ msgstr "Ninguno"
 #: admin/admin-settings-page.php:1152 admin/components/sections.php:101
 #: admin/components/titles.php:69
 msgid "Zoom in"
-msgstr ""
+msgstr "Acercar"
 
 #: admin/admin-settings-page.php:1153 admin/components/sections.php:102
 #: admin/components/titles.php:70
 msgid "Zoom out"
-msgstr ""
+msgstr "Alejar"
 
 #: admin/admin-settings-page.php:1154 admin/components/sections.php:103
 #: admin/components/titles.php:71
 msgid "Zoom centered"
-msgstr ""
+msgstr "Zoom centrado"
 
 #: admin/admin-settings-page.php:1161 admin/components/containers.php:43
 #: admin/components/containers.php:201 admin/components/others.php:91
@@ -757,7 +760,7 @@ msgstr "Agrega un patrón de superposición sobre el fondo del título."
 
 #: admin/admin-settings-page.php:1196
 msgid "Titles"
-msgstr ""
+msgstr "Títulos"
 
 #: admin/admin-settings-page.php:1197
 msgid "Set the titles and subtitles for the various pages."
@@ -882,7 +885,7 @@ msgstr "Importación de demostración en curso, espere hasta 5 minutos"
 
 #: admin/admin-settings-page.php:1362
 msgid "We're downloading the demo files"
-msgstr ""
+msgstr "Estamos descargando los archivos de demostración"
 
 #: admin/admin-settings-page.php:1710
 msgid ""
@@ -892,7 +895,7 @@ msgstr ""
 
 #: admin/admin-settings-page.php:1714
 msgid "Yes import now"
-msgstr ""
+msgstr "Sí importar ahora"
 
 #: admin/admin-settings-page.php:1723
 msgid "SAVE ALL SETTINGS"
@@ -1156,7 +1159,7 @@ msgstr "Título"
 
 #: admin/components/containers.php:244
 msgid "Main text"
-msgstr ""
+msgstr "Texto principal"
 
 #: admin/components/containers.php:258 admin/components/others.php:47
 #: admin/components/others.php:149 admin/components/others.php:198
@@ -1696,7 +1699,7 @@ msgstr "Contenido extra"
 #: admin/components/content_box.php:204 admin/components/content_box.php:256
 #: admin/components/others.php:503 admin/components/others.php:1128
 msgid "Text ..."
-msgstr ""
+msgstr "Texto ..."
 
 #: admin/components/content_box.php:119 admin/components/sections.php:166
 #: admin/components/sections.php:429 admin/components/titles.php:138
@@ -2168,7 +2171,7 @@ msgstr "Ocultar porcentaje"
 
 #: admin/components/others.php:771
 msgid "Unit text"
-msgstr ""
+msgstr "Texto de la unidad"
 
 #: admin/components/others.php:786
 msgid "Start angle"
@@ -2282,7 +2285,7 @@ msgstr "Límite"
 
 #: admin/components/others.php:990
 msgid "Timeout"
-msgstr ""
+msgstr "Se acabó el tiempo"
 
 #: admin/components/others.php:998
 msgid "Effect"
@@ -2551,7 +2554,7 @@ msgstr "Redimensionar"
 
 #: admin/components/others.php:1835
 msgid "Textarea"
-msgstr ""
+msgstr "Textarea"
 
 #: admin/components/others.php:1836
 msgid "Email"
@@ -2580,7 +2583,7 @@ msgstr ""
 
 #: admin/components/others.php:1874
 msgid "your-email@domain.com"
-msgstr ""
+msgstr "your-email@domain.com"
 
 #: admin/components/others.php:1877
 msgid "Subject"
@@ -2937,7 +2940,7 @@ msgstr ""
 #: admin/components/sections.php:193 admin/components/titles.php:83
 #: admin/components/titles.php:124 admin/components/titles.php:169
 msgid "Transparent light"
-msgstr ""
+msgstr "Luz transparente"
 
 #: admin/components/sections.php:116 admin/components/sections.php:153
 #: admin/components/sections.php:194 admin/components/titles.php:84
@@ -2953,7 +2956,7 @@ msgstr "Cuadrícula"
 
 #: admin/components/sections.php:192
 msgid "Transparent-dark"
-msgstr ""
+msgstr "Transparente-oscuro"
 
 #: admin/components/sections.php:210 admin/components/titles.php:186
 msgid "Background Image"
@@ -2962,7 +2965,7 @@ msgstr ""
 
 #: admin/components/sections.php:219 admin/components/titles.php:195
 msgid "Main image - PNG"
-msgstr ""
+msgstr "Imágen principal - PNG"
 
 #: admin/components/sections.php:231 admin/components/titles.php:207
 #: admin/components/titles.php:216
@@ -3028,7 +3031,7 @@ msgstr "Compositor"
 
 #: admin/composer-side.php:23
 msgid "Templates"
-msgstr ""
+msgstr "Plantillas"
 
 #: admin/composer-side.php:29
 msgid "Insert css classes for current page here"
@@ -3059,7 +3062,7 @@ msgstr ""
 
 #: admin/composer-side.php:54
 msgid "Template name"
-msgstr ""
+msgstr "Nombre de la plantilla"
 
 #: admin/composer-side.php:55
 msgid "Save template"
@@ -3129,7 +3132,7 @@ msgstr ""
 
 #: admin/composer-side.php:449
 msgid "Unique ID"
-msgstr ""
+msgstr "Identificación única"
 
 #: admin/composer-side.php:450
 msgid "Must be unique and alphanumeric only"
@@ -3224,7 +3227,7 @@ msgstr ""
 
 #: admin/composer.php:190
 msgid "WordPress editor"
-msgstr ""
+msgstr "Editor de WordPress"
 
 #: admin/composer.php:196
 msgid "Code block"
@@ -3305,7 +3308,7 @@ msgstr ""
 
 #: admin/composer.php:306 admin/composer.php:649
 msgid "Timeline"
-msgstr ""
+msgstr "Cronología"
 
 #: admin/composer.php:312
 msgid "Google map"
@@ -3449,7 +3452,7 @@ msgstr "Secciones"
 
 #: admin/composer.php:594
 msgid "Two blocks"
-msgstr ""
+msgstr "Dos bloques"
 
 #: admin/composer.php:600
 msgid "Map"
@@ -3668,7 +3671,7 @@ msgstr ""
 
 #: admin/widgets.php:72
 msgid "Your site&#8217;s most recent Posts."
-msgstr ""
+msgstr "Publicaciones más recientes de su sitio."
 
 #: admin/widgets.php:75
 msgid "Recent Post Types"
@@ -3814,7 +3817,7 @@ msgstr ""
 
 #. Theme Name of the plugin/theme
 msgid "Y Theme"
-msgstr ""
+msgstr "Tema Y"
 
 #. Theme URI of the plugin/theme
 msgid "http://www.wordpress.framework-y.com/"

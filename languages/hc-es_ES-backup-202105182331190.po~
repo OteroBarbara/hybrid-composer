@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Y Theme\n"
 "POT-Creation-Date: 2017-01-14 20:09+0100\n"
-"PO-Revision-Date: 2021-05-19 08:44+0000\n"
+"PO-Revision-Date: 2021-05-18 23:27+0000\n"
 "Last-Translator: \n"
 "Language-Team: Español\n"
 "Language: es_ES\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
-"X-Loco-Version: 2.5.2; wp-5.7.1"
+"X-Loco-Version: 2.5.2; wp-5.7.2"
 
 #: admin/admin-settings-page.php:99 admin/composer-side.php:483
 msgid "Documentation"
@@ -92,7 +92,7 @@ msgstr "Favicon de la pestaña superior del navegador a 16px x 16px."
 
 #: admin/admin-settings-page.php:165
 msgid "Logo margin top"
-msgstr "Margen superior del logo"
+msgstr ""
 
 #: admin/admin-settings-page.php:166
 msgid "Margin top of the logo."
@@ -101,11 +101,11 @@ msgstr ""
 
 #: admin/admin-settings-page.php:177
 msgid "Skin"
-msgstr "Tema"
+msgstr ""
 
 #: admin/admin-settings-page.php:178
 msgid "The skin is the main design of your website."
-msgstr "El tema es  el diseño principal de tu sitio web."
+msgstr ""
 
 #: admin/admin-settings-page.php:202
 msgid "Icon family"
@@ -120,19 +120,19 @@ msgstr ""
 
 #: admin/admin-settings-page.php:221
 msgid "Main color"
-msgstr "Color principal"
+msgstr ""
 
 #: admin/admin-settings-page.php:222
 msgid "Main color of your website."
-msgstr "Color principal de tu sitio web."
+msgstr ""
 
 #: admin/admin-settings-page.php:235
 msgid "Hover color"
-msgstr "Color al apuntar con el cursor"
+msgstr ""
 
 #: admin/admin-settings-page.php:236
 msgid "Hover color of your website."
-msgstr "Color al apuntar con el cursor en tu sitio web"
+msgstr "Coloca el cursor sobre el color de tu sitio web."
 
 #: admin/admin-settings-page.php:249 admin/admin-settings-page.php:263
 #: admin/components/containers.php:95
@@ -141,7 +141,7 @@ msgstr "Color"
 
 #: admin/admin-settings-page.php:250 admin/admin-settings-page.php:264
 msgid "Additional color, used in some skin."
-msgstr "Color adicional, usado en algunos temas."
+msgstr "Color adicional, usado en algunas pieles."
 
 #: admin/admin-settings-page.php:280
 msgid "Controls the site layout."
@@ -162,7 +162,7 @@ msgstr ""
 
 #: admin/admin-settings-page.php:320
 msgid "Site width"
-msgstr "Ancho del sitio"
+msgstr ""
 
 #: admin/admin-settings-page.php:321
 msgid "Controls the overall site width in px."
@@ -196,7 +196,7 @@ msgstr ""
 
 #: admin/admin-settings-page.php:369
 msgid "Title and elements margins"
-msgstr "Márgenes de título y elementos"
+msgstr ""
 
 #: admin/admin-settings-page.php:370
 msgid ""
@@ -208,7 +208,7 @@ msgstr ""
 
 #: admin/admin-settings-page.php:381
 msgid "Left sidebar width"
-msgstr "Ancho de la barra lateral izquierda"
+msgstr ""
 
 #: admin/admin-settings-page.php:382
 msgid "Controls the width of the left sidebar."
@@ -229,11 +229,11 @@ msgstr ""
 
 #: admin/admin-settings-page.php:426
 msgid "Select the menu type."
-msgstr "Seleccione el tipo de menú."
+msgstr ""
 
 #: admin/admin-settings-page.php:451
 msgid "Menu animation"
-msgstr "Animación del menú"
+msgstr ""
 
 #: admin/admin-settings-page.php:452
 msgid "Animation on hover of menu dropdown items."
@@ -245,7 +245,7 @@ msgstr "Menú transparente"
 
 #: admin/admin-settings-page.php:482
 msgid "Set transparent style for your menu."
-msgstr "Establezca un estilo transparente para su menú."
+msgstr ""
 
 #: admin/admin-settings-page.php:493
 msgid "Hamburger menu"
@@ -260,12 +260,11 @@ msgstr ""
 
 #: admin/admin-settings-page.php:505
 msgid "Lateral dropdown"
-msgstr "Menú desplegable lateral"
+msgstr ""
 
 #: admin/admin-settings-page.php:506
 msgid "Lateral dropdown layout for side menus. *Only for side menus."
 msgstr ""
-"Diseño desplegable lateral para menús laterales. * Solo para menús laterales."
 
 #: admin/admin-settings-page.php:517
 msgid "Wide menu"
@@ -285,13 +284,11 @@ msgstr "Actívelos para sitios web de una página."
 
 #: admin/admin-settings-page.php:541
 msgid "Fixed top"
-msgstr "Fijo arriba"
+msgstr ""
 
 #: admin/admin-settings-page.php:542
 msgid "Menu is always visible on top. *Only for horizontal menus."
 msgstr ""
-"El menú siempre está visible en la parte superior. * Solo para menús "
-"horizontales."
 
 #: admin/admin-settings-page.php:553 admin/admin-settings-page.php:770
 msgid "Search box"
@@ -299,7 +296,7 @@ msgstr "Caja de búsqeda"
 
 #: admin/admin-settings-page.php:554
 msgid "Show search box on right side of menu."
-msgstr "Mostrar cuadro de búsqueda en el lado derecho del menú."
+msgstr ""
 
 #: admin/admin-settings-page.php:566
 msgid "Search button"
@@ -307,7 +304,7 @@ msgstr "Botón de búsqueda"
 
 #: admin/admin-settings-page.php:567
 msgid "Show a search button on right side of menu."
-msgstr "Muestra un botón de búsqueda en el lado derecho del menú."
+msgstr ""
 
 #: admin/admin-settings-page.php:579 admin/admin-settings-page.php:782
 #: admin/admin-settings-page.php:842
@@ -317,8 +314,6 @@ msgstr "Iconos sociales"
 #: admin/admin-settings-page.php:580
 msgid "Show the social icons, you can set the icons on Social and API tab."
 msgstr ""
-"Muestre los íconos sociales, puede configurar los íconos en la pestaña "
-"Social y API."
 
 #: admin/admin-settings-page.php:592 admin/components/containers.php:754
 #: admin/components/containers.php:1169 admin/components/containers.php:1751
@@ -328,7 +323,7 @@ msgstr "Centrado"
 
 #: admin/admin-settings-page.php:593
 msgid "Set center menu."
-msgstr "Establecer menú central."
+msgstr ""
 
 #: admin/admin-settings-page.php:604
 msgid "Full width mega menu"
@@ -348,19 +343,16 @@ msgstr "Margen externo superior de columna"
 #: admin/admin-settings-page.php:617
 msgid "Top padding of the columns of the mega menu. *Only for mega menus."
 msgstr ""
-"Padding superior de las columnas del mega menú. * Solo para mega menús."
 
 #: admin/admin-settings-page.php:628
 msgid "WPML Lan menu"
-msgstr "Menú WPML Lan"
+msgstr ""
 
 #: admin/admin-settings-page.php:629
 msgid ""
 "Show the WPML language selector on the menu. You musy install and activate "
 "the WPML plugin."
 msgstr ""
-"Muestra el selector de idioma WPML en el menú. Debe instalar y activar el "
-"complemento WPML."
 
 #: admin/admin-settings-page.php:640 admin/components/containers.php:1629
 #: admin/components/post_types.php:337 admin/composer-side.php:120
@@ -370,7 +362,6 @@ msgstr "Posición del menú"
 #: admin/admin-settings-page.php:641
 msgid "Menu position of horizontal menus. *Only for horizontal menus."
 msgstr ""
-"Posición de menú de menús horizontales. * Solo para menús horizontales."
 
 #: admin/admin-settings-page.php:650 admin/components/containers.php:91
 #: admin/components/containers.php:1007 admin/components/containers.php:1631
@@ -405,18 +396,16 @@ msgstr ""
 
 #: admin/admin-settings-page.php:659
 msgid "Top logo"
-msgstr "Logotipo superior"
+msgstr ""
 
 #: admin/admin-settings-page.php:660
 msgid ""
 "Show the logo above the menu, on top of the page. *Only for middle logo menu."
 msgstr ""
-"Muestre el logotipo sobre el menú, en la parte superior de la página. * Solo "
-"para el menú intermedio del logotipo."
 
 #: admin/admin-settings-page.php:671
 msgid "Top icons"
-msgstr "Iconos superiores"
+msgstr ""
 
 #: admin/admin-settings-page.php:672
 msgid ""
@@ -436,8 +425,6 @@ msgid ""
 "Insert every HTML you want, you can copy the code blocks of framework-y.com "
 "and paste theme here."
 msgstr ""
-"Inserte todos los HTML que desee, puede copiar los bloques de código de "
-"framework-y.com y pegar el tema aquí."
 
 #: admin/admin-settings-page.php:695
 msgid "Middle box content"
@@ -449,16 +436,14 @@ msgid ""
 "Insert every HTML you want, you can copy the code blocks of framework-y.com "
 "and paste theme here. *Only for middle box menus"
 msgstr ""
-"Inserte todos los HTML que desee, puede copiar los bloques de código de "
-"framework-y.com y pegar el tema aquí. * Solo para menús de cuadro intermedio"
 
 #: admin/admin-settings-page.php:705
 msgid "Menu design settings"
-msgstr "Configuraciónes de diseño de menú"
+msgstr ""
 
 #: admin/admin-settings-page.php:708
 msgid "Logo height"
-msgstr "Altura del logo"
+msgstr ""
 
 #: admin/admin-settings-page.php:709
 msgid "Controls the main logo height of menu. In pixels."
@@ -466,25 +451,23 @@ msgstr "Controla la altura del logotipo principal del menú. En píxeles."
 
 #: admin/admin-settings-page.php:720
 msgid "Menu height"
-msgstr "Altura del menú"
+msgstr ""
 
 #: admin/admin-settings-page.php:721
 msgid "Set the menu height. *Only for horizontal menus."
-msgstr "Establece la altura del menú. * Solo para menús horizontales."
+msgstr ""
 
 #: admin/admin-settings-page.php:732
 msgid "Menu margin left"
-msgstr "Margen izquierdo del menú"
+msgstr ""
 
 #: admin/admin-settings-page.php:733
 msgid "Menu margin left, use this option for centered logo menus."
 msgstr ""
-"Margen del menú a la izquierda, use esta opción para menús de logotipos "
-"centrados."
 
 #: admin/admin-settings-page.php:742
 msgid "Top mini menu"
-msgstr "Mini menú superior"
+msgstr ""
 
 #: admin/admin-settings-page.php:745
 msgid "Activate top menu"
@@ -511,8 +494,6 @@ msgstr ""
 #: admin/admin-settings-page.php:783
 msgid "Show teh social icons, you can set the icons on Social and API tab."
 msgstr ""
-"Muestre los íconos sociales, puede configurar los íconos en la pestaña "
-"Social y API."
 
 #: admin/admin-settings-page.php:794
 msgid "WPML language menu"
@@ -523,8 +504,6 @@ msgid ""
 "Show the WPML language selector on the menu. You musy install and activate "
 "the WPML plugin.."
 msgstr ""
-"Muestra el selector de idioma WPML en el menú. Debe instalar y activar el "
-"complemento WPML.."
 
 #: admin/admin-settings-page.php:806
 msgid "Custom content"
@@ -535,7 +514,7 @@ msgid ""
 "Custom content of the top menu. Insert every HTML you want, you can copy the "
 "code blocks of framework-y.com and paste theme here."
 msgstr ""
-"Contenido personalizado del menú superior. Inserte todos los HTML que desee, "
+"ontenido personalizado del menú superior. Inserte todos los HTML que desee, "
 "puede copiar los bloques de código de framework-y.com y pegar el tema aquí."
 
 #: admin/admin-settings-page.php:822
@@ -551,8 +530,6 @@ msgstr ""
 msgid ""
 "Show the social icons on the footer, you set the icons on Social and API tab."
 msgstr ""
-"Muestre los íconos sociales en el pie de página, configure los íconos en la "
-"pestaña Social y API."
 
 #: admin/admin-settings-page.php:854
 msgid "CSS classes"
@@ -561,7 +538,6 @@ msgstr "Clases CSS"
 #: admin/admin-settings-page.php:855
 msgid "Insert the css classes to apply to the footer, separated by spaces."
 msgstr ""
-"Inserte las clases css para aplicar al pie de página, separadas por espacios."
 
 #: admin/admin-settings-page.php:866
 msgid "Wide"
@@ -569,7 +545,7 @@ msgstr "Amplio"
 
 #: admin/admin-settings-page.php:867
 msgid "Set full width footer."
-msgstr "Establecer pie de página de ancho completo."
+msgstr ""
 
 #: admin/admin-settings-page.php:878
 msgid "Columns layout"
@@ -577,7 +553,7 @@ msgstr "Diseño de columnas"
 
 #: admin/admin-settings-page.php:879
 msgid "Set the layout of the footer."
-msgstr "Establece el diseño del pie de página."
+msgstr ""
 
 #: admin/admin-settings-page.php:900
 msgid "Footer background"
@@ -590,7 +566,7 @@ msgstr "Agregar una imagen de fondo para el pie de página."
 
 #: admin/admin-settings-page.php:916
 msgid "Left area"
-msgstr "Zona izquierda"
+msgstr ""
 
 #: admin/admin-settings-page.php:928
 msgid "Center area"
@@ -610,8 +586,6 @@ msgid ""
 "This text is showed as last text of the footer and is usually used for "
 "copyright texts."
 msgstr ""
-"Este texto se muestra como último texto del pie de página y generalmente se "
-"usa para textos con derechos de autor."
 
 #: admin/admin-settings-page.php:966
 msgid "What are the lists ?"
@@ -721,11 +695,11 @@ msgstr "Subir"
 #: admin/components/titles.php:62 admin/components/titles.php:112
 #: admin/components/titles.php:157 admin/components/titles.php:225
 msgid "Parallax"
-msgstr "Parallax"
+msgstr ""
 
 #: admin/admin-settings-page.php:1132
 msgid "Set parallax effect for the title background."
-msgstr "Establece efectos de Parallax para el título de fondo"
+msgstr ""
 
 #: admin/admin-settings-page.php:1142
 msgid "Ken-burn effect"
@@ -736,8 +710,6 @@ msgid ""
 "Set the ken-burn animation. *Supported only for image title with parallax "
 "active."
 msgstr ""
-"Establece animación de Ken-Burn. *Disponible solo para títulos de imágenes "
-"con efecto de Parallax."
 
 #: admin/admin-settings-page.php:1151 admin/components/others.php:949
 #: admin/components/others.php:1002 admin/components/others.php:1588
@@ -1085,7 +1057,7 @@ msgstr "Columnas"
 
 #: admin/components/containers.php:162
 msgid "Page lightbox"
-msgstr "Caja de luz de la página"
+msgstr ""
 
 #: admin/components/containers.php:176
 msgid "Media link"
@@ -2279,7 +2251,7 @@ msgstr "Desplazamiento izquierdo del marcador"
 
 #: admin/components/others.php:907 admin/components/sections.php:345
 msgid "Map skin"
-msgstr "Apariencia del mapa"
+msgstr ""
 
 #: admin/components/others.php:910 admin/components/sections.php:348
 msgid "Gray"
@@ -2781,7 +2753,7 @@ msgstr ""
 #: admin/components/post_types.php:162 admin/components/post_types.php:374
 #: admin/components/post_types.php:524 admin/components/post_types.php:623
 msgid "Image classic box"
-msgstr "Cuadro de imagen clásico"
+msgstr ""
 
 #: admin/components/post_types.php:163 admin/components/post_types.php:375
 #: admin/components/post_types.php:525 admin/components/post_types.php:624
@@ -2992,7 +2964,7 @@ msgstr ""
 
 #: admin/components/sections.php:219 admin/components/titles.php:195
 msgid "Main image - PNG"
-msgstr "Imágen principal - PNG"
+msgstr ""
 
 #: admin/components/sections.php:231 admin/components/titles.php:207
 #: admin/components/titles.php:216
@@ -3012,12 +2984,12 @@ msgstr "Nubes 2"
 #: admin/components/sections.php:235 admin/components/sections.php:244
 #: admin/components/titles.php:211
 msgid "Fog 1"
-msgstr "Niebla 1"
+msgstr ""
 
 #: admin/components/sections.php:236 admin/components/sections.php:245
 #: admin/components/titles.php:212
 msgid "Fog 2"
-msgstr "Niebla 2"
+msgstr ""
 
 #: admin/components/sections.php:240
 msgid "Animation image 2"
@@ -3050,7 +3022,7 @@ msgstr "Nubes"
 
 #: admin/components/titles.php:220 admin/components/titles.php:221
 msgid "Fog"
-msgstr "Niebla"
+msgstr ""
 
 #: admin/composer-side.php:16
 msgid "Composer"

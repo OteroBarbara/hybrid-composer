@@ -9,7 +9,8 @@
     <div data-hc-id="_ID" data-hc-component="hc_column" data-hc-setting="section_content" class="hc-column hc-tmp">
         <i class="button-move-complete button-move-up"></i>
         <i class="button-move-complete button-move-down"></i>
-        <div class="column-menu">    
+        <div class="column-menu">
+        <i title="MAYRA" class="button-column icon-grid" data-hc-setting="column_width" data-hc-component="value" data-value="hc-tmp"></i>    
         <i title="Ancho" class="button-column icon-grid" data-hc-setting="column_width" data-hc-component="value" data-value="hc-tmp"></i>
             <i title="Aimación" class="button-anima button-anima-section icon-eye-view" data-hc-setting="animation" data-hc-component="value" data-value="">
                 <input type="hidden" data-hc-setting="animation_time" class="animation-time" value="" />

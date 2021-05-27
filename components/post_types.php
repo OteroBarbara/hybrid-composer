@@ -13,9 +13,6 @@
 //   03. SLIDER LIST - POST TYPE - Show the items of selected custom Post Type - Lists with the slider component. Slider documentation and demo: framework-y.com/containers/sliders.html
 //   04. COVERFLOW LIST - POST TYPE - Show the items of selected custom Post Type - Lists with the coverflow component. Coverflow documentation and demo: framework-y.com/containers/sliders.html#coverflow
 //   05. MENU - POST TYPE - Show the categories menu of selected custom Post Type - Lists with the inner menu component. Inner menu documentation and demo: framework-y.com/components/menu/menu-inner-horizontal.html
-//   06. TAG CLOUD - POST TYPE - Show the tags of post's blog
-//   07. MENU NAVIGATION - POST TYPE - Show next post, previous post and archive page buttons
-//   08. POST INFORMATIONS - POST TYPE - Show author, post date, post categories informations.
 // =============================================================================
 
 function hc_get_post_pagination($prev_text="",$next_text="",$button_size="pagination-sm") {
@@ -774,38 +771,3 @@ function hc_include_hc_pt_navigation(&$Y_NOW,$EXTRA) {
 
     </div>
 </div>
-<?php
-}
-function hc_include_hc_pt_post_informations(&$Y_NOW,$EXTRA) {
-    global $post; ?>
-<div class="tag-row icon-row text-<?php echo esc_attr($Y_NOW["position"]) . " " . hc_get_component_classes($Y_NOW,$EXTRA) ?>" <?php hc_echo(esc_attr($Y_NOW["custom_css_styles"]),'style="','"'); ?>>
-    <?php
-    if (hc_true($Y_NOW["date"])) echo '<span><i class="fa fa-calendar"></i><a>' . get_the_time('l, F jS, Y') . '</a></span>';
-    if (hc_true($Y_NOW["categories"])) hc_echo(hc_get_post_categories($post->ID,$post->post_type),'<span><i class="fa fa-bookmark"></i>','</span>');
-    if (hc_true($Y_NOW["author"])) hc_echo(ucfirst(get_the_author()),'<span><i class="fa fa-pencil"></i><a>','</a></span>');
-    if (hc_true($Y_NOW["share"])) {
-    ?>
-    <div class="social-group-button">
-        <div class="social-button" data-anima="pulse-vertical" data-trigger="hover">
-            <i class="fa fa-share-alt"></i>
-        </div>
-        <div class="btn-group social-group">
-            <a target="_blank" href="#" data-social="share-facebook">
-                <i class="fa fa-facebook circle"></i>
-            </a>
-            <a target="_blank" href="#">
-                <i data-social="share-twitter" class="fa fa-twitter circle"></i>
-            </a>
-            <a target="_blank" href="#">
-                <i data-social="share-google" class="fa fa-google circle"></i>
-            </a>
-            <a target="_blank" href="#">
-                <i data-social="share-linkedin" class="fa fa-linkedin circle"></i>
-            </a>
-        </div>
-    </div>
-    <?php } ?>
-</div>
-<?php
-} ?>
-

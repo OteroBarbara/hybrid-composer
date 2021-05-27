@@ -28,11 +28,7 @@ $menu_margin_left = hc_get_setting('menu-margin-left');
 if (strlen($menu_margin_left) != 0) $menu_margin_left = "margin-left: " . $menu_margin_left . "px";
 
 $logo = hc_get_setting("logo");
-$logo_retina = hc_get_setting("logo-retina");
-$logo_retina_2 = hc_get_setting("logo-2-retina");
 if ($logo == "") $logo = HC_THEME_URL . "/inc/logo.png";
-if ($logo_retina == "") $logo_retina = $logo;
-if ($logo_retina_2 == "") $logo_retina_2 = $logo_retina;
 
 
 $menu_id = "main-menu";
