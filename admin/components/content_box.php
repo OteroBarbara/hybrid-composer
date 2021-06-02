@@ -347,19 +347,25 @@
 </div>
 <div id="cnt_hc_niche_content_box_call">
     <div data-hc-id="_ID" data-hc-component="hc_niche_content_box_call" data-hc-setting="main_content" class="hc-content-box hc-call-content-box hc-cnt-component">
+         <script> console.log("_ID");
+         frutas["_ID"] = "False";
+         </script>
         <input type="hidden" class="file_require" value="content_box">
         <?php hc_e_composer_item_menu("Botón de acceso a interpretación en Lengua de Señas.") ?>
         <div class="flex-box">
-            <div class="input-row input-select">
-                <p><?php _e("Elige aquí el tipo de interpretación en Lengua de Señas:","hc") ?></p>
-                <select data-hc-setting="button_text" class="animations-list">
-                    <?php hc_html_interpretionLS(); ?>
-                </select>
-            </div>          
+        <div class="input-row input-select">
+                        <p><?php _e("Elige aquí el tipo de interpretación en Lengua de Señas:","hc") ?></p>
+                        <select data-hc-setting="button_text" class="animations-list">
+                            <?php hc_html_interpretionLS(); ?>
+                        </select>
+                      
+                        
+        </div>          
         </div>
         <div>
         <?php hc_get_link_engine(); ?>
         <p>
+             
         *Aquí puedes enlazar a una plataforma de videoconferencia para interpretación en tiempo real (ejemplo: Zoom o Skype) o enlazar a un contenido de vídeo en Lengua de Señas pre grabado (Ejemplo: YouTube o Google Drive).
         </p>
         </div>
