@@ -389,24 +389,17 @@ function hc_include_hc_niche_content_box_pricing_table(&$Y_NOW,$EXTRA) { ?>
 </div>
 <?php }
 function hc_include_hc_niche_content_box_call(&$Y_NOW,$EXTRA) { ?>
-<div class="call-action-box vertical-row <?php echo hc_get_component_classes($Y_NOW,$EXTRA); ?>" style="<?php echo esc_attr($Y_NOW["custom_css_styles"]); ?>">
-    <div class="row">
-        <?php hc_echo($Y_NOW["icon"],'<div class="col-md-1 vertical-col"><i class="',' action-icon"></i></div>'); ?>
-        <div class="col-md-9 vertical-col">
-            <p>
-                <?php echo hc_json($Y_NOW["content"]) ?>
-            </p>
-            <div class="clear"></div>
-        </div>
+<div class="vertical-row <?php echo hc_get_component_classes($Y_NOW,$EXTRA); ?>" style="<?php echo esc_attr($Y_NOW["custom_css_styles"]); ?>">
+
         <?php if (strlen($Y_NOW["button_text"]) > 0) { ?>
-        <div class="<?php if ($Y_NOW["icon"] != "") echo 'col-md-2'; else echo 'col-md-3'; ?>  vertical-col">
-            <a <?php hc_set_link_settings($Y_NOW, " circle-button btn btn-sm"); ?>>
+        <div class="<?php echo 'col-md-12'; ?>  vertical-col">
+            <a <?php hc_set_link_settings($Y_NOW, " circle-button btn"); ?>>
                 <?php echo hc_json($Y_NOW["button_text"]); ?>
             </a>
             <div class="clear"></div>
         </div>
         <?php } ?>
-    </div>
+
     <?php hc_set_content_lightbox($Y_NOW);  ?>
 </div>
 <?php } ?>

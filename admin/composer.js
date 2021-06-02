@@ -16,6 +16,11 @@ var post_name = ""; //gutenberg
 var post_id; //gutenberg
 var update_interval; //gutenberg
 
+ //Crear arreglo
+        let  frutas = ["Manzana", "Banana"];
+        const  frutas_1 = ["Manzana", "Banana"];
+        console.log(frutas);
+
 (function ($) {
     var myTether;
     var current_source;
@@ -1371,9 +1376,12 @@ var update_interval; //gutenberg
                     });
                 });
 
-                //Save updates
+       
+        //Save updates
                 $(body).on("click", ".editor-post-publish-button", function (e) {
-                    if ($("#mode_button_hc select").val() != "classic") {
+                    var a = false;
+                    if(a == true){
+                        if ($("#mode_button_hc select").val() != "classic") {
                         let publish_button = $(".editor-post-publish-button");
                         showNoticeBox("", "");
                         update_interval = setInterval(function () {
@@ -1412,10 +1420,18 @@ var update_interval; //gutenberg
                             }
                         }, 100);
                     }
+                      $(body).on("click", "#hc-notice-box .notice-dismiss", function () {
+                             showNoticeBox("", "");
+                         });
+                    } else {
+                        // acá hay que trabajar en las alertas.
+                        alert("Hello! I am an alert box!!");
+                         $(body).on("click", "#hc-notice-box .notice-dismiss", function () {
+                             showNoticeBox("", "dddd");
+                         });
+                    }
                 });
-                $(body).on("click", "#hc-notice-box .notice-dismiss", function () {
-                    showNoticeBox("", "");
-                });
+              
 
                 //Preview
                 var hc_preview_tab;
