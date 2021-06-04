@@ -16,12 +16,11 @@ var post_name = ""; //gutenberg
 var post_id; //gutenberg
 var update_interval; //gutenberg
 
- //Crear arreglo
-        let  frutas = ["Manzana", "Banana"];
-        const  frutas_1 = ["Manzana", "Banana"];
-        console.log(frutas);
+//Crear arreglo
+let frutas = [];
+console.log(frutas);
 
-(function ($) {
+(function($) {
     var myTether;
     var current_source;
     var item_source;
@@ -37,7 +36,7 @@ var update_interval; //gutenberg
     var is_new_page = false; //gutenberg
     var last_saved_page_content = ""; //gutenberg
 
-    $(document).ready(function () {
+    $(document).ready(function() {
         //INIT
         body = $("body");
         body_class_arr = $(body).attr("class").split(" ");
@@ -55,7 +54,7 @@ var update_interval; //gutenberg
             if ($(body).hasClass("block-editor-page")) {
                 is_gutenberg = true;
                 editor_selector = ".wp-block-freeform > p";
-                setTimeout(function () {
+                setTimeout(function() {
                     var html
                     $(".edit-post-header__settings").prepend('<div id="hc-preview" class="hc-preview button">Preview</div>' + (is_new_page ? '<div id="hc-publish" class="hc-publish button is-primary">Publish</div>' : ''));
                 }, 300);
@@ -69,7 +68,7 @@ var update_interval; //gutenberg
                         id: post_id
                     },
                     async: false
-                }).done(function (response) {
+                }).done(function(response) {
                     if (response == "new") {
                         edit_txt = defaul_content;
                     } else {
@@ -80,7 +79,7 @@ var update_interval; //gutenberg
                 edit_txt = $(body).find(editor_selector).text();
             }
 
-            $(body).on("change", ".components-base-control input", function () {
+            $(body).on("change", ".components-base-control input", function() {
                 post_name = $(this).val();
                 var spans = $(".components-external-link span");
                 $(view_button).attr("data-href", $(spans).eq(0).html() + $(spans).eq(1).html() + $(spans).eq(2).html());
@@ -99,12 +98,12 @@ var update_interval; //gutenberg
             if (navigator.userAgent.indexOf('Firefox') > -1) browser_type = "firefox";
             if (navigator.userAgent.indexOf('MSIE') > -1) browser_type = "ie";
             $(body).addClass("browser-" + browser_type);
- 
+
             if (edit_txt.length > 0) {
                 var err = false;
                 try {
                     PAGE_CONTENT_ARR = JSON.parse(edit_txt);
-                    var typevarr = typeof (PAGE_CONTENT_ARR);
+                    var typevarr = typeof(PAGE_CONTENT_ARR);
                     if (typevarr == "string" || typevarr == "number") err = true;
                 } catch (e) {
                     err = true;
@@ -137,7 +136,8 @@ var update_interval; //gutenberg
             if (body_class_arr.indexOf("post-type-y-post-types") > -1) {
                 isPostType = true;
                 var p = $(".post-type-y-post-types #titlediv #title");
-                if ($(p).val() == "") $("#titlewrap").hide(); else $(p).attr("disabled", "true");
+                if ($(p).val() == "") $("#titlewrap").hide();
+                else $(p).attr("disabled", "true");
                 if ("post_type_setting" in PAGE_CONTENT_ARR && "settings" in PAGE_CONTENT_ARR["post_type_setting"]) {
                     hc_init_archive_page_id = PAGE_CONTENT_ARR["post_type_setting"]["settings"]["archive_page_id"];
                 }
@@ -172,10 +172,10 @@ var update_interval; //gutenberg
                                 if (ls_1.length > 10) $("#hybrid_composer_content").html(ls_1);
                                 if (ls_2.length > 10) $("#template-meta-boxes-top .inside").html(ls_2);
                                 if (ls_3.length > 10) $("#template-meta-boxes .inside").html(ls_3);
-                                $("#hybrid_composer_content select,#template-meta-boxes-top select,#template-meta-boxes select").each(function () {
+                                $("#hybrid_composer_content select,#template-meta-boxes-top select,#template-meta-boxes select").each(function() {
                                     $(this).setContentValue($(this).find("[data-select]").val());
                                 });
-                                $("#hybrid_composer_content select,#template-meta-boxes-top select,#template-meta-boxes select").each(function () {
+                                $("#hybrid_composer_content select,#template-meta-boxes-top select,#template-meta-boxes select").each(function() {
                                     $(this).setContentValue($(this).find("[data-select]").val());
                                 });
                                 applyPostTypesContent();
@@ -195,7 +195,7 @@ var update_interval; //gutenberg
             $(".hc-start-button,#edit-slug-box").show();
 
             //INPUTS MONITOR
-            $(body).on("click", "input:checkbox", function () {
+            $(body).on("click", "input:checkbox", function() {
                 //1
                 if (!isEmpty($(this).attr("data-dependence-trigger"))) {
                     var p = $(this).closest("[data-hc-id]");
@@ -217,8 +217,11 @@ var update_interval; //gutenberg
                     var t = this;
                     var name = $(t).attr("name");
                     if (!isEmpty(name)) {
-                        $(t).closest("[data-hc-id]").find("input:checkbox[name='" + name + "']").each(function () {
-                            if ($(this).isContentSetted() && this !== t) { $(this).click(); $(this).attr("checked", false); }
+                        $(t).closest("[data-hc-id]").find("input:checkbox[name='" + name + "']").each(function() {
+                            if ($(this).isContentSetted() && this !== t) {
+                                $(this).click();
+                                $(this).attr("checked", false);
+                            }
                         });
                     }
                 }
@@ -231,7 +234,7 @@ var update_interval; //gutenberg
                     if ($(this).is(':checked') && !$(t).is(':checked')) $(t).click();
                 }
             });
-            $(body).on("change", "select", function () {
+            $(body).on("change", "select", function() {
                 var css = $(this).attr("class");
                 if (!isEmpty(css)) css.split(" ");
                 else css = [];
@@ -244,10 +247,13 @@ var update_interval; //gutenberg
                     if (isEmpty(p)) p = $(this).closest(".inside");
                     var target = $(this).attr("data-hc-setting");
                     var val = $(this).val();
-                    $(this).find("option").each(function () {
+                    $(this).find("option").each(function() {
                         var tt = $(p).find("[data-dependence-show='" + target + "_" + $(this).val() + "']");
-                        if (action == "hide") if ($(this).val() != val) $(tt).showSmart(); else $(tt).hide();
-                        else if ($(this).val() != val) $(tt).hide(); else $(tt).showSmart();
+                        if (action == "hide")
+                            if ($(this).val() != val) $(tt).showSmart();
+                            else $(tt).hide();
+                        else if ($(this).val() != val) $(tt).hide();
+                        else $(tt).showSmart();
                     });
                 }
                 //2
@@ -317,7 +323,7 @@ var update_interval; //gutenberg
                     var cat_slug = $(this).val();
                     if ($(select_cats).length) {
                         $(select_cats).val("");
-                        $(select_cats).find("option").each(function (i) {
+                        $(select_cats).find("option").each(function(i) {
                             if (i > 0) {
                                 if ($(this).attr("data-taxonomy").startsWith(cat_slug)) $(this).show();
                                 else $(this).hide();
@@ -326,7 +332,7 @@ var update_interval; //gutenberg
                     }
                 }
             });
-            $(body).on("click", "div,input,span,li,a,i,th", function (e) {
+            $(body).on("click", "div,input,span,li,a,i,th", function(e) {
                 var attr_sett = $(this).attr("data-hc-setting");
                 var css = $(this).attr("class");
                 if (!isEmpty(css)) css = css.split(" ");
@@ -350,7 +356,7 @@ var update_interval; //gutenberg
                 if (!isEmpty(tmp) && tmp == "upload") {
                     var img_src = this;
                     var cnt = $(this).closest(".upload-box");
-                    $(this).open_upload_box(function (target, attachment) {
+                    $(this).open_upload_box(function(target, attachment) {
                         if ($(cnt).hasClass("upload-multi")) {
                             var html = "";
                             var cmp = $("#cnt_hc_upload_img").html();
@@ -412,7 +418,7 @@ var update_interval; //gutenberg
                             var tmp = $(this).closest(".upload-link");
                             if (!isEmpty(tmp)) {
                                 var t = this;
-                                $(this).open_upload_box(function (target, attachment) {
+                                $(this).open_upload_box(function(target, attachment) {
                                     $(img_src).closest(".upload-link").find("input").val(attachment.first().toJSON().url);
                                 });
                             } else {
@@ -515,7 +521,7 @@ var update_interval; //gutenberg
                 //10
                 if (css.indexOf("button-copy") > -1) {
                     var target = $(this).closest(".hc-column,.hc-section,.hc-cnt-content");
-                    $(target).find("[data-hc-setting]").each(function () {
+                    $(target).find("[data-hc-setting]").each(function() {
                         $(this).setContentValue($(this).readContentValue());
                     });
                     var duplicate = $.parseHTML($(target).outerHTML());
@@ -526,7 +532,7 @@ var update_interval; //gutenberg
                     if (isEmpty(target_id)) target_id = $(this).closest("[data-hc-id]").attr("data-hc-id");
                     var duplicate_id = type + makeID();
 
-                    $(duplicate).find("[data-hc-id]").each(function () {
+                    $(duplicate).find("[data-hc-id]").each(function() {
                         $(this).attr("data-hc-id", makeID());
                     });
 
@@ -573,7 +579,7 @@ var update_interval; //gutenberg
                 //16
                 if (css.indexOf("upload-hc-button") > -1) {
                     var t = this;
-                    $(this).open_upload_box(function (target, attachment) {
+                    $(this).open_upload_box(function(target, attachment) {
                         $(t).closest("div").find(".input-link").val(attachment.first().toJSON().url);
                     });
                 }
@@ -620,13 +626,13 @@ var update_interval; //gutenberg
                         $(current_source).append(html);
                         $(current_source).find(".column-empty").removeClass(".column-empty");
                         var cmp_id = $(html).find("[data-hc-id]").attr("data-hc-id");
-                        $(current_source).find("[data-hc-id='" + cmp_id + "'] .input-repeater").each(function () {
+                        $(current_source).find("[data-hc-id='" + cmp_id + "'] .input-repeater").each(function() {
                             var t = $(this).find(".repeater-container");
                             var s = $(this).find(".repeater-source");
                             if ($(t).html().length == 0) $(t).html('<div class="hc-cnt-content" data-hc-setting="' + $(t).attr("data-hc-setting") + '" data-hc-id="' + makeID() + '" data-hc-component="repeater_item">' + $(s).html() + '<div class="clear"></div><span class="order-top"></span><span class="order-down"></span><span class="close-button"></span></div>');
                             setHTMLcomment($(s));
                         });
-                        $(current_source).find("[data-hc-id='" + cmp_id + "'] .tab-hc .panel").each(function (i) {
+                        $(current_source).find("[data-hc-id='" + cmp_id + "'] .tab-hc .panel").each(function(i) {
                             if (i != 0 && target != "hc_column") setHTMLcomment($(this));
                         });
                         if (target.indexOf("hc_section") == -1 && target.indexOf("hc_page_") == -1) {
@@ -644,7 +650,7 @@ var update_interval; //gutenberg
                             $(t).setWidthLayout();
                         }
 
-                        setTimeout(function () {
+                        setTimeout(function() {
                             $(".new-anima").removeClass("new-anima");
                         }, 1000);
 
@@ -672,7 +678,7 @@ var update_interval; //gutenberg
                                 template_id: $(t).attr("data-hc-target")
                             },
                             async: false
-                        }).done(function (response) {
+                        }).done(function(response) {
                             if (response != "error") {
                                 PAGE_CONTENT_ARR = JSON.parse(response);
                                 applyHTMLContentArr();
@@ -730,7 +736,7 @@ var update_interval; //gutenberg
                 if (css.indexOf("button-css-save") > -1) {
                     var t = $(this).closest("#popover-box-code");
                     var classes = "";
-                    $(".css-class-list li").each(function () {
+                    $(".css-class-list li").each(function() {
                         if ($(this).find("input").isContentSetted()) classes += $(this).attr("data-value") + " ";
                     });
                     $(current_source).find(".custom-css-classes").val($(t).find(".custom-css-classes input").val());
@@ -755,19 +761,18 @@ var update_interval; //gutenberg
                             height: '385px',
                             size: '4px'
                         });
-                    }
-                    else t = $("#popover-box-empty");
+                    } else t = $("#popover-box-empty");
                     var w = $(this).attr("data-width");
                     $(t).css("max-width", "");
                     if (!isEmpty(w)) $(t).css("max-width", w + "px");
                     current_source = this;
                     $(t).find("ul").html($(this).find("ul").html());
 
-                    $(t).find("ul select[data-hc-setting]").each(function () {
+                    $(t).find("ul select[data-hc-setting]").each(function() {
                         $(this).find("option[data-select]").attr("selected", "selected");
                     });
 
-                    $(t).find(".upload-box").each(function () {
+                    $(t).find(".upload-box").each(function() {
                         var close = $(this).find(".close-button");
                         if (!isEmpty($(this).find(".upload-btn").attr("data-upload-link"))) {
                             $(close).css("display", "block");
@@ -781,7 +786,7 @@ var update_interval; //gutenberg
                     if ($(this).hasClass("popover-big-inner-save")) t = $("#popover-box-empty-big");
                     else t = $("#popover-box-empty");
                     $(t).find("ul").html($(this).find("ul").html())
-                    $(t).find("[data-hc-setting]").each(function () {
+                    $(t).find("[data-hc-setting]").each(function() {
                         $(current_source).find("[data-hc-setting='" + $(this).attr("data-hc-setting") + "']").setContentValue($(this).readContentValue());
                         if ($(this).attr("data-layout") == "column")
                             setColumnLayout(this, $(current_source).closest("[data-hc-id]"));
@@ -794,7 +799,7 @@ var update_interval; //gutenberg
                     current_source = this;
                     var val = $(this).attr("data-value");
                     var defval = $(this).attr("data-default-values");
-                    $(t).find("ul li *[data-option-id],ul li *[data-sub-option-id]").each(function () {
+                    $(t).find("ul li *[data-option-id],ul li *[data-sub-option-id]").each(function() {
                         var def = $(this).attr("data-default");
                         if (isEmpty(def)) def = "";
                         $(this).setContentValue(def);
@@ -841,7 +846,7 @@ var update_interval; //gutenberg
                     var c = $(this).closest(".popover-box");
                     var result = "";
 
-                    $(c).find("ul li *[data-option-id]").each(function () {
+                    $(c).find("ul li *[data-option-id]").each(function() {
                         var def = $(this).attr("data-default");
                         if (isEmpty(def)) def == "";
                         var val = $(this).readContentValue() + "";
@@ -853,7 +858,7 @@ var update_interval; //gutenberg
                     var sub_opt = $(current_source).find(".data_sub_options");
                     if (sub_opt.length) {
                         result = "";
-                        $(c).find("ul li *[data-sub-option-id]").each(function () {
+                        $(c).find("ul li *[data-sub-option-id]").each(function() {
                             var def = $(this).attr("data-default");
                             if (isEmpty(def)) def == "";
                             var val = $(this).readContentValue() + "";
@@ -881,7 +886,7 @@ var update_interval; //gutenberg
                     var tmp = $(this).closest(".upload-link");
                     if (!isEmpty(tmp)) {
                         var t = this;
-                        $(this).open_upload_box(function (target, attachment) {
+                        $(this).open_upload_box(function(target, attachment) {
                             $(tmp).find("input").val(attachment.first().toJSON().url);
                         });
                     }
@@ -901,7 +906,7 @@ var update_interval; //gutenberg
                 //33
                 if (css.indexOf("composer-item-copy") > -1) {
                     var target = $(current_source).closest(".hc-column,.hc-section,.hc-cnt-content");
-                    $(target).find("[data-hc-setting]").each(function () {
+                    $(target).find("[data-hc-setting]").each(function() {
                         $(this).setContentValue($(this).readContentValue());
                     });
                     var clone = $(target)[0].cloneNode(true);
@@ -937,7 +942,7 @@ var update_interval; //gutenberg
                                 html = '<div class="hc-cnt-content">' + html + '</div>';
                             }
                             var dom = $('<div>').html(html);
-                            $.each($(dom).find('[data-hc-id]'), function () {
+                            $.each($(dom).find('[data-hc-id]'), function() {
                                 $(this).attr('data-hc-id', makeID());
                             });
 
@@ -979,7 +984,7 @@ var update_interval; //gutenberg
                     }
                     if ((!is_down && index > 0) || (is_down && index < $(items).length - 1)) {
                         var t2 = $(items).eq(index + index2);
-                        $(t2).find("[data-hc-setting]").each(function () {
+                        $(t2).find("[data-hc-setting]").each(function() {
                             $(this).setContentValue($(this).readContentValue());
                         });
                         var html = $('<div>').append($(t2).clone()).html();
@@ -998,6 +1003,7 @@ var update_interval; //gutenberg
             var dragType;
             var currentOverItem;
             var dragTime = false;
+
             function hc_drag_reset() {
                 $(".hc-column,.hc-section").removeClass("drag-component-active");
                 $(".hc-column,.hc-section,.hc-cnt-content").removeClass("drag-move").removeClass("drag-source-cnt").css("margin-top", "").css("margin-bottom", "");
@@ -1008,9 +1014,9 @@ var update_interval; //gutenberg
                 $("#wpwrap").removeClass("mouse-dragging").removeClass("drag-type-" + dragType);
                 isDragging = false;
             }
-            $(body).on("mousedown", ".button-move", function (e) {
+            $(body).on("mousedown", ".button-move", function(e) {
                 if (e.which === 1) {
-                    setTimeout(function () { dragTime = true; }, 700);
+                    setTimeout(function() { dragTime = true; }, 700);
                     item_source = $(this).closest(".hc-column,.hc-section,.hc-cnt-content");
                     isDragging = true;
                     currentOverItem = null;
@@ -1032,7 +1038,7 @@ var update_interval; //gutenberg
                         $(".hc-column,.hc-section").addClass("drag-component-active");
                         dragType = "component";
                     }
-                    $(selector_a).each(function () {
+                    $(selector_a).each(function() {
                         var items = $(this).find(".drag-move");
                         if (selector_a == "#hybrid_composer_content") items = $(this).find(" > .hc-cnt-content");
                         $(items).removeClass("last-item").last().addClass("last-item");
@@ -1043,10 +1049,10 @@ var update_interval; //gutenberg
                     $(this).addClass("active");
                     $(item_source).addClass("drag-source");
                     $(this).parents(".hc-column,.hc-section,.hc-cnt-content").addClass("drag-source-cnt");
-                    $(item_source).find("[data-hc-setting]").each(function () {
+                    $(item_source).find("[data-hc-setting]").each(function() {
                         $(this).setContentValue($(this).readContentValue());
                     });
-                    $(".hc-column").each(function () {
+                    $(".hc-column").each(function() {
                         if ($(this).find(".column-content .hc-cnt-content,.column-content .hc-column").length == 0) {
                             $(this).find("[data-hc-setting='main_content']").append('<i class="button-move-complete button-move-into icon-plus-add-2"></i>');
                         }
@@ -1055,27 +1061,27 @@ var update_interval; //gutenberg
                     e.preventDefault();
                 }
             });
-            $(body).on("mouseenter", ".column-content", function () {
+            $(body).on("mouseenter", ".column-content", function() {
                 if (isDragging) $(this).find(".button-move-into").css("opacity", "1");
             });
-            $(body).on("mouseleave", ".column-content", function () {
+            $(body).on("mouseleave", ".column-content", function() {
                 if (isDragging) $(this).find(".button-move-into").css("opacity", "0");
             });
-            $(body).on("mouseup", ".button-move-complete", function () {
+            $(body).on("mouseup", ".button-move-complete", function() {
                 if (isDragging) currentOverItem = this;
             });
 
-            $(document).on("mouseup", "body", function () {
+            $(document).on("mouseup", "body", function() {
                 if (isDragging) {
                     $(item_source).removeClass("drag-source");
                     $(item_source).css("left", "").css("top", "");
                     if (!isEmpty(currentOverItem) && dragTime) {
                         var target = $(currentOverItem).closest(".hc-column,.hc-section,.hc-cnt-content");
                         $(item_source).remove();
-                        $(target).find("[data-hc-setting]").each(function () {
+                        $(target).find("[data-hc-setting]").each(function() {
                             $(this).setContentValue($(this).readContentValue());
                         });
-                        $(item_source).find("[data-hc-setting]").each(function () {
+                        $(item_source).find("[data-hc-setting]").each(function() {
                             $(this).setContentValue($(this).readContentValue());
                         });
 
@@ -1098,10 +1104,11 @@ var update_interval; //gutenberg
                     item_source = null;
                 }
             });
-            $(document).mousemove(function (e) {
+            $(document).mousemove(function(e) {
                 if (isDragging) {
                     if (e.which === 1) {
-                        var dragX = e.pageX, dragY = e.pageY;
+                        var dragX = e.pageX,
+                            dragY = e.pageY;
                         $(item_source).offset({
                             left: e.pageX + 20,
                             top: e.pageY + 20
@@ -1119,22 +1126,22 @@ var update_interval; //gutenberg
                 }
             });
 
-            $(body).on("mouseover", ".drag-component-active .button-move-up", function () {
+            $(body).on("mouseover", ".drag-component-active .button-move-up", function() {
                 $(this).closest(".hc-cnt-component,.hc-column,.hc-section").first().addClass("dragged-now-up");
             });
-            $(body).on("mouseout", ".drag-component-active .button-move-up", function () {
+            $(body).on("mouseout", ".drag-component-active .button-move-up", function() {
                 $(this).closest(".hc-cnt-component,.hc-column,.hc-section").first().removeClass("dragged-now-up");
             });
-            $(body).on("mouseover", ".drag-component-active .button-move-down", function () {
+            $(body).on("mouseover", ".drag-component-active .button-move-down", function() {
                 $(this).closest(".hc-cnt-component,.hc-column,.hc-section").first().addClass("dragged-now-down");
             });
-            $(body).on("mouseout", ".drag-component-active .button-move-down", function () {
+            $(body).on("mouseout", ".drag-component-active .button-move-down", function() {
                 $(this).closest(".hc-cnt-component,.hc-column,.hc-section").first().removeClass("dragged-now-down");
             });
-            $(body).on("click", ".column-content .hc-cnt-content .hc-menu-component > .close-button,.column-content .hc-cnt-content > .close-button", function () {
+            $(body).on("click", ".column-content .hc-cnt-content .hc-menu-component > .close-button,.column-content .hc-cnt-content > .close-button", function() {
                 $(this).closest(".hc-cnt-content").remove();
             });
-            $(HC_CNT).on("click", ".tab-wp .nav-tabs li a", function () {
+            $(HC_CNT).on("click", ".tab-wp .nav-tabs li a", function() {
                 var t = $(this).closest(".tab-box");
                 var component = $(this).attr("href").replace("#", "");
                 var content = "";
@@ -1144,19 +1151,19 @@ var update_interval; //gutenberg
                 $(this).closest("li").addClass("active");
                 return false;
             });
-            $(HC_CNT).on("click", ".tab-hc .nav-tabs li", function () {
+            $(HC_CNT).on("click", ".tab-hc .nav-tabs li", function() {
                 var t = $(this).closest(".tab-box");
                 var t_active = $(t).find("> .panel").eq($(this).index());
-                $(t).find(".panel").each(function () {
+                $(t).find(".panel").each(function() {
                     setHTMLcomment($(this));
                 });
                 $(t_active).html($(t_active).html().replace("<!--", "").replace("-->", ""));
                 $(t).find(".tab_index").val($(this).index());
             });
-            $(HC_CNT).on("click", ".tab-hc-fast .nav-tabs li", function () {
+            $(HC_CNT).on("click", ".tab-hc-fast .nav-tabs li", function() {
                 $(this).closest(".tab-box").find(".tab_index").val($(this).index());
             });
-            $(body).on("click", "#popover-box-icons-wp li span,#popover-box-icons li span,#popover-box-icons-all li span,#popover-box-icons-all .popover-icon-save", function () {
+            $(body).on("click", "#popover-box-icons-wp li span,#popover-box-icons li span,#popover-box-icons-all li span,#popover-box-icons-all .popover-icon-save", function() {
                 if (!$(this).hasClass("popover-icon-save")) {
                     var newClass = $(this).attr("class").replace("sch ", "");
                     $(current_source).attr("data-value", newClass);
@@ -1194,17 +1201,17 @@ var update_interval; //gutenberg
                 }
                 $('#popover-box-icons,#popover-box-icons-all,#popover-box-icons-wp').hide();
             });
-            $(body).on("focusout", "input:text[data-require]", function () {
+            $(body).on("focusout", "input:text[data-require]", function() {
                 var id = $(this).attr('data-require');
                 var t = $(this).closest("*[data-hc-id]").find("*[data-hc-setting='" + id + "']");
                 if ($(this).val() > 0 && !$(t).is(':checked')) $(t).click();
             });
 
             //SECTIONS & COLUMNS & PAGE ELEMENTS
-            $(body).on("mouseover", ".columns-list span", function () {
+            $(body).on("mouseover", ".columns-list span", function() {
                 $(".columns-list .column-type").html($(this).attr("data-title"));
             });
-            $(body).on("change", "[data-layout='column']", function () {
+            $(body).on("change", "[data-layout='column']", function() {
                 setColumnLayout(this);
             });
 
@@ -1217,7 +1224,7 @@ var update_interval; //gutenberg
                 $(window).trigger('resize').trigger('scroll');
                 $("#sidebars-menu").val($("#hc-sidebar").val());
             }
-            $(body).on("focusin", ".link-field .input-link", function () {
+            $(body).on("focusin", ".link-field .input-link", function() {
                 var t = $(this).closest(".link-field");
                 var width = $(t).width();
                 var chars = $(this).val().length;
@@ -1225,10 +1232,10 @@ var update_interval; //gutenberg
                     $(t).addClass("link-popup");
                 }
             });
-            $(body).on("focusout", ".link-field .input-link", function () {
+            $(body).on("focusout", ".link-field .input-link", function() {
                 $(this).closest(".link-field").removeClass("link-popup");
             });
-            $(body).on("click", "#popover-box-flexslider .popover-box-save", function () {
+            $(body).on("click", "#popover-box-flexslider .popover-box-save", function() {
                 var t = $(current_source).closest(".hc-slider");
                 if ($(t).find("[data-hc-setting='type']").val() == "carousel") {
                     var n = $("#popover-box-flexslider").find("[data-option-id='numItems']").val();
@@ -1239,17 +1246,17 @@ var update_interval; //gutenberg
 
             //WP EDITOR - WORDPRESS
             var active_editor;
-            $(body).on("click", ".hc-wp-editor .cnt-wpe", function () {
+            $(body).on("click", ".hc-wp-editor .cnt-wpe", function() {
                 active_editor = this;
                 $("#hc-wp-editor-core #hc-wp-editor-2-html").click();
-                $('textarea#hc-wp-editor-2').val($(this).html().replace(/"/g,"'"));
+                $('textarea#hc-wp-editor-2').val($(this).html().replace(/"/g, "'"));
                 $("#hc-wp-editor-core #hc-wp-editor-2-tmce").click();
                 $('#hc-wp-editor-core').show();
             });
-            $(body).on("click", "#hc-wp-editor-core > .close-button", function () {
+            $(body).on("click", "#hc-wp-editor-core > .close-button", function() {
                 $('#hc-wp-editor-core').hide();
             });
-            $(body).on("click", "#hc-wp-editor-core > .save-button", function () {
+            $(body).on("click", "#hc-wp-editor-core > .save-button", function() {
                 var cnt = $('textarea#hc-wp-editor-2').val().replace(/"/g, "'");
                 $("#hc-wp-editor-core #hc-wp-editor-2-html").click();
                 if (!tinyMCE.editors['wp-editor-area'] || tinyMCE.activeEditor.isHidden()) {
@@ -1263,7 +1270,7 @@ var update_interval; //gutenberg
             });
 
             //TEMPLATES
-            $("#page_template").change(function () {
+            $("#page_template").change(function() {
                 $("#template-meta-boxes .inside").html("");
             });
 
@@ -1325,7 +1332,7 @@ var update_interval; //gutenberg
                     }
                 }
                 if ($("#mode_button_hc select").val() != "classic") {
-                    $("#hybrid_composer_content [data-hc-setting],#template-meta-boxes-top [data-hc-setting],#template-meta-boxes [data-hc-setting]").each(function () {
+                    $("#hybrid_composer_content [data-hc-setting],#template-meta-boxes-top [data-hc-setting],#template-meta-boxes [data-hc-setting]").each(function() {
                         $(this).setContentValue($(this).readContentValue());
                     });
                     generatePageContentArr();
@@ -1345,15 +1352,15 @@ var update_interval; //gutenberg
                     }
                 }
             }
-            $("#post").submit(function (e) {
+            $("#post").submit(function(e) {
                 return pubblishHybridComposer(e, $(this).attr("id"));
             });
-            $("#publish,#post-preview").click(function (e) {
+            $("#publish,#post-preview").click(function(e) {
                 return pubblishHybridComposer(e, $(this).attr("id"));
             });
             if (is_gutenberg) {
                 //Publish new page
-                $(body).on("click", "#hc-publish", function (e) {
+                $(body).on("click", "#hc-publish", function(e) {
                     $(this).addClass("is-busy");
                     pubblishHybridComposer(e, "publish");
                     jQuery.ajax({
@@ -1367,7 +1374,7 @@ var update_interval; //gutenberg
                             post_type: getURLParameter("post_type")
                         },
                         async: true
-                    }).always(function (response) {
+                    }).always(function(response) {
                         if (response.responseText != "0") {
                             var url = window.location.href;
                             url = url.substr(0, url.indexOf("wp-admin"))
@@ -1376,66 +1383,80 @@ var update_interval; //gutenberg
                     });
                 });
 
-       
-        //Save updates
-                $(body).on("click", ".editor-post-publish-button", function (e) {
+
+                //Save updates
+                $(body).on("click", ".editor-post-publish-button", function(e) {
                     var a = false;
-                    if(a == true){
+                    Object.entries(frutas).forEach(([key, value]) => {
+                        console.log(key, value); // key ,value
+                        if (value == "False") {
+                            console.log(key);
+                        };
+                    });
+                    if (a == true) {
                         if ($("#mode_button_hc select").val() != "classic") {
-                        let publish_button = $(".editor-post-publish-button");
-                        showNoticeBox("", "");
-                        update_interval = setInterval(function () {
-                            if (!$(publish_button).hasClass("is-busy")) {
-                                $(publish_button).addClass("is-busy").removeAttr("aria-disbled");
-                                pubblishHybridComposer(e, "publish");
-                                jQuery.ajax({
-                                    method: "POST",
-                                    url: ajax_url,
-                                    dataType: "json",
-                                    data: {
-                                        action: 'hc_ajax_save',
-                                        post_id: post_id,
-                                        post_title: $(body).find(".main_title").val(),
-                                        post_name: post_name,
-                                        post_revision: true,
-                                        content: JSON.stringify(PAGE_CONTENT_ARR)
-                                    },
-                                    async: true
-                                }).always(function (response) {
-                                    if (!isEmpty(response.responseText)) response = response.responseText;
-                                    var status = "notice-success";
-                                    var text = "Update completed!";
-                                    if (!response) {
-                                        status = "notice-error";
-                                        text = "Error :(";
-                                    } else {
-                                        localStorage.removeItem("hc-autosave-" + post_id);
-                                    }
-                                    showNoticeBox(status, text);
-                                    last_saved_page_content = stringifyPageContentArr();
-                                    if (!isEmpty($(view_button).attr("data-href"))) $(view_button).attr("href", $(view_button).attr("data-href"));
-                                    $(publish_button).removeClass("is-busy").removeAttr("aria-disbled");
-                                });
-                                clearInterval(update_interval);
-                            }
-                        }, 100);
-                    }
-                      $(body).on("click", "#hc-notice-box .notice-dismiss", function () {
-                             showNoticeBox("", "");
-                         });
+                            let publish_button = $(".editor-post-publish-button");
+                            showNoticeBox("", "");
+                            update_interval = setInterval(function() {
+                                if (!$(publish_button).hasClass("is-busy")) {
+                                    $(publish_button).addClass("is-busy").removeAttr("aria-disbled");
+                                    pubblishHybridComposer(e, "publish");
+                                    jQuery.ajax({
+                                        method: "POST",
+                                        url: ajax_url,
+                                        dataType: "json",
+                                        data: {
+                                            action: 'hc_ajax_save',
+                                            post_id: post_id,
+                                            post_title: $(body).find(".main_title").val(),
+                                            post_name: post_name,
+                                            post_revision: true,
+                                            content: JSON.stringify(PAGE_CONTENT_ARR)
+                                        },
+                                        async: true
+                                    }).always(function(response) {
+                                        if (!isEmpty(response.responseText)) response = response.responseText;
+                                        var status = "notice-success";
+                                        var text = "Update completed!";
+                                        if (!response) {
+                                            status = "notice-error";
+                                            text = "Error :(";
+                                        } else {
+                                            localStorage.removeItem("hc-autosave-" + post_id);
+                                        }
+                                        showNoticeBox(status, text);
+                                        last_saved_page_content = stringifyPageContentArr();
+                                        if (!isEmpty($(view_button).attr("data-href"))) $(view_button).attr("href", $(view_button).attr("data-href"));
+                                        $(publish_button).removeClass("is-busy").removeAttr("aria-disbled");
+                                    });
+                                    clearInterval(update_interval);
+                                }
+                            }, 100);
+                        }
+                        $(body).on("click", "#hc-notice-box .notice-dismiss", function() {
+                            showNoticeBox("", "");
+                        });
                     } else {
+                        let mensaje = "Hay una falla de accesibilidad en los siguientes componentes: ";
                         // acá hay que trabajar en las alertas.
-                        alert("Hello! I am an alert box!!");
-                         $(body).on("click", "#hc-notice-box .notice-dismiss", function () {
-                             showNoticeBox("", "dddd");
-                         });
+                        Object.entries(frutas).forEach(([key, value]) => {
+                            console.log(key, value); // key ,value
+                            if ((value == "False") && (key != "_ID")) {
+                                console.log(key);
+                                mensaje += key.toString() + " ";
+                            };
+                        });
+                        alert(mensaje);
+                        $(body).on("click", "#hc-notice-box .notice-dismiss", function() {
+                            showNoticeBox("", "dddd");
+                        });
                     }
                 });
-              
+
 
                 //Preview
                 var hc_preview_tab;
-                $(body).on("click", "#hc-preview", function (e) {
+                $(body).on("click", "#hc-preview", function(e) {
                     if (is_new_page) {
                         showNoticeBox("notice-warning", "Publish the page to enable the preview.");
                     } else {
@@ -1451,7 +1472,7 @@ var update_interval; //gutenberg
                                 content: JSON.stringify(PAGE_CONTENT_ARR)
                             },
                             async: true
-                        }).always(function (response) {
+                        }).always(function(response) {
                             if (response.responseText.includes("success")) {
                                 if (typeof hc_preview_tab != "undefined") {
                                     hc_preview_tab.close();
@@ -1467,14 +1488,14 @@ var update_interval; //gutenberg
                 //Autosave
                 var previous_page_content = "";
                 if (!is_new_page) {
-                    setTimeout(function () {
+                    setTimeout(function() {
                         var autosave = localStorage.getItem("hc-autosave-" + post_id);
                         if (!isEmpty(autosave)) {
                             showNoticeBox("notice-warning", "The backup of this post in your browser is different from the version below. <a class='is-link' id='hc-restore-backup' href='#'>Restore backup</a>");
                         }
                         last_saved_page_content = stringifyPageContentArr();
                     }, 1000);
-                    setInterval(function () {
+                    setInterval(function() {
                         var stringify = stringifyPageContentArr();
                         if (previous_page_content != "") {
                             if (previous_page_content != stringify) {
@@ -1487,13 +1508,13 @@ var update_interval; //gutenberg
                             previous_page_content = stringify;
                         }
                     }, 5000);
-                    $(window).bind('beforeunload', function (e) {
+                    $(window).bind('beforeunload', function(e) {
                         if (last_saved_page_content != stringifyPageContentArr()) {
                             return "You have made changes on this page that you have not yet saved. If you navigate away from this page you will lose your unsaved changes.";
                         }
                     });
                 }
-                $(body).on("click", "#hc-restore-backup", function () {
+                $(body).on("click", "#hc-restore-backup", function() {
                     var autosave = localStorage.getItem("hc-autosave-" + post_id);
                     PAGE_CONTENT_ARR = JSON.parse(autosave);
                     applyHTMLContentArr();
@@ -1505,8 +1526,8 @@ var update_interval; //gutenberg
     });
 
     //HIDE ELEMENTS ON MOUSE CLICK OUT
-    $(document).mouseup(function (e) {
-        $(".popover-box").each(function () {
+    $(document).mouseup(function(e) {
+        $(".popover-box").each(function() {
             var container = $(this);
             if (!container.is(e.target) && container.has(e.target).length === 0) {
                 if ($(this).attr("id") == "popover-box-columns") {
@@ -1518,14 +1539,15 @@ var update_interval; //gutenberg
     });
 
     //FUNCTIONS
-    $.fn.isContentSetted = function () {
+    $.fn.isContentSetted = function() {
         var c = $(this).readContentValue();
         if (c == false) return false;
         if (c == true) return true;
-        if (isEmpty(c) || c.length == 0 || c.indexOf("_RUNTIME_VAL") != -1) return false; else return true;
+        if (isEmpty(c) || c.length == 0 || c.indexOf("_RUNTIME_VAL") != -1) return false;
+        else return true;
         return false;
     }
-    $.fn.readContentValue = function () {
+    $.fn.readContentValue = function() {
         var type = $(this).attr("data-hc-component");
         var input_attr = $(this).attr('type');
         if (isEmpty(type)) type = "";
@@ -1536,8 +1558,7 @@ var update_interval; //gutenberg
         else if ($(this).is("textarea")) {
             if (type == "base64") return bin2hex($(this).val());
             else return $(this).val();
-        }
-        else if ($(this).is("select")) return $(this).val();
+        } else if ($(this).is("select")) return $(this).val();
         else {
             if (type == "upload") return (isEmpty($(this).attr("data-upload-link"))) ? "" : setTextArr([$(this).attr("data-upload-link"), $(this).attr("data-upload-height"), $(this).attr("data-upload-width"), $(this).attr("data-upload-id")]);
             if (type == "value") return $(this).attr("data-value");
@@ -1546,7 +1567,7 @@ var update_interval; //gutenberg
             return "";
         }
     }
-    $.fn.setContentValue = function (content) {
+    $.fn.setContentValue = function(content) {
         var bool = true;
         var type = $(this).attr("data-hc-component");
         var input_attr = $(this).attr('type');
@@ -1563,17 +1584,14 @@ var update_interval; //gutenberg
             $(this).prop('checked', bool)
             if (bool) $(this).attr("checked", "checked");
             else $(this).removeAttr("checked");
-        }
-        else if ($(this).is("textarea")) {
+        } else if ($(this).is("textarea")) {
             if (type == "base64") content = hex2bin(content);
             $(this).val(content).html(content);
-        }
-        else if ($(this).is("select")) {
+        } else if ($(this).is("select")) {
             $(this).val(content);
             $(this).find("option").removeAttr("data-select");
             $(this).find("option[value='" + content + "']").attr("data-select", "selected");
-        }
-        else {
+        } else {
             if (type == "upload") {
                 var arr = getTextArr(content);
                 if (arr.length == 0) { arr = ["", "", "", ""] }
@@ -1592,15 +1610,15 @@ var update_interval; //gutenberg
             if (type == "wordpress_editor") tinyMCE.get($(this).attr("data-wp-id")).setContent(content.replace(/"/g, "'"));
         }
     }
-    $.fn.outerHTML = function () {
+    $.fn.outerHTML = function() {
         var elem = this[0],
-          tmp;
+            tmp;
 
-        return !elem ? null
-          : typeof (tmp = elem.outerHTML) === 'string' ? tmp
-          : (div = div || $('<div/>')).html(this.eq(0).clone()).html();
+        return !elem ? null :
+            typeof(tmp = elem.outerHTML) === 'string' ? tmp :
+            (div = div || $('<div/>')).html(this.eq(0).clone()).html();
     };
-    $.fn.showTether = function (target) {
+    $.fn.showTether = function(target) {
         if (!isEmpty(this)) {
             var _targetAttachment = $(target).attr("data-pos");
             if (isEmpty(_targetAttachment)) _targetAttachment = "top center";
@@ -1620,8 +1638,8 @@ var update_interval; //gutenberg
             $(window).scroll();
         }
     }
-    $.fn.showSmart = function () {
-        $(this).each(function () {
+    $.fn.showSmart = function() {
+        $(this).each(function() {
             $(this).css("display", "");
             var s = $(this).css("display");
             var dd = $(this).attr("data-display");
@@ -1630,10 +1648,10 @@ var update_interval; //gutenberg
             $(this).css("display", s);
         });
     }
-    $.fn.resetComponentsValue = function () {
+    $.fn.resetComponentsValue = function() {
         var target_id = $(this).attr('data-hc-id');
         if (isEmpty(target_id)) target_id = $(this).find("[data-hc-id]").attr('data-hc-id');
-        $(this).find("*[data-hc-setting]").each(function () {
+        $(this).find("*[data-hc-setting]").each(function() {
             if ($(this).is("select")) {
                 var current_id = $(this).closest("[data-hc-id]").attr("data-hc-id");
                 var current_selector = ' ';
@@ -1645,19 +1663,19 @@ var update_interval; //gutenberg
             $(this).setContentValue($(this).readContentValue());
         });
     }
-    String.prototype.capitalizeFirstLetter = function () {
+    String.prototype.capitalizeFirstLetter = function() {
         try {
             return this.charAt(0).toUpperCase() + this.slice(1);
         } catch (e) { return this; }
     }
-    $.fn.setWidthLayout = function () {
+    $.fn.setWidthLayout = function() {
         var w = $(this).width();
         $(this).removeClass("small-cnt");
         if (w < 263) {
             $(this).addClass("small-cnt");
         }
     }
-    $.fn.setImageSize = function (isFixed) {
+    $.fn.setImageSize = function(isFixed) {
         if (isEmpty(isFixed)) isFixed = false;
         var h = parseInt($(this).attr("data-upload-height"));
         var w = parseInt($(this).attr("data-upload-width"));
@@ -1686,7 +1704,7 @@ var update_interval; //gutenberg
     }
 
     //COMPONENTS FUNCTIONS 
-    $.fn.setInputCSSrepeater = function (num_items) {
+    $.fn.setInputCSSrepeater = function(num_items) {
         var t = $(this).closest(".input-css-repeater");
         var items = $(t).find(".css-repeater-container .css-repeater-item");
         $(items).hide();
@@ -1707,18 +1725,21 @@ function generatePageContentArr() {
         if (isEmpty(archive_page_id)) archive_page_id = hc_init_archive_page_id;
     }
     PAGE_CONTENT_ARR = {};
-    jQuery(HC_CNT + " [data-hc-id]").each(function () {
+    jQuery(HC_CNT + " [data-hc-id]").each(function() {
         if (isEmpty(jQuery(this).attr("data-hc-setting"))) PAGE_CONTENT_ARR[jQuery(this).attr("data-hc-id")] = recursiveContent(this);
     });
+
     function recursiveContent(t) {
         var hc_component = {
-            component: jQuery(t).attr("data-hc-component"), id: jQuery(t).attr("data-hc-id"), path: jQuery(t).attr("data-hc-path")
+            component: jQuery(t).attr("data-hc-component"),
+            id: jQuery(t).attr("data-hc-id"),
+            path: jQuery(t).attr("data-hc-path")
         };
         var id = jQuery(t).attr("data-hc-id");
         var cnt = jQuery(t).attr("data-hc-container");
         if (!isEmpty(cnt) && cnt == "repeater") hc_component = [];
         var cont = null;
-        jQuery(t).find("[data-hc-setting]").each(function () {
+        jQuery(t).find("[data-hc-setting]").each(function() {
             if (cont != null && !jQuery.contains(cont, this) || cont == null) {
                 var id_sub = jQuery(this).attr("data-hc-id");
                 var setting = jQuery(this).attr("data-hc-setting");
@@ -1740,11 +1761,11 @@ function generatePageContentArr() {
         return hc_component;
     }
 
-    jQuery().each(function () {
+    jQuery().each(function() {
         jQuery(this).setFileRequire();
     });
 
-    jQuery(HC_CNT + " .file_require,.template_setting_cnt .file_require," + HC_CNT + " [data-require-file]").each(function () {
+    jQuery(HC_CNT + " .file_require,.template_setting_cnt .file_require," + HC_CNT + " [data-require-file]").each(function() {
         var file = jQuery(this).attr("data-require-file");
         var valid = true;
 
@@ -1771,17 +1792,17 @@ function generatePageContentArr() {
 
     PAGE_CONTENT_ARR["template_setting"] = {};
     PAGE_CONTENT_ARR["template_setting_top"] = {};
-    jQuery("#template-meta-boxes [data-hc-id]").each(function () {
+    jQuery("#template-meta-boxes [data-hc-id]").each(function() {
         if (isEmpty(jQuery(this).attr("data-hc-setting"))) PAGE_CONTENT_ARR["template_setting"][jQuery(this).attr("data-hc-id")] = recursiveContent(this);
     });
-    jQuery("#template-meta-boxes-top [data-hc-id]").each(function () {
+    jQuery("#template-meta-boxes-top [data-hc-id]").each(function() {
         if (isEmpty(jQuery(this).attr("data-hc-setting"))) PAGE_CONTENT_ARR["template_setting_top"][jQuery(this).attr("data-hc-id")] = recursiveContent(this);
     });
-    jQuery("#template-meta-boxes-top .template_setting_cnt [data-hc-setting]").each(function () {
+    jQuery("#template-meta-boxes-top .template_setting_cnt [data-hc-setting]").each(function() {
         PAGE_CONTENT_ARR["template_setting_top"][jQuery(this).attr("data-hc-setting")] = jQuery(this).readContentValue();;
     });
     PAGE_SETTING = [jQuery("#lock-mode").val()];
-    jQuery(HC_CNT + " .page_setting").each(function () {
+    jQuery(HC_CNT + " .page_setting").each(function() {
         PAGE_SETTING.push(jQuery(this).readContentValue());
     });
     PAGE_CONTENT_ARR["page_setting"] = { "settings": PAGE_SETTING };
@@ -1825,6 +1846,7 @@ function generatePageContentArr() {
         };
     }
 }
+
 function bin2hex(s) {
     var hex, i;
     var result = "";
@@ -1834,6 +1856,7 @@ function bin2hex(s) {
     }
     return result
 }
+
 function hex2bin(hex) {
     var j;
     var hexes = hex.match(/.{1,4}/g) || [];
@@ -1843,8 +1866,10 @@ function hex2bin(hex) {
     }
     return back;
 }
+
 function applyHTMLContentArr() {
     var ALL_HTML = recursiveApply(jQuery('<div><div data-hc-setting="main-title"></div></div>'), PAGE_CONTENT_ARR);
+
     function recursiveApply(HTML, arr, parent_key) {
         for (var key in arr) {
             if (!isEmpty(arr[key]) && typeof arr[key] === 'object') {
@@ -1882,14 +1907,14 @@ function applyHTMLContentArr() {
 
     jQuery(HC_CNT).html(jQuery('<div>').append(jQuery(ALL_HTML).clone()).html());
 
-    jQuery(HC_CNT + " .input-repeater").each(function () {
+    jQuery(HC_CNT + " .input-repeater").each(function() {
         var t = jQuery(this).find(".repeater-container");
         var source = jQuery(this).find(".repeater-source").html();
         if (jQuery(t).html().length > 0) jQuery(this).find(".hc-cnt-content").prepend(source);
         setHTMLcomment(jQuery(this).find(".repeater-source"));
     });
     jQuery(HC_CNT + " .hc-wysiwyg-editor").wysiwyg(wysiwyg_arr);
-    jQuery(HC_CNT + " .hc-add-component").each(function () {
+    jQuery(HC_CNT + " .hc-add-component").each(function() {
         posButtonBottom(this);
     });
     var TEMPLATE_HTML = recursiveApply(jQuery('<div></div>'), PAGE_CONTENT_ARR["template_setting"]);
@@ -1897,8 +1922,10 @@ function applyHTMLContentArr() {
     TEMPLATE_HTML = recursiveApply(jQuery('<div></div>'), PAGE_CONTENT_ARR["template_setting_top"]);
     if (jQuery(TEMPLATE_HTML).html() != "") jQuery("#template-meta-boxes-top .inside .template_meta_boxes_cnt").html(jQuery('<div>').append(jQuery(TEMPLATE_HTML).clone()).html());
 }
+
 function applyContentArr() {
     recursiveApply(PAGE_CONTENT_ARR);
+
     function recursiveApply(arr, cnt_key) {
         for (var key in arr) {
             if (!isEmpty(arr[key]) && typeof arr[key] === 'object') {
@@ -1924,22 +1951,22 @@ function applyContentArr() {
             }
         }
     }
-    jQuery("[data-require-action='hide']").each(function () {
+    jQuery("[data-require-action='hide']").each(function() {
         var id = jQuery(this).attr("data-require");
         if (!jQuery(this).closest("*[data-hc-id]").find("*[data-hc-setting='" + id + "']").isContentSetted()) jQuery(this).closest(".input-row").hide();
         else jQuery(this).closest(".input-row").css("display", "inline-block");
     });
-    jQuery(".tab-wp").each(function () {
+    jQuery(".tab-wp").each(function() {
         var items = jQuery(this).find(".nav-tabs li");
         for (var i = 0; i < items.length; i++) {
             if (jQuery(this).find(".panel " + " *[data-hc-component='" + jQuery(items[i]).find("a").attr("href").replace("#", "") + "']").length) jQuery(items[i]).addClass("active");
         }
     });
-    jQuery(".section-panel .tab-wp").each(function () {
+    jQuery(".section-panel .tab-wp").each(function() {
         if (jQuery(this).find(".nav-tabs li.active").length > 1) jQuery(this).find(".nav-tabs li:first-child").removeClass("active");
     });
 
-    jQuery(".button-icons-list, .button-icons-list-all").each(function () {
+    jQuery(".button-icons-list, .button-icons-list-all").each(function() {
         var val = jQuery(this).attr("data-value");
         var css = "button-icons-list-all";
         if (jQuery(this).hasClass("button-icons-list")) css = "button-icons-list";
@@ -1950,7 +1977,7 @@ function applyContentArr() {
             if (!isEmpty(val)) jQuery(this).attr("class", "input-row " + css + " button-icon bg-contain").css("background-image", "url(" + val.split("|")[0] + ")");
         }
     });
-    jQuery(".hc-link .link-type").each(function () {
+    jQuery(".hc-link .link-type").each(function() {
         var val = jQuery(this).val();
         if (val == "custom") {
             var t = jQuery(this).closest(".hc-link");
@@ -1961,17 +1988,17 @@ function applyContentArr() {
         }
         if (val == "lightbox") jQuery(this).closest("div").find(".upload-hc-button").show();
     });
-    jQuery(".hc-content-box-base").each(function () {
+    jQuery(".hc-content-box-base").each(function() {
         var val = jQuery(this).find(".content-box-style").val();
         if (val == "top_icon_image" || val == "multiple_box" || val == "side_content") jQuery(this).find(".upload-box").show();
         else jQuery(this).find(".upload-box").hide();
     });
-    jQuery(".tab-hc").each(function () {
+    jQuery(".tab-hc").each(function() {
         var t = this;
         var pan = jQuery(this).find(".panel");
         var li = jQuery(t).find(".nav-tabs li");
         jQuery(li).attr("class", "");
-        jQuery(pan).each(function (index) {
+        jQuery(pan).each(function(index) {
             if (jQuery(this).find("[setted='true']").length == 0) {
                 setHTMLcomment(this);
                 jQuery(this).removeClass("active");
@@ -1983,27 +2010,30 @@ function applyContentArr() {
         if (jQuery(t).find(".nav-tabs li.active").length == 0) jQuery(li).first().addClass("active");
         if (jQuery(t).find(".panel.active").length == 0) jQuery(pan).first().addClass("active").html(jQuery(pan).first().html().replace("<!--", "").replace("-->", ""));
     });
-    jQuery(".tab-hc-fast").each(function () {
+    jQuery(".tab-hc-fast").each(function() {
         var index = jQuery(this).find(".tab_index").val();
         jQuery(this).find('>.panel,>.nav-tabs li').removeClass("active");
         jQuery(this).find('>.nav-tabs li:eq(' + index + '),>.panel:eq(' + index + ')').addClass("active");
     });
-    jQuery(".input-css-repeater .repeater-items select").each(function () {
+    jQuery(".input-css-repeater .repeater-items select").each(function() {
         jQuery(this).setInputCSSrepeater(parseInt(jQuery(this).val()));
     });
-    jQuery("select[data-dependence-trigger]").each(function () {
+    jQuery("select[data-dependence-trigger]").each(function() {
         var p = jQuery(this).closest("[data-hc-id]");
         var action = jQuery(this).attr("data-dependence-trigger");
         if (isEmpty(p)) p = jQuery(this).closest(".inside");
         var target = jQuery(this).attr("data-hc-setting");
         var val = jQuery(this).val();
-        jQuery(this).find("option").each(function () {
+        jQuery(this).find("option").each(function() {
             var tt = jQuery(p).find("[data-dependence-show='" + target + "_" + jQuery(this).val() + "']");
-            if (action == "hide") if (jQuery(this).val() != val) jQuery(tt).showSmart(); else jQuery(tt).hide();
-            else if (jQuery(this).val() != val) jQuery(tt).hide(); else jQuery(tt).showSmart();
+            if (action == "hide")
+                if (jQuery(this).val() != val) jQuery(tt).showSmart();
+                else jQuery(tt).hide();
+            else if (jQuery(this).val() != val) jQuery(tt).hide();
+            else jQuery(tt).showSmart();
         });
     });
-    jQuery("input:checkbox[data-dependence-trigger]").each(function () {
+    jQuery("input:checkbox[data-dependence-trigger]").each(function() {
         var p = jQuery(this).closest("[data-hc-id]");
         var action = jQuery(this).attr("data-dependence-trigger");
         if (isEmpty(p)) p = jQuery(this).closest(".inside");
@@ -2018,7 +2048,7 @@ function applyContentArr() {
             } else jQuery(target).hide();
         }
     });
-    jQuery(".hc-slider").each(function (index) {
+    jQuery(".hc-slider").each(function(index) {
         if (jQuery(this).find("[data-hc-setting='type']").val() == "carousel") {
             var val = jQuery(this).find("[data-hc-setting='data_options']").attr("data-value");
             var n = 3;
@@ -2035,7 +2065,7 @@ function applyContentArr() {
     });
 
     applyGlobalContentArr();
-    jQuery(HC_CNT + " .hc-column").each(function () {
+    jQuery(HC_CNT + " .hc-column").each(function() {
         jQuery(this).addClass(jQuery(this).find(".button-column").attr("data-value"));
         jQuery(this).setWidthLayout();
         var css = jQuery(this).find(".button-css").attr("data-value");
@@ -2044,7 +2074,7 @@ function applyContentArr() {
         }
     });
 
-    jQuery(HC_CNT + " .hc-social-feeds").each(function () {
+    jQuery(HC_CNT + " .hc-social-feeds").each(function() {
         var v = jQuery(this).find(".social-container-type").val();
         if (v == "slider" || v == "carousel") jQuery(this).find(".data-options-slider").show();
         if (v == "scroll_box") jQuery(this).find(".data-options-scroll-box").show();
@@ -2052,14 +2082,14 @@ function applyContentArr() {
         jQuery(this).find(".data-options-button-" + jQuery(this).find(".social-type").val()).show();
     });
     applyPostTypesContent();
-    jQuery(HC_CNT + " [data-layout='column']").each(function () {
+    jQuery(HC_CNT + " [data-layout='column']").each(function() {
         setColumnLayout(this);
     });
-    setTimeout(function () {
-        jQuery(HC_CNT + " .flex-repeater .hc-cnt-content").each(function () {
+    setTimeout(function() {
+        jQuery(HC_CNT + " .flex-repeater .hc-cnt-content").each(function() {
             jQuery(this).setWidthLayout();
         });
-        jQuery(HC_CNT + " .hc-column").each(function () {
+        jQuery(HC_CNT + " .hc-column").each(function() {
             jQuery(this).addClass(jQuery(this).find(".button-column").attr("data-value"));
             jQuery(this).setWidthLayout();
             var css = jQuery(this).find(".button-css").attr("data-value");
@@ -2067,14 +2097,14 @@ function applyContentArr() {
                 jQuery(this).addClass("layout-column-center");
             }
         });
-    }, 300); 
-    jQuery("[data-hc-component='upload']").each(function () {
+    }, 300);
+    jQuery("[data-hc-component='upload']").each(function() {
         if (jQuery(this).isContentSetted()) {
             jQuery(this).closest(".upload-box").find(".close-button").show();
             jQuery(this).setImageSize();
         }
     });
-    jQuery(".upload-fixed [data-hc-component='upload']").each(function () {
+    jQuery(".upload-fixed [data-hc-component='upload']").each(function() {
         jQuery(this).setImageSize(true);
     });
     if (!isEmpty(PAGE_CONTENT_ARR["page_setting"]["lightbox"])) {
@@ -2084,6 +2114,7 @@ function applyContentArr() {
         jQuery("#page-popup").val(JSON.stringify(PAGE_CONTENT_ARR["page_setting"]["popup"]));
     }
 }
+
 function applyGlobalContentArr(cnt) {
     if (isEmpty(cnt)) cnt = "";
     else cnt = cnt + " ";
@@ -2097,6 +2128,7 @@ function applyGlobalContentArr(cnt) {
     }
     autosize(jQuery(".input-text-area textarea"));
 }
+
 function applyPostTypesContent() {
     if (isPostType && !isEmpty(PAGE_CONTENT_ARR["post_type_setting"])) {
         jQuery("#post-type-name").setContentValue(PAGE_CONTENT_ARR["post_type_setting"]["settings"]["name"]);
@@ -2119,11 +2151,11 @@ function applyPostTypesContent() {
             jQuery("#post-type-item-icon-image").setContentValue(PAGE_CONTENT_ARR["post_type_setting"]["settings"]["icon"]["icon_image"]);
         } catch (e) { console.log(e); }
     }
-    jQuery(".post-type-slug").each(function () {
+    jQuery(".post-type-slug").each(function() {
         var select_cats = jQuery(this).closest("[data-hc-id]").find(".post-type-category");
         var cat_slug = jQuery(this).val();
         if (jQuery(select_cats).length) {
-            jQuery(select_cats).find("option").each(function (i) {
+            jQuery(select_cats).find("option").each(function(i) {
                 if (i > 0) {
                     if (jQuery(this).attr("data-taxonomy").startsWith(cat_slug)) jQuery(this).show();
                     else jQuery(this).hide();
@@ -2133,13 +2165,16 @@ function applyPostTypesContent() {
     });
 
 }
+
 function isInt(value) {
     var x = parseFloat(value);
     return !isNaN(value) && (x | 0) === x;
 }
+
 function setHTMLcomment(obj) {
     jQuery(obj).html("<!--" + jQuery(obj).html().replace("<!--", "").replace("-->", "") + "-->");
 }
+
 function hc_update_editor_mode(mode) {
     jQuery("#publish,#post-preview").addClass("disabled");
     jQuery(".editor-post-publish-button").attr("aria-disabled", "true");
@@ -2152,7 +2187,7 @@ function hc_update_editor_mode(mode) {
             id: post_id
         },
         async: true,
-        success: function () {
+        success: function() {
             jQuery("#publish,#post-preview").removeClass("disabled");
             jQuery("#editor-mode").val(mode);
             jQuery("input[value=hc-editor-mode]").closest("tr").find("textarea").val(mode);
@@ -2160,6 +2195,7 @@ function hc_update_editor_mode(mode) {
         }
     });
 }
+
 function printPageContentArr() {
     jQuery("#content-html").click();
     var json_string = JSON.stringify(PAGE_CONTENT_ARR).replace(/target='_blank'/g, "data-target='true'").replace(/rel='noopener noreferrer'/g, '');
@@ -2169,6 +2205,7 @@ function printPageContentArr() {
         tinyMCE.execCommand('mceInsertRawHTML', false, json_string);
     }
 }
+
 function showNoticeBox(status, content) {
     if (content == "") {
         jQuery("#hc-notice-box").html("");
@@ -2176,16 +2213,18 @@ function showNoticeBox(status, content) {
         jQuery("#hc-notice-box").html('<div class="notice notice-alt notice-hc ' + status + ' is-dismissible"><p>' + content + '</p><button class="notice-dismiss" type="button"><span class="screen-reader-text">Dismiss this notice</span></button></div>');
     }
 }
+
 function stringifyPageContentArr() {
     var result = "";
-    jQuery(HC_CNT + " [data-hc-setting]").each(function () {
+    jQuery(HC_CNT + " [data-hc-setting]").each(function() {
         result += jQuery(this).readContentValue();
     });
-    jQuery(HC_CNT + " [data-hc-id]").each(function () {
+    jQuery(HC_CNT + " [data-hc-id]").each(function() {
         result += jQuery(this).attr("data-hc-id");
     });
     return result;
 }
+
 function sanatizeString(string) {
     if (typeof string == "string") {
         string = string.replace(/\\"/g, '"');
@@ -2193,6 +2232,7 @@ function sanatizeString(string) {
     }
     return string;
 }
+
 function hc_get_url(suffix) {
     let url = jQuery("#wp-admin-bar-view a").attr("href");
     if (isEmpty(url)) {
@@ -2208,27 +2248,32 @@ function hc_get_url(suffix) {
     }
     return url;
 }
+
 function showPageCSSbox() {
     jQuery('#css-code-box textarea').val(jQuery('#css-page').val());
     jQuery.magnificPopup.open({
         items: {
             src: '#css-code-box'
-        }, type: 'inline'
+        },
+        type: 'inline'
     });
     jQuery('#css-code-box .scroll-content').slimScroll({
         height: '250px'
     });
 }
+
 function showComposerTemplatesBox() {
     jQuery.magnificPopup.open({
         items: {
             src: '#composer-templates-box'
-        }, type: 'inline'
+        },
+        type: 'inline'
     });
     jQuery('#composer-templates-box .scroll-content').slimScroll({
         height: '650px'
     });
 }
+
 function showPageSettingsBox() {
     if (isEmpty(getURLParameter("post"))) {
         alert("Please publish the page before enter in page settings area.")
@@ -2237,31 +2282,37 @@ function showPageSettingsBox() {
         jQuery.magnificPopup.open({
             items: {
                 src: '#popover-box-page-settings'
-            }, type: 'inline'
+            },
+            type: 'inline'
         });
         jQuery('#popover-box-page-settings .scroll-content').slimScroll({
             height: '450px'
         });
     }
 }
+
 function showPageLightbox() {
     indipendentSaveSystem("#popover-box-page-lightbox", "populate");
     jQuery.magnificPopup.open({
         items: {
             src: '#popover-box-page-lightbox'
-        }, type: 'inline'
+        },
+        type: 'inline'
     });
 }
+
 function showPagePopup() {
     indipendentSaveSystem("#popover-box-page-popup", "populate");
     jQuery.magnificPopup.open({
         items: {
             src: '#popover-box-page-popup'
-        }, type: 'inline'
+        },
+        type: 'inline'
     });
 }
+
 function showPageContentArr() {
-    jQuery(HC_CNT).find("*[data-hc-setting]").each(function () {
+    jQuery(HC_CNT).find("*[data-hc-setting]").each(function() {
         jQuery(this).setContentValue(jQuery(this).readContentValue());
     });
 
@@ -2272,7 +2323,8 @@ function showPageContentArr() {
     jQuery.magnificPopup.open({
         items: {
             src: '#page-code-box'
-        }, type: 'inline'
+        },
+        type: 'inline'
     });
     jQuery('#page-code-box .scroll-content').slimScroll({
         height: '250px'
@@ -2280,6 +2332,7 @@ function showPageContentArr() {
     applyHTMLContentArr();
     applyContentArr();
 }
+
 function setTextArr(arr) {
     var result = "";
     for (var i = 0; i < arr.length; i++) {
@@ -2287,14 +2340,17 @@ function setTextArr(arr) {
     }
     return result.substr(0, result.length - 1);
 }
+
 function getTextArr(text) {
     if (isEmpty(text)) return [];
     return text.split("|");
 }
+
 function setValue(string, id, val) {
     var output_1 = string.substr(0, string.indexOf(id));
     var output_2 = output_1.substr(output_1.indexOf('"'), string.indexOf(id));
 }
+
 function makeID(count) {
     var text = "5ZtkF";
     if (isEmpty(count)) count = 1;
@@ -2302,7 +2358,7 @@ function makeID(count) {
     var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
     var page_content = jQuery("#content").val();
     if (makeIDarr.length == 0) {
-        jQuery("[data-hc-id]").each(function () {
+        jQuery("[data-hc-id]").each(function() {
             makeIDarr.push(jQuery(this).attr("data-hc-id"));
         });
     }
@@ -2318,9 +2374,11 @@ function makeID(count) {
     if (count == 0) return arrIDs[0];
     return arrIDs;
 }
+
 function inArray(obj, search) {
     var result = false;
     recursive(obj, search);
+
     function recursive(obj, search) {
         for (var property in obj) {
             if (obj.hasOwnProperty(property)) {
@@ -2332,13 +2390,14 @@ function inArray(obj, search) {
                             result = true;
                             return true;
                         }
-                    } catch (e) { }
+                    } catch (e) {}
                 }
             }
         }
     }
     return result;
 }
+
 function posButtonBottom(button) {
     var cnt = jQuery(button).closest("[data-hc-setting]");
     var hide_val = jQuery(button).attr("data-components");
@@ -2352,6 +2411,7 @@ function posButtonBottom(button) {
     jQuery(cnt).append('<div class="clear"></div><div class="hc-add-component' + css + '"' + hide_val_html + '><i class="icon-plus-add-2"></i></div>');
     jQuery(button).remove();
 }
+
 function ajaxSaveOption(option_name, content) {
     var res;
     jQuery.ajax({
@@ -2363,11 +2423,12 @@ function ajaxSaveOption(option_name, content) {
             content: content
         },
         async: false
-    }).done(function (response) {
+    }).done(function(response) {
         res = response;
     });
     return res;
 }
+
 function saveHCTemplate(name) {
     generatePageContentArr();
     hc_templates[name] = PAGE_CONTENT_ARR;
@@ -2378,6 +2439,7 @@ function saveHCTemplate(name) {
         jQuery("#composer-templates-box .result-box").html('<div class="notice error"><p>Error. Template may be not saved.</p></div>');
     };
 }
+
 function deleteHCTemplate(name) {
     var hc_templates_new = {}
     for (var key in hc_templates) {
@@ -2392,11 +2454,13 @@ function deleteHCTemplate(name) {
         jQuery("#composer-templates-box .result-box").html('<div class="notice error"><p>Error. Template not deleted.</p></div>');
     };
 }
+
 function resetSelectValues(container) {
-    jQuery(container).find("select").each(function () {
+    jQuery(container).find("select").each(function() {
         jQuery(this).attr("data-select-value", jQuery(this).readContentValue());
     });
 }
+
 function setColumnLayout(obj, target) {
     var val = jQuery(obj).val();
     if (isEmpty(target)) target = jQuery(obj).closest("[data-hc-id]").closest("[data-hc-id]");
@@ -2407,6 +2471,7 @@ function setColumnLayout(obj, target) {
     if (val == "col-md-2") val = 6;
     saveColumnLayout(target, val);
 }
+
 function saveColumnLayout(target, val) {
     jQuery(target).removeClass("layout-columns-1").removeClass("layout-columns-2").removeClass("layout-columns-3").removeClass("layout-columns-4").removeClass("layout-columns-5").removeClass("layout-columns-6").addClass("layout-columns-" + val);
     jQuery(target).find(".hc-cnt-content,.hc-column").setWidthLayout();
@@ -2433,7 +2498,7 @@ function indipendentSaveSystem(source, action) {
                 content: result,
             },
             async: false
-        }).done(function (response) {
+        }).done(function(response) {
             jQuery(t).find(".save_array_json").val(result);
         });
     } else {
