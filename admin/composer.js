@@ -1441,7 +1441,7 @@ console.log(frutas);
                                 for (let i = 0; i < unElemento.length; i++) {
                                     let clave = unElemento[i].getAttribute('data-hc-id');
                                     if (clave == key) {
-                                        unElemento[i].style.backgroundColor = '#FF0000';
+                                        unElemento[i].style.borderColor = 'Red';
                                     }
                                 }
                             };
