@@ -1387,12 +1387,6 @@ console.log(frutas);
                 //Save updates
                 $(body).on("click", ".editor-post-publish-button", function(e) {
                     var a = false;
-                    Object.entries(frutas).forEach(([key, value]) => {
-                        console.log(key, value); // key ,value
-                        if (value == "False") {
-                            console.log(key);
-                        };
-                    });
                     if (a == true) {
                         if ($("#mode_button_hc select").val() != "classic") {
                             let publish_button = $(".editor-post-publish-button");
@@ -1440,10 +1434,16 @@ console.log(frutas);
                         let mensaje = "Hay una falla de accesibilidad en los siguientes componentes: ";
                         // acá hay que trabajar en las alertas.
                         Object.entries(frutas).forEach(([key, value]) => {
-                            console.log(key, value); // key ,value
                             if ((value == "False") && (key != "_ID")) {
                                 console.log(key);
                                 mensaje += key.toString() + " ";
+                                var unElemento = document.getElementsByClassName('hc-cnt-component');
+                                for (let i = 0; i < unElemento.length; i++) {
+                                    let clave = unElemento[i].getAttribute('data-hc-id');
+                                    if (clave == key) {
+                                        unElemento[i].style.backgroundColor = '#FF0000';
+                                    }
+                                }
                             };
                         });
                         alert(mensaje);
