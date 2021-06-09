@@ -1431,7 +1431,7 @@ console.log(frutas);
                             showNoticeBox("", "");
                         });
                     } else {
-                        let mensaje = "Hay una falla de accesibilidad en los siguientes componentes: ";
+                        let mensaje = "Hay una falla de accesibilidad en los siguientes componentes, y se marcaran con ROJO: ";
                         // acá hay que trabajar en las alertas.
                         Object.entries(frutas).forEach(([key, value]) => {
                             if ((value == "False") && (key != "_ID")) {
