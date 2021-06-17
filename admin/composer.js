@@ -1719,11 +1719,13 @@ console.log(frutas);
 
 //Función validación de accesibilidad
 function validar(idfruta){
-    Object.entries(frutas).forEach(([key, value]) => {
-        if ((key == idfruta)) {
-            frutas[key] = "True";
-        };
-    });
+    //TODO preguntar por campo description
+    if(document.getElementById("iddesc") == null) {
+        alert('No has escrito nada en la descripcion');
+    }else {
+        frutas[idfruta] = "True";
+    };
+    return;
 }
 
 function generatePageContentArr() {

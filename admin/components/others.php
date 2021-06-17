@@ -73,13 +73,13 @@
                     </li>
                     <li class="input-row input-text">
                         <p><?php _e("Descripción","hc") ?></p>
-                        <input data-hc-setting="description" placeholder="Ingrese una descripción" type="text">
+                        <input id="iddesc" data-hc-setting="description" placeholder="Ingrese una descripción" type="text">
                     </li>
                 </ul>
             </div>
-            <input data-hc-setting="link" class="input-link" placeholder="<?php _e("Link","hc") ?>" type="text" value="" /> 
-            <!-- programar el evento onblur(cuando pierde el foco) asociado al botón guardar -->
-            <a class="preview button link-content-btn" href="#" onblur="checkAlert()"><?php _e("Edit content","hc") ?></a>
+            <input data-hc-setting="link" class="input-link"  onclick="validar('_ID')" placeholder="<?php _e("Link","hc") ?>" type="text" value="" /> 
+            <!-- TODO programar el evento onblur(cuando pierde el foco) asociado al botón guardar -->
+            <a class="preview button link-content-btn" href="#"><?php _e("Edit content","hc") ?></a>
         </div>
         <div class="clear"></div>
         <div class="link-content css-box-popup">
