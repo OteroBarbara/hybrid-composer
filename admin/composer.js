@@ -20,6 +20,7 @@ var update_interval; //gutenberg
 let frutas = [];
 console.log(frutas);
 
+
 (function($) {
     var myTether;
     var current_source;
@@ -1715,6 +1716,16 @@ console.log(frutas);
 }(jQuery));
 
 //FUNCTIONS
+
+//Función validación de accesibilidad
+function validar(idfruta){
+    Object.entries(frutas).forEach(([key, value]) => {
+        if ((key == idfruta)) {
+            frutas[key] = "True";
+        };
+    });
+}
+
 function generatePageContentArr() {
     var FINAL_SCRIPTS_ARR = {};
     var FINAL_CSS_ARR = {};
