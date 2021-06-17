@@ -76,11 +76,11 @@
                     </li>
                     <li class="input-text input-row caption-img-box">
                         <p><?php _e("Title","hc") ?></p>
-                        <input type="text" data-hc-setting="caption_img_box" />
+                        <input type="text" placeholder="Ingrese un títilo" data-hc-setting="caption_img_box" />
                     </li>
                     <li class="input-row input-text">
                         <p><?php _e("Alt text","hc") ?></p>
-                        <input type="text" data-hc-setting="alt" />
+                        <input type="text" placeholder="Texto alternativo de la imagen" data-hc-setting="alt" />
                     </li>
                 </ul>
             </div>
@@ -172,7 +172,8 @@
             <ul>
                 <li class="input-row input-text">
                     <p><?php _e("Alt text","hc") ?></p>
-                    <input type="text" data-hc-setting="alt" />
+                    <input type="text" placeholder="Texto alternativo de la imagen" data-hc-setting="alt" />
+                    <p>Describe el propósito de la imagen. Déjalo vacío si la imagen es puramente decorativa.</p>
                 </li>
                 <li class="input-row input-select">
                     <p><?php _e("Image size","hc") ?></p>

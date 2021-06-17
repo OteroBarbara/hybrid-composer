@@ -61,7 +61,7 @@
                     </li>
                     <li class="input-row input-text">
                         <p><?php _e("Lightbox caption","hc") ?></p>
-                        <input data-hc-setting="caption" type="text">
+                        <input data-hc-setting="caption" placeholder="Ingrese un título" type="text">
                     </li>
                     <li class="input-row input-checkbox">
                         <p><?php _e("Inner caption","hc") ?></p>
@@ -73,7 +73,7 @@
                     </li>
                     <li class="input-row input-text">
                         <p><?php _e("Descripción","hc") ?></p>
-                        <input data-hc-setting="description" type="text">
+                        <input data-hc-setting="description" placeholder="Ingrese una descripción" type="text">
                     </li>
                 </ul>
             </div>
@@ -1230,7 +1230,7 @@
                     </li>
                     <li class="input-text input-row full-only-input">
                         <p class="sch"><?php _e("Author","hc") ?></p>
-                        <input data-hc-setting="author" type="text" />
+                        <input data-hc-setting="author" placeholder= "Nombre del autor" type="text" />
                     </li>
                 </ul>
             </div>
