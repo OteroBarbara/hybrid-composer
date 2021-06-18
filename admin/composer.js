@@ -1720,7 +1720,7 @@ console.log(frutas);
 //Función validación de accesibilidad
 function validar(idfruta){
     //TODO preguntar por campo description
-    if(document.getElementById("iddesc") == null) {
+    if(document.getElementById("iddesc").value == "") {
         alert('No has escrito nada en la descripcion');
     }else {
         frutas[idfruta] = "True";
