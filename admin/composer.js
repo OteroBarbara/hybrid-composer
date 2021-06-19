@@ -787,8 +787,6 @@ console.log(frutas);
                 var theElement = $('#component1'); //elemento del contextbox que tiene el id del componente
                 var theElement2 = $('#iddesc');  //elemento input que no puede estar  vacio
                 var theAtribute = theElement.attr('data-hc-id'); //tiene el id del elemento
-                // var theAtribute2 = theElement2.attr('data-hc-setting'); //description
-                // var theAtribute3 = theElement2.attr('placeholder'); //Ingrese una descripcion
                 if (css.indexOf("popover-inner-save") > -1) {                 
                     if ($(this).hasClass("popover-big-inner-save")) t = $("#popover-box-empty-big");
                     else t = $("#popover-box-empty");
@@ -1732,18 +1730,7 @@ console.log(frutas);
 
 //FUNCTIONS
 
-//Función validación de accesibilidad
-// function validar(){
-//     //TODO preguntar por campo description
-//     // var theElement = document.getElementById(idFruta);
-//     // var theAttribute = theElement.getAttribute('data-hc-id');
-//     if(document.getElementById("iddesc").value == "") {
-//          alert('No has escrito nada en la descripcion');
-//      }else {
-//          frutas[idfruta] = "True";
-//      };
-//      return;
-// }
+
 
 function generatePageContentArr() {
     var FINAL_SCRIPTS_ARR = {};
