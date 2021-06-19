@@ -51,6 +51,7 @@
             </select>
             <i class="button-icon input-row upload-hc-button icon-link" data-value=""></i>
             <div class="button-inner-options" data-width="315">
+                <!-- Esta es la ruedita -->
                 <i class="button-icon input-row icon-gear-setting-2"></i>
                 <ul>
                     <li class="input-row input-select">
@@ -78,8 +79,8 @@
                 </ul>
             </div>
             <input data-hc-setting="link" class="input-link" placeholder="<?php _e("Link","hc") ?>" type="text" value="" /> 
-            <!-- TODO programar el evento onblur(cuando pierde el foco) asociado al botón guardar -->
-            <a class="preview button link-content-btn" href="#"  onclick="validar('_ID')"><?php _e("Edit content","hc") ?></a>
+            <!-- este no era el boton :( -->
+            <a class="preview button link-content-btn" href="#"><?php _e("Edit content","hc") ?></a> 
         </div>
         <div class="clear"></div>
         <div class="link-content css-box-popup">

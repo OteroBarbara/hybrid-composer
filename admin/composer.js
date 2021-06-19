@@ -783,15 +783,30 @@ console.log(frutas);
                     $(t).showTether(this);
                 }
                 //25
-                if (css.indexOf("popover-inner-save") > -1) {
+                //ACA ESTA JQUERY DEL BOTON GUARDAR CAMBIOS
+                var theElement = $('#component1'); //elemento del contextbox que tiene el id del componente
+                var theElement2 = $('#iddesc');  //elemento input que no puede estar  vacio
+                var theAtribute = theElement.attr('data-hc-id'); //tiene el id del elemento
+                // var theAtribute2 = theElement2.attr('data-hc-setting'); //description
+                // var theAtribute3 = theElement2.attr('placeholder'); //Ingrese una descripcion
+                if (css.indexOf("popover-inner-save") > -1) {                 
                     if ($(this).hasClass("popover-big-inner-save")) t = $("#popover-box-empty-big");
                     else t = $("#popover-box-empty");
                     $(t).find("ul").html($(this).find("ul").html())
                     $(t).find("[data-hc-setting]").each(function() {
                         $(current_source).find("[data-hc-setting='" + $(this).attr("data-hc-setting") + "']").setContentValue($(this).readContentValue());
+                        if($(this).attr("data-hc-setting") == "description"){
+                            if($("#iddesc").val().length < 1) {
+                                alert("La descripcion es obligatoria");
+                                return false;
+                            }else{
+                                frutas[theAtribute] = "True";
+                            };
+                        }
+                        
                         if ($(this).attr("data-layout") == "column")
                             setColumnLayout(this, $(current_source).closest("[data-hc-id]"));
-                    });
+                    });                
                     $(t).hide();
                 }
                 //26
@@ -1718,15 +1733,17 @@ console.log(frutas);
 //FUNCTIONS
 
 //Función validación de accesibilidad
-function validar(idfruta){
-    //TODO preguntar por campo description
-    if(document.getElementById("iddesc").value == "") {
-        alert('No has escrito nada en la descripcion');
-    }else {
-        frutas[idfruta] = "True";
-    };
-    return;
-}
+// function validar(){
+//     //TODO preguntar por campo description
+//     // var theElement = document.getElementById(idFruta);
+//     // var theAttribute = theElement.getAttribute('data-hc-id');
+//     if(document.getElementById("iddesc").value == "") {
+//          alert('No has escrito nada en la descripcion');
+//      }else {
+//          frutas[idfruta] = "True";
+//      };
+//      return;
+// }
 
 function generatePageContentArr() {
     var FINAL_SCRIPTS_ARR = {};
