@@ -350,7 +350,7 @@
          <script>
          var id_component= "_ID"; 
          console.log(id_component);
-         frutas["_ID"] = "False";
+         get_id_component["_ID"] = "False";
          </script>
         <input type="hidden" class="file_require" value="content_box">
         <?php hc_e_composer_item_menu("Botón de acceso a interpretación en Lengua de Señas.") ?>

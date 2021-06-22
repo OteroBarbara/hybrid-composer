@@ -17,8 +17,8 @@ var post_id; //gutenberg
 var update_interval; //gutenberg
 
 //Crear arreglo
-let frutas = [];
-console.log(frutas);
+let get_id_component = [];
+console.log(get_id_component);
 
 
 (function($) {
@@ -797,7 +797,7 @@ console.log(frutas);
                                 alert("La descripción es requerida");
                                 return false;
                             }else{
-                                frutas[theAtribute] = "True";
+                                get_id_component[theAtribute] = "True";
                             };
                         }
                         
@@ -1446,7 +1446,7 @@ console.log(frutas);
                     } else {
                         let mensaje = "Hay una falla de accesibilidad en los siguientes componentes, y se marcaran con ROJO: ";
                         // acá hay que trabajar en las alertas.
-                        Object.entries(frutas).forEach(([key, value]) => {
+                        Object.entries(get_id_component).forEach(([key, value]) => {
                             if ((value == "False") && (key != "_ID")) {
                                 console.log(key);
                                 mensaje += key.toString() + " ";
