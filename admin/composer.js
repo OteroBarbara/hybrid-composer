@@ -785,7 +785,6 @@ console.log(frutas);
                 //25
                 //ACA ESTA JQUERY DEL BOTON GUARDAR CAMBIOS
                 var theElement = $('#component1'); //elemento del contextbox que tiene el id del componente
-                var theElement2 = $('#iddesc');  //elemento input que no puede estar  vacio
                 var theAtribute = theElement.attr('data-hc-id'); //tiene el id del elemento
                 if (css.indexOf("popover-inner-save") > -1) {                 
                     if ($(this).hasClass("popover-big-inner-save")) t = $("#popover-box-empty-big");
@@ -795,7 +794,7 @@ console.log(frutas);
                         $(current_source).find("[data-hc-setting='" + $(this).attr("data-hc-setting") + "']").setContentValue($(this).readContentValue());
                         if($(this).attr("data-hc-setting") == "description"){
                             if($("#iddesc").val().length < 1) {
-                                alert("La descripcion es obligatoria");
+                                alert("La descripción es requerida");
                                 return false;
                             }else{
                                 frutas[theAtribute] = "True";
