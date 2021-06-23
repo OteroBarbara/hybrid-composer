@@ -363,7 +363,7 @@
         </div>          
         </div>
         <div>
-        <?php hc_get_link_engine(); ?>
+        <?php hc_get_link("_ID"); ?>
         <p>
              
         *Aquí puedes enlazar a una plataforma de videoconferencia para interpretación en tiempo real (ejemplo: Zoom o Skype) o enlazar a un contenido de vídeo en Lengua de Señas pre grabado (Ejemplo: YouTube o Google Drive).

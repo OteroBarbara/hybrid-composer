@@ -40,8 +40,7 @@
 // =============================================================================
 ?>
 
-<div id="cnt_hc_link">
-    <?php function hc_get_link_engine() { ?>
+<div id="cnt_hc_link"><?php function hc_get_link($idlink) { echo $idlink;?>
     <div class="hc-link">
         <div class="input-text input-row link-field">
             <select data-hc-setting="link_type" class="link-type" data-require-file="yes">
@@ -73,13 +72,81 @@
                     </li>
                     <li class="input-row input-text">
                         <p><?php _e("Descripción","hc") ?></p>
-                        <input id="iddesc" data-hc-setting="description" placeholder="Ingrese una descripción" type="text">
+                        <input id="<?php echo $idlink ?>" data-hc-setting="description" placeholder="Ingrese una descripción" type="text">
                     </li>
                 </ul>
             </div>
             <input data-hc-setting="link" class="input-link" placeholder="<?php _e("Link","hc") ?>" type="text" value="" /> 
             <!-- TODO programar el evento onblur(cuando pierde el foco) asociado al botón guardar -->
-            <a class="preview button link-content-btn" href="#"  onclick="validar('_ID')"><?php _e("Edit content","hc") ?></a>
+            <a class="preview button link-content-btn" href="#"  onclick="validar('<?php echo $idlink?>')"><?php _e("Edit content","hc") ?></a>
+        </div>
+        <div class="clear"></div>
+        <div class="link-content css-box-popup">
+            <div class="scroll-content" data-height="500">
+                <div data-hc-setting="link_content" data-hc-id="main_content" data-hc-container="repeater" class="row">
+                    <div class="clear"></div>
+                    <div class="hc-add-component"><i class="icon-plus-add-2"></i></div>
+                </div>
+                <div class="clear"></div>
+                <div class="link-content-bar">
+                    <div class="input-row input-select">
+                        <p><?php _e("Lightbox size","hc") ?></p>
+                        <select data-hc-setting="lightbox_size" data-default="left">
+                            <option value="s"><?php _e("Small","hc") ?></option>
+                            <option selected="selected" value=""><?php _e("Medium","hc") ?></option>
+                            <option value="l"><?php _e("Large","hc") ?></option>
+                            <option value="full-screen-size"><?php _e("Full screen","hc") ?></option>
+                        </select>
+                    </div>
+                    <div class="input-row input-checkbox">
+                        <p><?php _e("Scroll box","hc") ?></p>
+                        <input data-hc-setting="scrollbox" type="checkbox" data-require-file="slimscroll">
+                    </div>
+                </div>
+            </div>
+            <a class="button button-primary button-large save-button-css-box"  onclick="validar('<?php echo $idlink?>')"><?php _e("SAVE","hc") ?></a>
+        </div>
+    </div>
+    <?php } ?>
+    <?php function hc_get_link_engine() { echo $idlink; echo "Hola :D";?>
+    <div class="hc-link">
+        <div class="input-text input-row link-field">
+            <select data-hc-setting="link_type" class="link-type" data-require-file="yes">
+                <option selected value="classic"><?php _e("Link","hc") ?></option>
+                <option value="lightbox" data-require-file="lightbox"><?php _e("Lightbox","hc") ?></option>
+                <option value="custom" data-require-file="lightbox"><?php _e("Custom","hc") ?></option>
+            </select>
+            <i class="button-icon input-row upload-hc-button icon-link" data-value=""></i>
+            <div class="button-inner-options" data-width="315">
+                <i class="button-icon input-row icon-gear-setting-2"></i>
+                <ul>
+                    <li class="input-row input-select">
+                        <p><?php _e("Lightbox animation","hc") ?></p>
+                        <select data-hc-setting="lightbox_animation" class="animations-list">
+                            <?php hc_html_animations(); ?>
+                        </select>
+                    </li>
+                    <li class="input-row input-text">
+                        <p><?php _e("Lightbox caption","hc") ?></p>
+                        <input data-hc-setting="caption" placeholder="Ingrese un título" type="text">
+                    </li>
+                    <li class="input-row input-checkbox">
+                        <p><?php _e("Inner caption","hc") ?></p>
+                        <input data-hc-setting="inner_caption" type="checkbox">
+                    </li>
+                    <li class="input-row input-checkbox">
+                        <p><?php _e("New window","hc") ?></p>
+                        <input data-hc-setting="new_window" type="checkbox">
+                    </li>
+                    <li class="input-row input-text">
+                        <p><?php _e("Descripción","hc") ?></p>
+                        <input data-hc-setting="description" placeholder="Ingrese una descripción" type="text">
+                    </li>
+                </ul>
+            </div>
+            <input data-hc-setting="link" class="input-link" placeholder="<?php _e("Link","hc") ?>" type="text" value="" /> 
+            <!-- TODO programar el evento onblur(cuando pierde el foco) asociado al botón guardar -->
+            <a class="preview button link-content-btn" href="#" ><?php _e("Edit content","hc") ?></a>
         </div>
         <div class="clear"></div>
         <div class="link-content css-box-popup">

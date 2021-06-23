@@ -683,7 +683,8 @@ COMPOSER POPOVER BOXES
         <ul class="list scroll-content <?php echo $icons_family ?>" data-height="210" data-options="wheelStep:2"><?php echo $html ?></ul>
         <div class="clear"></div>
         <hr class="space s" />
-        <a class="button button-primary button-large popover-icon-save"><?php _e("GUARDAR CAMBIOS","hc") ?></a>
+        <!-- TODO -->
+        <a class="button button-primary button-large popover-icon-save barbs" onclick="validar('<?php echo $idlink?>')"><?php _e("GUARDAR CAMBIOS","hc") ?></a>
     </div>
     <div id="popover-box-icons-wp" class="popover-box popover-icon search-filter" data-search-class="sch" style="display: none">
         <span class="close-button"></span>
