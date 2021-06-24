@@ -697,11 +697,9 @@ COMPOSER POPOVER BOXES
         <span class="close-button"></span>
         <ul class="list"></ul>
         <div class="clear"></div>
-        <?php echo "echo1"?>
         <?php echo '<script type="text/javascript">'
             , 'console.log("elemento");'
             , '</script>' ?>
-        <?php echo "echo2"?>
         <a class="button button-primary button-large popover-inner-save" onclick="pop(this.parentNode)" onblur="alert('holaaaa')"> <?php _e("GUARDAR CAMBIOS","hc") ?></a>
         <script>
             function pop(button) {
