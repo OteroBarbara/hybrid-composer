@@ -51,7 +51,7 @@
             <i class="button-icon input-row upload-hc-button icon-link" data-value=""></i>
             <div class="button-inner-options" data-width="315">
                 <i class="button-icon input-row icon-gear-setting-2"></i>
-                <ul>
+                <ul barbs="<?php echo $idlink ?>">
                     <li class="input-row input-select">
                         <p><?php _e("Lightbox animation","hc") ?></p>
                         <select data-hc-setting="lightbox_animation" class="animations-list">
@@ -77,8 +77,8 @@
                 </ul>
             </div>
             <input data-hc-setting="link" class="input-link" placeholder="<?php _e("Link","hc") ?>" type="text" value="" /> 
-            <!-- TODO programar el evento onblur(cuando pierde el foco) asociado al botón guardar -->
-            <a class="preview button link-content-btn" href="#"  onclick="validar('<?php echo $idlink?>')"><?php _e("Edit content","hc") ?></a>
+
+            <a class="preview button link-content-btn" href="#"><?php _e("Edit content","hc") ?></a>
         </div>
         <div class="clear"></div>
         <div class="link-content css-box-popup">
@@ -104,11 +104,12 @@
                     </div>
                 </div>
             </div>
-            <a class="button button-primary button-large save-button-css-box"  onclick="validar('<?php echo $idlink?>')"><?php _e("SAVE","hc") ?></a>
+            <!-- onclick="validar('<//?php echo $idlink?>')" -->
+            <a class="button button-primary button-large save-button-css-box"><?php _e("SAVE","hc") ?></a>
         </div>
     </div>
     <?php } ?>
-    <?php function hc_get_link_engine() { echo $idlink; echo "Hola :D";?>
+    <?php function hc_get_link_engine() { ?>
     <div class="hc-link">
         <div class="input-text input-row link-field">
             <select data-hc-setting="link_type" class="link-type" data-require-file="yes">
@@ -145,7 +146,7 @@
                 </ul>
             </div>
             <input data-hc-setting="link" class="input-link" placeholder="<?php _e("Link","hc") ?>" type="text" value="" /> 
-            <!-- TODO programar el evento onblur(cuando pierde el foco) asociado al botón guardar -->
+            
             <a class="preview button link-content-btn" href="#" ><?php _e("Edit content","hc") ?></a>
         </div>
         <div class="clear"></div>

@@ -683,8 +683,7 @@ COMPOSER POPOVER BOXES
         <ul class="list scroll-content <?php echo $icons_family ?>" data-height="210" data-options="wheelStep:2"><?php echo $html ?></ul>
         <div class="clear"></div>
         <hr class="space s" />
-        <!-- TODO -->
-        <a class="button button-primary button-large popover-icon-save barbs" onclick="validar('<?php echo $idlink?>')"><?php _e("GUARDAR CAMBIOS","hc") ?></a>
+        <a class="button button-primary button-large popover-icon-save"><?php _e("GUARDAR CAMBIOS","hc") ?></a>
     </div>
     <div id="popover-box-icons-wp" class="popover-box popover-icon search-filter" data-search-class="sch" style="display: none">
         <span class="close-button"></span>
@@ -698,7 +697,19 @@ COMPOSER POPOVER BOXES
         <span class="close-button"></span>
         <ul class="list"></ul>
         <div class="clear"></div>
-        <a class="button button-primary button-large popover-inner-save"><?php _e("GUARDAR CAMBIOS","hc") ?></a>
+        <?php echo "echo1"?>
+        <?php echo '<script type="text/javascript">'
+            , 'console.log("elemento");'
+            , '</script>' ?>
+        <?php echo "echo2"?>
+        <a class="button button-primary button-large popover-inner-save" onclick="pop(this.parentNode)" onblur="alert('holaaaa')"> <?php _e("GUARDAR CAMBIOS","hc") ?></a>
+        <script>
+            function pop(button) {
+                var elementoId = button.childNodes[3].childNodes[9].childNodes[3].getAttribute("id").toString();
+                console.log(elementoId);
+                validar(elementoId);
+            }
+        </script>
     </div>
     <div id="popover-box-empty-big" class="popover-box popover-list" style="display: none">
         <span class="close-button"></span>
