@@ -17,8 +17,7 @@ var post_id; //gutenberg
 var update_interval; //gutenberg
 
 //Crear arreglo
-let frutas = [];
-console.log(frutas);
+let vectorAccesibilidad = [];
 
 
 (function($) {
@@ -1319,6 +1318,7 @@ console.log(frutas);
 
             //PUBLISH
             function pubblishHybridComposer(e, id) {
+                
                 if (isPostType) {
                     var name = $("#post-type-name").val();
                     $("#titlewrap #title").val(name);
@@ -1362,32 +1362,37 @@ console.log(frutas);
             if (is_gutenberg) {
                 //Publish new page
                 $(body).on("click", "#hc-publish", function(e) {
-                    $(this).addClass("is-busy");
-                    pubblishHybridComposer(e, "publish");
-                    jQuery.ajax({
-                        method: "POST",
-                        url: ajax_url,
-                        dataType: "json",
-                        data: {
-                            action: 'hc_ajax_publish',
-                            post_title: $(body).find(".main_title").val(),
-                            content: JSON.stringify(PAGE_CONTENT_ARR),
-                            post_type: getURLParameter("post_type")
-                        },
-                        async: true
-                    }).always(function(response) {
-                        if (response.responseText != "0") {
-                            var url = window.location.href;
-                            url = url.substr(0, url.indexOf("wp-admin"))
-                            document.location = url + "wp-admin/post.php?post=" + response + "&action=edit&lang=en";
-                        }
-                    });
+                    var a = evaluarVector();
+                    if (a == true) {
+                        $(this).addClass("is-busy");
+                        pubblishHybridComposer(e, "publish");
+                        jQuery.ajax({
+                            method: "POST",
+                            url: ajax_url,
+                            dataType: "json",
+                            data: {
+                                action: 'hc_ajax_publish',
+                                post_title: $(body).find(".main_title").val(),
+                                content: JSON.stringify(PAGE_CONTENT_ARR),
+                                post_type: getURLParameter("post_type")
+                            },
+                            async: true
+                        }).always(function(response) {
+                            if (response.responseText != "0") {
+                                var url = window.location.href;
+                                url = url.substr(0, url.indexOf("wp-admin"))
+                                document.location = url + "wp-admin/post.php?post=" + response + "&action=edit&lang=en";
+                            }
+                        });
+                    }else{
+                        faltaAccesibilidad();
+                    }
                 });
 
 
                 //Save updates
                 $(body).on("click", ".editor-post-publish-button", function(e) {
-                    var a = false;
+                    var a = evaluarVector();
                     if (a == true) {
                         if ($("#mode_button_hc select").val() != "classic") {
                             let publish_button = $(".editor-post-publish-button");
@@ -1432,22 +1437,7 @@ console.log(frutas);
                             showNoticeBox("", "");
                         });
                     } else {
-                        let mensaje = "Hay una falla de accesibilidad en los siguientes componentes, y se marcaran con ROJO: ";
-                        // acá hay que trabajar en las alertas.
-                        Object.entries(frutas).forEach(([key, value]) => {
-                            if ((value == "False") && (key != "_ID")) {
-                                console.log(key);
-                                mensaje += key.toString() + " ";
-                                var unElemento = document.getElementsByClassName('hc-cnt-component');
-                                for (let i = 0; i < unElemento.length; i++) {
-                                    let clave = unElemento[i].getAttribute('data-hc-id');
-                                    if (clave == key) {
-                                        unElemento[i].style.borderColor = 'Red';
-                                    }
-                                }
-                            };
-                        });
-                        alert(mensaje);
+                        faltaAccesibilidad();
                         $(body).on("click", "#hc-notice-box .notice-dismiss", function() {
                             showNoticeBox("", "dddd");
                         });
@@ -1715,18 +1705,60 @@ console.log(frutas);
     }
 }(jQuery));
 
+
 //FUNCTIONS
 
 //Función validación de accesibilidad
 function validar(idfruta){
-    console.log("pasa por acaaa - funcion validar");
     //TODO preguntar por campo description
     if(document.getElementById(idfruta).value == "") {
-        alert('No has escrito nada en la descripcion');
+        vectorAccesibilidad[idfruta] = "False";
+        if (idfruta != "_ID"){
+            var unElemento = document.getElementsByClassName('hc-cnt-component');
+            for (let i = 0; i < unElemento.length; i++) {
+                let clave = unElemento[i].getAttribute('data-hc-id');
+                if (clave == idfruta) {
+                    unElemento[i].style.borderColor = 'Red';
+                }
+            }
+        }
+        return false;
     }else {
-        frutas[idfruta] = "True";
+        vectorAccesibilidad[idfruta] = "True";
+        if (idfruta != "_ID"){
+            var unElemento = document.getElementsByClassName('hc-cnt-component');
+            for (let i = 0; i < unElemento.length; i++) {
+                let clave = unElemento[i].getAttribute('data-hc-id');
+                if (clave == idfruta) {
+                    unElemento[i].style.borderColor = 'Green';
+                }
+            }
+        }
+        return true;
     };
-    return;
+}
+
+//Función que evalúa el vector
+function evaluarVector(){
+    let aux = true;
+    Object.entries(vectorAccesibilidad).forEach(([key, value]) => {
+        if ((!validar(key)) && (key != "_ID")) {
+            aux = false;
+        }
+    });
+    return aux;
+};
+
+function faltaAccesibilidad() {
+    let mensaje = "Hay una falla de accesibilidad en los siguientes componentes, y se marcaran con ROJO: ";
+    // acá hay que trabajar en las alertas.
+    Object.entries(vectorAccesibilidad).forEach(([key, value]) => {
+        if ((value == "False") && (key != "_ID")) {
+            mensaje += key.toString() + " ";
+        }
+
+    });
+    alert(mensaje);
 }
 
 function generatePageContentArr() {

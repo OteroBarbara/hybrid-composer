@@ -40,7 +40,7 @@
 // =============================================================================
 ?>
 
-<div id="cnt_hc_link"><?php function hc_get_link($idlink) { echo $idlink;?>
+<div id="cnt_hc_link"><?php function hc_get_link($idlink) { ?>
     <div class="hc-link">
         <div class="input-text input-row link-field">
             <select data-hc-setting="link_type" class="link-type" data-require-file="yes">

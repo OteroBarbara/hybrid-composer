@@ -697,17 +697,7 @@ COMPOSER POPOVER BOXES
         <span class="close-button"></span>
         <ul class="list"></ul>
         <div class="clear"></div>
-        <?php echo '<script type="text/javascript">'
-            , 'console.log("elemento");'
-            , '</script>' ?>
-        <a class="button button-primary button-large popover-inner-save" onclick="pop(this.parentNode)" onblur="alert('holaaaa')"> <?php _e("GUARDAR CAMBIOS","hc") ?></a>
-        <script>
-            function pop(button) {
-                var elementoId = button.childNodes[3].childNodes[9].childNodes[3].getAttribute("id").toString();
-                console.log(elementoId);
-                validar(elementoId);
-            }
-        </script>
+        <a class="button button-primary button-large popover-inner-save"> <?php _e("GUARDAR CAMBIOS","hc") ?></a>
     </div>
     <div id="popover-box-empty-big" class="popover-box popover-list" style="display: none">
         <span class="close-button"></span>
