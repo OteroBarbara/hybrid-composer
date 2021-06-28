@@ -1738,6 +1738,7 @@ function validar(idfruta){
     };
 }
 
+
 //Función que evalúa el vector
 function evaluarVector(){
     let aux = true;
