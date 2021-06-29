@@ -160,6 +160,11 @@
 </div>
 <div id="cnt_hc_image">
     <div data-hc-id="_ID" data-hc-component="hc_image" data-hc-setting="main_content" class="hc-image-box hc-image hc-cnt-component">
+        <script> 
+            vectorAccesibilidad["_ID"] = "False";
+            var id= "_ID";
+            console.log("id:" + id);
+        </script>
         <?php hc_e_composer_item_menu("Image") ?>
         <div class="upload-box upload-row full-input">
             <span class="close-button"></span>
