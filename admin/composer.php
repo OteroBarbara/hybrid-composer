@@ -76,10 +76,10 @@ function hc_thumb_sizes() {
 ?>
 <option value="full">Original</option>
 <option value="hd">HD</option>
-<option value="ultra-large">Ultra large</option>
-<option selected value="large">Large</option>
-<option value="medium">Medium</option>
-<option value="thumbnail">Thumbnail</option>
+<option value="ultra-large">Ultra grande</option>
+<option selected value="large">Grande</option>
+<option value="medium">Mediano</option>
+<option value="thumbnail">Miniatura</option>
 <?php
 }
 function hc_e_composer_item_menu($name) {
