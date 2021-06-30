@@ -165,7 +165,7 @@
             var id= "_ID";
             console.log("id:" + id);
         </script>
-        <?php hc_e_composer_item_menu("Image") ?>
+        <?php hc_e_composer_item_menu("Imágen") ?>
         <div class="upload-box upload-row full-input">
             <span class="close-button"></span>
             <div class="upload-container">
@@ -177,7 +177,7 @@
             <ul>
                 <li class="input-row input-text">
                     <p><?php _e("Alt text","hc") ?></p>
-                    <input type="text" placeholder="Descripción de la imagen" data-hc-setting="alt" />
+                    <input id="_ID" type="text" placeholder="Descripción de la imagen" data-hc-setting="alt" />
                 </li>
                 <li>
                     <p>*Describe el propósito de la imagen: Escribe de forma clara, breve y concisa el contenido principal 

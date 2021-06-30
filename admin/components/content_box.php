@@ -13,7 +13,7 @@
 //   03. NICHE CONTENT BOX TESTIMONIALS - Documentation and demo: framework-y.com/components/content-box.html#niche-box
 //   04. NICHE CONTENT BOX TEAM - Documentation and demo: framework-y.com/components/content-box.html#niche-box
 //   05. NICHE CONTENT BOX PRICING TABLES - Documentation and demo: framework-y.com/components/content-box.html#niche-box
-//   06. NICHE CONTENT BOX CALL TO ACTION - Documentation and demo: framework-y.com/components/content-box.html#niche-box
+//   06. BOTON LENGUA DE SEÑAS - Documentation and demo: framework-y.com/components/content-box.html#niche-box
 // =============================================================================
 ?>
 <div id="cnt_hc_content_box">
@@ -364,9 +364,16 @@
         <div>
         <?php hc_get_link("_ID"); ?>
         <p>
-             
-        *Aquí puedes enlazar a una plataforma de videoconferencia para interpretación en tiempo real (ejemplo: Zoom o Skype) o enlazar a un contenido de vídeo en Lengua de Señas pre grabado (Ejemplo: YouTube o Google Drive).
+        *Aquí puedes enlazar a los usuarios con discapacidad auditiva a una interpretación del contenido en la Lengua de Señas de su país a través de:
         </p>
+        <ol>
+            <li>
+            Una plataforma de videoconferencia con un intérprete en tiempo real (ejemplo: Zoom o Skype)
+            </li>
+            <li>
+            Un contenido de video pre grabado y alojado en un servicio de streaming o en la nube (ejemplo: YouTube o Google Drive).
+            </li>
+
         </div>
     </div>
 </div>
