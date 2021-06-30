@@ -177,11 +177,20 @@
             <ul>
                 <li class="input-row input-text">
                     <p><?php _e("Alt text","hc") ?></p>
-                    <input type="text" placeholder="Texto alternativo de la imagen" data-hc-setting="alt" />
-                    <p>Describe el propósito de la imagen. Déjalo vacío si la imagen es puramente decorativa.</p>
+                    <input type="text" placeholder="Descripción de la imagen" data-hc-setting="alt" />
                 </li>
+                <li>
+                    <p>*Describe el propósito de la imagen: Escribe de forma clara, breve y concisa el contenido principal 
+                    de la imagen<br>(150 caracteres máximo).</p>
+                </li>
+                <li>
+                    <p>Los textos alternativos permiten que usuarios con 
+                    discapacidad visual puedan acceder al contenido de las imágenes mediante el uso de sistemas de lectores de pantalla.</p>
+                </li>
+                <li></li>
                 <li class="input-row input-select">
-                    <p><?php _e("Image size","hc") ?></p>
+                    <!-- <p><?php _e("Image size","hc") ?></p> -->
+                    <p>Tamaño de imagen</p>
                     <select data-hc-setting="thumb_size">
                         <?php hc_thumb_sizes(); ?>
                     </select>
