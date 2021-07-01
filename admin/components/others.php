@@ -40,7 +40,8 @@
 // =============================================================================
 ?>
 
-<div id="cnt_hc_link"><?php function hc_get_link($idlink) { git ?>
+
+<div id="cnt_hc_link"><?php function hc_get_link($idlink) { ?>
     <div class="hc-link">
         <div class="input-text input-row link-field">
             <select data-hc-setting="link_type" class="link-type" data-require-file="yes">
@@ -51,7 +52,7 @@
             <i class="button-icon input-row upload-hc-button icon-link" data-value=""></i>
             <div class="button-inner-options" data-width="315">
                 <i class="button-icon input-row icon-gear-setting-2"></i>
-                <ul barbs="<?php echo $idlink ?>">
+                <ul list="<?php echo $idlink ?>">
                     <li class="input-row input-select">
                         <p><?php _e("Lightbox animation","hc") ?></p>
                         <select data-hc-setting="lightbox_animation" class="animations-list">
@@ -262,7 +263,12 @@
 </div>
 <div id="cnt_hc_button">
     <div data-hc-id="_ID" data-hc-component="hc_button" data-hc-setting="main_content" class="hc-button hc-cnt-component">
-        <?php hc_e_composer_item_menu("Button") ?>
+    <script> 
+            vectorAccesibilidad["_ID"] = "False";
+            var id= "_ID";
+            console.log("id:" + id);
+        </script>
+        <?php hc_e_composer_item_menu("Botón") ?>
         <div class="flex-box">
             <i class="input-row button-icon button-icons-list icon-plus-add-2" data-hc-setting="icon" data-hc-component="value" data-value=""></i>
             <div class="button-inner-options">
@@ -303,19 +309,19 @@
                 </ul>
             </div>
             <div class="input-text input-row full-only-input">
-                <input data-hc-setting="text" placeholder="<?php _e("Button text","hc") ?>" type="text" value="" />
+                <input data-hc-setting="text" placeholder="Ingrese el texto del botón aquí" type="text" value="" />
             </div>
         </div>
 
-        <?php hc_get_link_engine(); ?>
+        <?php hc_get_link("_ID"); ?>
     </div>
 </div>
 <div id="cnt_hc_title_tag">
     <div data-hc-id="_ID" data-hc-component="hc_title_tag" data-hc-setting="main_content" class="hc-title-tag hc-cnt-component">
-        <?php hc_e_composer_item_menu("Title H1-H6") ?>
+        <?php hc_e_composer_item_menu("Título H1-H6") ?>
         <div class="flex-box">
             <div class="input-text input-row full-only-input">
-                <input placeholder="<?php _e("Title","hc") ?>" data-hc-setting="text" type="text" value="" />
+                <input placeholder="Inglese el título aquí." data-hc-setting="text" type="text" value="" />
             </div>
             <div class="input-row input-select only-input" style="min-width: 60px;">
                 <select data-hc-setting="tag">
@@ -2097,9 +2103,9 @@
 </div>
 <div id="cnt_hc_text_block">
     <div data-hc-id="_ID" data-hc-component="hc_text_block" data-hc-setting="main_content" class="hc-text-block hc-cnt-component">
-        <?php hc_e_composer_item_menu("Text block") ?>
+        <?php hc_e_composer_item_menu("Bloque de texto") ?>
         <div class="input-text-area input-row full-input only-input">
-            <textarea data-hc-setting="content" placeholder="..."></textarea>
+            <textarea data-hc-setting="content" placeholder="Escribe el texto aqui."></textarea>
         </div>
     </div>
 </div>

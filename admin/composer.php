@@ -706,6 +706,7 @@ COMPOSER POPOVER BOXES
         <a class="button button-primary button-large popover-inner-save popover-big-inner-save"><?php _e("GUARDAR CAMBIOS","hc") ?></a>
     </div>
 </div>
+
 <!--
 OTHERS
 =============================================================================
