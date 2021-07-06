@@ -11,7 +11,7 @@
 //   01. IMAGE BOX - Documentation and demo: framework-y.com/components/image-box.html
 //   02. ADVANCED IMAGE BOX - Documentation and demo: framework-y.com/components/image-box.html#advanced-image-box
 //   03. IMAGE - Static image
-// =============================================================================
+// ============================================================================
 ?>
 <div id="cnt_hc_image_box">
     <div data-hc-id="_ID" data-hc-component="hc_image_box" data-hc-setting="main_content" class="hc-image-box hc-cnt-component">
