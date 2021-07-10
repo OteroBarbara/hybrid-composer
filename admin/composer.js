@@ -1711,6 +1711,9 @@ let vectorAccesibilidad = [];
 //Función validación de accesibilidad
 function validar(idfruta){
     //TODO preguntar por campo description
+    if(!document.getElementById(idfruta)){
+        return true;
+    }else
     if(document.getElementById(idfruta).value == "") {
         vectorAccesibilidad[idfruta] = "False";
         if (idfruta != "_ID"){
@@ -1737,7 +1740,12 @@ function validar(idfruta){
         return true;
     };
 }
-
+//funcion que elimina un elemento del vector
+function quitarElemento(id){
+    console.log(id);
+    //vectorAccesibilidad.splice(id,1);
+    delete vectorAccesibilidad[id];
+}
 
 //Función que evalúa el vector
 function evaluarVector(){

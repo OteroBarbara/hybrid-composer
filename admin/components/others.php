@@ -268,7 +268,7 @@
             var id= "_ID";
             console.log("id:" + id);
         </script>
-        <?php hc_e_composer_item_menu("Botón") ?>
+        <?php hc_item_menu_accesible("Botón", "_ID") ?>
         <div class="flex-box">
             <i class="input-row button-icon button-icons-list icon-plus-add-2" data-hc-setting="icon" data-hc-component="value" data-value=""></i>
             <div class="button-inner-options">

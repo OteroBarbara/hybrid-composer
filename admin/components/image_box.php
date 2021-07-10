@@ -18,7 +18,7 @@
         <input type="hidden" class="file_require" value="lightbox">
         <?php hc_e_composer_item_menu("Image box") ?>
         <div class="upload-box upload-row full-input">
-            <span class="close-button"></span>
+            <span onclick="quitarElemento('_ID')" class="close-button"></span>
             <div class="upload-container">
                 <div data-hc-setting="image" data-hc-component="upload" data-upload-link="" data-upload-height="" data-upload-width="" class="upload-btn upload-img-box"></div>
             </div>
