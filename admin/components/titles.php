@@ -20,16 +20,17 @@
 
 <div id="cnt_hc_title">
     <div data-hc-id="main-title" data-hc-component="hc_title" id="main-title" class="hc-title">
-        <input class="main_title" data-hc-setting="title" type="text" placeholder="<?php esc_attr_e("...","hc") ?>" value="<?php echo get_the_title() ?>" /><!--gutenberg-->
-        <input class="main_subtitle" data-hc-setting="subtitle" type="text" placeholder="<?php esc_attr_e("...","hc") ?>" value="" /><!--gutenberg-->
+        <p>*Aquí puedes diseñar el encabezado de tu sitio web</p>
+        <input class="main_title" data-hc-setting="title" type="text" placeholder="<?php esc_attr_e("Título para el encabezado","hc") ?>" value="<?php echo get_the_title() ?>" /><!--gutenberg-->
+        <input class="main_subtitle" data-hc-setting="subtitle" type="text" placeholder="<?php esc_attr_e("Subtítulo del encabezado","hc") ?>" value="" /><!--gutenberg-->
         <div id="title-tab" class="tab-box inverse tab-wp">
             <div class="panel active">
                 <div data-hc-setting="title_content" class="row"></div>
                 <div class="clear"></div>
             </div>
             <ul class="nav nav-tabs">
-                <li class="tab-title-image"><a href="#hc_title_image"><?php esc_attr_e("Image","hc") ?></a></li>
-                <li class="tab-title-empty"><a href="#hc_title_empty"><?php esc_attr_e("Empty","hc") ?></a></li>
+                <li class="tab-title-image"><a href="#hc_title_image"><?php esc_attr_e("Encabezado con imagen","hc") ?></a></li>
+                <li class="tab-title-empty"><a href="#hc_title_empty"><?php esc_attr_e("Encabezado vacío","hc") ?></a></li>
             </ul>
             <div class="clear"></div>
             <div id="hc-permalink"></div>

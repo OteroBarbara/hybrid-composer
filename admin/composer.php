@@ -183,6 +183,7 @@ COMPOSER CONTENT CONTAINER
 -->
 <div id="hybrid_composer_content">
 </div>
+<p>*Aquí  puedes diseñar el contenido de tu sitio web. Selecciona la cantidad de columnas para comenzar.</p>
 <div class="clear"></div>
 <div class="hc-start-button">
     <table>
