@@ -353,26 +353,46 @@
          </script>
         <input type="hidden" class="file_require" value="content_box">
         <?php hc_item_menu_accesible("Botón de acceso a interpretación en Lengua de Señas.", "_ID") ?>
-        <div class="flex-box">
+        <!-- <div class="flex-box">
         <div class="input-row input-select">
-                        <p><?php _e("Elige aquí el tipo de interpretación en Lengua de Señas:","hc") ?></p>
+                        <p>
+                            <?php// _e("Elige aquí el tipo de interpretación en Lengua de Señas:","hc") ?>
+                        </p>
                         <select data-hc-setting="button_text" class="animations-list">
-                            <?php hc_html_interpretionLS(); ?>
+                            <?php// hc_html_interpretionLS(); ?>
                         </select>                
         </div>          
-        </div>
+        </div> -->
         <div>
         <?php hc_get_link("_ID"); ?>
         <p>
-        *Aquí puedes enlazar a los usuarios con discapacidad auditiva a una interpretación del contenido en la Lengua de Señas de su país a través de:
+        *Aquí puedes enlazar a los usuarios con discapacidad auditiva a una interpretación del contenido en la Lengua de Señas de su país a través de una plataforma de videoconferencia con un intérprete en tiempo real (ejemplo: Zoom o Skype)
         </p>
-        <ol>
-            <li>
-            Una plataforma de videoconferencia con un intérprete en tiempo real (ejemplo: Zoom o Skype)
-            </li>
-            <li>
-            Un contenido de video pre grabado y alojado en un servicio de streaming o en la nube (ejemplo: YouTube o Google Drive).
-            </li>
+
+        </div>
+    </div>
+</div>
+
+<div id="cnt_hc_niche_content_box_call2">
+    <div data-hc-id="_ID" data-hc-component="hc_niche_content_box_call" data-hc-setting="main_content" class="hc-content-box hc-call-content-box hc-cnt-component">
+         <script> 
+         vectorAccesibilidad["_ID"] = "False";
+         </script>
+        <input type="hidden" class="file_require" value="content_box">
+        <?php hc_item_menu_accesible("Botón de acceso a interpretación en Lengua de Señas.", "_ID") ?>
+        <!-- <div class="flex-box">
+        <div class="input-row input-select">
+                        <p><?php// _e("Elige aquí el tipo de interpretación en Lengua de Señas:","hc") ?></p>
+                        <select data-hc-setting="button_text" class="animations-list">
+                            <?php// hc_html_interpretionLS(); ?>
+                        </select>                
+        </div>          
+        </div> -->
+        <div>
+        <?php hc_get_link("_ID"); ?>
+        <p>
+        *Aquí puedes enlazar a los usuarios con discapacidad auditiva a una interpretación del contenido en la Lengua de Señas de su país a través de un contenido de video pre grabado y alojado en un servicio de streaming o en la nube (ejemplo: YouTube o Google Drive).
+        </p>
 
         </div>
     </div>
