@@ -353,16 +353,13 @@
          </script>
         <input type="hidden" class="file_require" value="content_box">
         <?php hc_item_menu_accesible("Botón de acceso a interpretación en Lengua de Señas.", "_ID") ?>
-        <!-- <div class="flex-box">
+        <div class="flex-box">
         <div class="input-row input-select">
-                        <p>
-                            <?php// _e("Elige aquí el tipo de interpretación en Lengua de Señas:","hc") ?>
-                        </p>
                         <select data-hc-setting="button_text" class="animations-list">
-                            <?php// hc_html_interpretionLS(); ?>
+                            <?php hc_html_interpretionLS(); ?>
                         </select>                
         </div>          
-        </div> -->
+        </div>
         <div>
         <?php hc_get_link("_ID"); ?>
         <p>
@@ -380,20 +377,24 @@
          </script>
         <input type="hidden" class="file_require" value="content_box">
         <?php hc_item_menu_accesible("Botón de acceso a interpretación en Lengua de Señas.", "_ID") ?>
-        <!-- <div class="flex-box">
+        <div class="flex-box">
         <div class="input-row input-select">
-                        <p><?php// _e("Elige aquí el tipo de interpretación en Lengua de Señas:","hc") ?></p>
                         <select data-hc-setting="button_text" class="animations-list">
-                            <?php// hc_html_interpretionLS(); ?>
+                            <?php hc_html_interpretionLS_2(); ?>
                         </select>                
         </div>          
-        </div> -->
+        </div>
         <div>
         <?php hc_get_link("_ID"); ?>
         <p>
         *Aquí puedes enlazar a los usuarios con discapacidad auditiva a una interpretación del contenido en la Lengua de Señas de su país a través de un contenido de video pre grabado y alojado en un servicio de streaming o en la nube (ejemplo: YouTube o Google Drive).
         </p>
-
+        <p>
+       *Asegúrate de subir un material de buena calidad, que permita ver de forma correcta el movimiento de las manos y la expresión facial de la intérprete.
+       </p>
+       <p>
+       *El video debe contar con subtítulos.
+       </p>
         </div>
     </div>
 </div>

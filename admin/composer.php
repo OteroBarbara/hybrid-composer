@@ -54,12 +54,16 @@ function hc_html_animations() {
 <option value="rotate-20">Rotate 20</option>
 <?php
 }
-/* function hc_html_interpretionLS() {
+function hc_html_interpretionLS() {
+    ?>
+    <option selected="selected" value="Contactar a Intérprete de Lengua de Señas Uruguaya (LSU).">Interpretación en tiempo real mediante plataforma de videoconferencia.</option>
+    <?php
+    }
+function hc_html_interpretionLS_2() {
     ?>
     <option selected="selected" value="Acceder a la versión en Lengua de Señas Uruguaya (LSU).">Video con la interpretación a Lengua de Señas correspondiente.</option>
-    <option value="Contactar a Intérprete de Lengua de Señas Uruguaya (LSU).">Interpretación en tiempo real mediante plataforma de videoconferencia.</option>
     <?php
-    } */
+    }
 function hc_html_image_animations() {
 ?>
 <option selected="selected" value="">None</option>
@@ -319,47 +323,47 @@ COMPOSER POPOVER BOXES
                         <span class="sch"><?php _e("Breadcrumbs","hc") ?></span>
                     </div>
                 </li>
-                <li class="li-container component-hc-image-slider">
+                <!-- <li class="li-container component-hc-image-slider">
                     <div class="component-box" data-hc-target="hc_image_slider">
                         <i class="icon-icomoon-20"></i>
-                        <span class="sch"><?php _e("Image slider","hc") ?></span>
+                        <span class="sch"><?php /* _e("Image slider","hc") */ ?></span>
                     </div>
                 </li>
                 <li class="li-container component-hc-image-coverflow">
                     <div class="component-box" data-hc-target="hc_image_coverflow">
                         <i class="icon-icomoon-46"></i>
-                        <span class="sch"><?php _e("Image Coverflow","hc") ?></span>
+                        <span class="sch"><?php /* _e("Image Coverflow","hc") */ ?></span>
                     </div>
                 </li>
                 <li class="li-container component-hc-masonry-list">
                     <div class="component-box" data-hc-target="hc_masonry_list">
                         <i class="icon-icomoon-48"></i>
-                        <span class="sch"><?php _e("Masonry list","hc") ?></span>
+                        <span class="sch"><?php /* _e("Masonry list","hc") */ ?></span>
                     </div>
                 </li>
                 <li class="li-post-type component-hc-pt-masonry-list">
                     <div class="component-box" data-hc-target="hc_pt_grid_list">
                         <i class="icon-icomoon-48"></i>
-                        <span class="sch"><?php _e("Grid list","hc") ?></span>
+                        <span class="sch"><?php/*  _e("Grid list","hc") */ ?></span>
                     </div>
                 </li>
                 <li class="li-post-type component-hc-pt-slider">
                     <div class="component-box" data-hc-target="hc_pt_slider">
                         <i class="icon-icomoon-20"></i>
-                        <span class="sch"><?php _e("Slider","hc") ?></span>
+                        <span class="sch"><?php /* _e("Slider","hc") */ ?></span>
                     </div>
-                </li>
-                <li class="divider li-component"><?php _e("Componentes de accesibilidad","hc") ?></li>
+                </li> -->
+                <li class="divider li-component"><?php _e("Herramientas de accesibilidad","hc") ?></li>
                 <li class="li-component component-hc-niche-content-box-call">
                     <div class="component-box" data-hc-target="hc_niche_content_box_call">
                         <i class="icon-icomoon-17"></i>
-                        <span class="sch"><?php _e("Intérprete en LS - tiempo real","hc") ?></span>
+                        <span class="sch"><?php _e("Intérprete en Lengua de Señas - online","hc") ?></span>
                     </div>
                 </li>
                 <li class="li-component component-hc-niche-content-box-call">
                     <div class="component-box" data-hc-target="hc_niche_content_box_call2">
                         <i class="icon-icomoon-17"></i>
-                        <span class="sch"><?php _e("Intérprete en LS - video","hc") ?></span>
+                        <span class="sch"><?php _e("Intérprete en Lengua de Señas - video","hc") ?></span>
                     </div>
                 </li>
                 <!--COLUMNS-->
