@@ -334,9 +334,6 @@
     <div data-hc-id="_ID" data-hc-component="hc_title_tag" data-hc-setting="main_content" class="hc-title-tag hc-cnt-component">
         <?php hc_e_composer_item_menu("Título H1-H6") ?>
         <div class="flex-box">
-            <div class="input-text input-row full-only-input">
-                <input placeholder="Ingrese el título aquí." data-hc-setting="text" type="text" value="" />
-            </div>
             <div class="button-inner-options" data-width="315">
                 <i class="button-icon input-row icon-gear-setting-2"></i>
                 <ul>
@@ -348,6 +345,9 @@
                         </p>
                     </li>
                 </ul>
+            </div>
+            <div class="input-text input-row full-only-input">
+                <input placeholder="Ingrese el título aquí." data-hc-setting="text" type="text" value="" />
             </div>
             <div class="input-row input-select only-input" style="min-width: 60px;">
                 <select data-hc-setting="tag">
@@ -477,8 +477,6 @@
 <div id="cnt_hc_icon_list_simple">
     <div data-hc-id="_ID" data-hc-component="hc_icon_list_simple" data-hc-setting="main_content" class="hc-icon-list-simple hc-cnt-component">
         <?php hc_e_composer_item_menu("Icon list") ?>
-        <p>Seleccionarla el botón con el icono de la red social a la cual quieres redirigir a los visitantes. </p>
-        <p>*Recuerda: debes insertar la URL del perfil social al cual se hace referencia en el botón.</p></p>
         <div class="input-text input-row input-repeater" data-value="">
             <div class="repeater-source">
                 <div class="flex-box">
@@ -528,6 +526,16 @@
 <div id="cnt_hc_icon_links">
     <div data-hc-id="_ID" data-hc-component="hc_icon_links" data-hc-setting="main_content" class="hc-icon-links hc-cnt-component">
         <?php hc_e_composer_item_menu("Icon links") ?>
+        <div class="button-inner-options" data-width="315">
+            <i class=" input-row icon-gear-setting-2"></i>
+            <ul>
+                <li>
+                    <h2>Enlace de iconos</h2>
+                    <p>Seleccionar el botón con el icono del enlace al cual quieres redirigir a los visitantes. Puede ser útil para enlazar redes sociales.</p>
+        	    <p>*Recuerda: Debes insertar la URL del perfil al cual se hace referencia en el botón.</p>
+                </li>
+            </ul>
+        </div>
         <div class="input-text input-row input-repeater" data-value="">
             <div class="repeater-source">
                 <div class="flex-box">
@@ -1316,6 +1324,16 @@
 <div id="cnt_hc_quote">
     <div data-hc-id="_ID" data-hc-component="hc_quote" data-hc-setting="main_content" class="hc-quote hc-cnt-component">
         <?php hc_e_composer_item_menu("Quote") ?>
+        <div class="button-inner-options" data-width="315">
+            <i class=" input-row icon-gear-setting-2"></i>
+            <ul>
+                <li>
+                    <h2>Cita</h2>
+                    <p>Aplica este formato para ajustar y entrecomillar correctamente cualquier texto que no sea de tu autoría para que aparezca como una cita en tu contenido de texto
+                    </p>
+                </li>
+            </ul>
+        </div>
         <div class="input-text-area input-row full-input only-input">
             <textarea data-hc-setting="text" placeholder="<?php _e("Text ...","hc") ?>"></textarea>
         </div>
