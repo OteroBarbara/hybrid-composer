@@ -48,7 +48,7 @@
         </div>
         <div class="section-content">
             <div data-hc-setting="section_content" data-hc-id="section_content" data-hc-container="repeater" class="row">
-                <!--section-content-start-->
+                <!--sección-contenido-inicio-->
                 <div class="clear"></div>
                 <div title="Add section component" class="hc-add-component hc-type-section"><i class="icon-plus-add-2"></i></div>
             </div>
@@ -59,11 +59,7 @@
                         <div class="clear"></div>
                     </div>
                     <ul class="nav nav-tabs">
-                        <li class="sec-tab-empty active"><a href="#"><?php _e("Empty","hc") ?></a></li>
-                        <li class="tab-panel-image"><a href="#hc_section_image"><?php _e("Image","hc") ?></a></li>
-                        <li class="tab-panel-slider"><a href="#hc_section_slider"><?php _e("Slider","hc") ?></a></li>
-                        <li class="tab-panel-video"><a href="#hc_section_video"><?php _e("Video","hc") ?></a></li>
-                        <li class="tab-panel-animation"><a href="#hc_section_animation"><?php _e("Animation","hc") ?></a></li>
+                        <li class="sec-tab-empty active"><a href="#"><?php _e("Fondo vacío","hc") ?></a></li>
                     </ul>
                     <div class="clear"></div>
                 </div>
@@ -146,6 +142,7 @@
             </div>
         </div>
         <hr class="space s" />
+        ppppp
         <div class="input-checkbox input-row">
             <p><?php _e("Fullscreen","hc") ?></p>
             <input data-hc-setting="full_screen" type="checkbox">

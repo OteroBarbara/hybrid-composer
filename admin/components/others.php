@@ -229,6 +229,20 @@
                 <input data-hc-setting="link" class="input-link" placeholder="<?php _e("Youtube or MP4 link","hc") ?>" type="text" value="">
                 <i class="button-icon input-row upload-hc-button icon-link" data-value=""></i>
             </div>
+        <div class="button-inner-options" data-width="315">
+            <i class="button-icon input-row icon-gear-setting-2"></i>
+            <ul>
+                <li>
+                    <h2>Botón Video</h2>
+                    <p>Recuerda que tus contenidos deben ser accesibles, en el caso de un video asegúrate de que tenga intérprete de Lengua de Señas, subtítulos y audiodescripción.</p>
+                    <p><strong>Intérprete: </strong>Ubicada del lado inferior derecho (desde el espectador) con un tamaño mínimo de 1/8 de la pantalla.</p>
+                    <p><strong>Subtitulado: </strong>Letra con igual o superior 16 puntos. Tipografía Sin serif. Deben convivir con la intérprete de Lengua de Señas.</p>
+                    <p><strong>Audiodescripción: </strong>Herramienta para describir la información visual, en formato de audio.Se audiodescriben los contenidos de las imágenes: logos y créditos, tiempo (cuándo), espacio (dónde), personajes (quién) y acciones (qué).</p>                    
+                    <p>Por más información:</p>
+                    <a href="#">Haz clic aquí</a>
+                </li>
+            </ul>
+         </div>
             <div class="button-inner-options">
                 <i class="button-icon input-row icon-gear-setting-2"></i>
                 <ul>
@@ -321,7 +335,19 @@
         <?php hc_e_composer_item_menu("Título H1-H6") ?>
         <div class="flex-box">
             <div class="input-text input-row full-only-input">
-                <input placeholder="Inglese el título aquí." data-hc-setting="text" type="text" value="" />
+                <input placeholder="Ingrese el título aquí." data-hc-setting="text" type="text" value="" />
+            </div>
+            <div class="button-inner-options" data-width="315">
+                <i class="button-icon input-row icon-gear-setting-2"></i>
+                <ul>
+                    <li>
+                        <h2>Título</h2>
+                        <p>Escribe aquí el título que utilizarás como encabezado de tu contenido</p>
+                        <p>* Atención: es importante que tengas en cuenta si este título tiene un nivel de importancia principal o secundario en lo que quieres transmitir o, incluso, si tienes más de un título, cuál es el orden de los títulos en que los visitantes deben leer el contenido.
+                        Aquí debes indicar el nivel de importancia u orden de tu título en la escala de H1 (principal) a H6 (secundarios), según corresponda
+                        </p>
+                    </li>
+                </ul>
             </div>
             <div class="input-row input-select only-input" style="min-width: 60px;">
                 <select data-hc-setting="tag">
@@ -451,6 +477,8 @@
 <div id="cnt_hc_icon_list_simple">
     <div data-hc-id="_ID" data-hc-component="hc_icon_list_simple" data-hc-setting="main_content" class="hc-icon-list-simple hc-cnt-component">
         <?php hc_e_composer_item_menu("Icon list") ?>
+        <p>Seleccionarla el botón con el icono de la red social a la cual quieres redirigir a los visitantes. </p>
+        <p>*Recuerda: debes insertar la URL del perfil social al cual se hace referencia en el botón.</p></p>
         <div class="input-text input-row input-repeater" data-value="">
             <div class="repeater-source">
                 <div class="flex-box">
@@ -2104,6 +2132,17 @@
 <div id="cnt_hc_text_block">
     <div data-hc-id="_ID" data-hc-component="hc_text_block" data-hc-setting="main_content" class="hc-text-block hc-cnt-component">
         <?php hc_e_composer_item_menu("Bloque de texto") ?>
+        <div class="button-inner-options" data-width="315">
+                <i class="button-icon input-row icon-gear-setting-2"></i>
+                <ul>
+                    <li>
+                        <h2>Bloque de texto</h2>
+                        <p>Aquí debes insertar el contenido del texto que deseas publicar.</p>
+                        <p> *Recuerda: mientras más concreto sea el mensaje y el lenguaje que utilices sea más sencillo, mayor cantidad de personas podrán acceder, comprender y aprovechar al máximo tu contenido.
+                        </p>
+                    </li>
+                </ul>
+            </div>            
         <div class="input-text-area input-row full-input only-input">
             <textarea data-hc-setting="content" placeholder="Escribe el texto aqui."></textarea>
         </div>

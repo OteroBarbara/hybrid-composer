@@ -57,44 +57,11 @@
         <div class="button-inner-options" data-width="315">
             <i class="button-icon input-row icon-gear-setting-2"></i>
             <ul>
-                <li class="input-checkbox input-row">
-                    <p><?php esc_attr_e("Parallax","hc") ?></p>
-                    <input data-hc-setting="parallax" type="checkbox" data-require-file="parallax">
-                </li>
-                <li class="input-row input-text small-input" data-dependence-show="parallax">
-                    <p class="sch"><?php _e("Bleed","hc") ?></p>
-                    <input data-hc-setting="bleed" type="text" placeholder="70" data-mask="number" value="" />
-                </li>
-                <li class="input-select input-row">
-                    <p><?php esc_attr_e("Ken-burn animation","hc") ?></p>
-                    <select data-hc-setting="ken_burn" data-require="parallax">
-                        <option selected value=""><?php esc_attr_e("None","hc") ?></option>
-                        <option value="ken-burn"><?php esc_attr_e("Zoom in","hc") ?></option>
-                        <option value="ken-burn-out"><?php esc_attr_e("Zoom out","hc") ?></option>
-                        <option value="ken-burn-center"><?php esc_attr_e("Zoom centered","hc") ?></option>
-                    </select>
-                </li>
-                <li class="input-select input-row">
-                    <p><?php esc_attr_e("Overlay","hc") ?></p>
-                    <select data-hc-setting="overlay">
-                        <option selected value=""><?php esc_attr_e("None","hc") ?></option>
-                        <option value="dotted"><?php esc_attr_e("Dotted","hc") ?></option>
-                        <option value="line-45"><?php esc_attr_e("Line 45","hc") ?></option>
-                        <option value="carbonio"><?php esc_attr_e("Carbonio","hc") ?></option>
-                        <option value="tile"><?php esc_attr_e("Tile","hc") ?></option>
-                        <option value="transparent-dark"><?php esc_attr_e("Transparent dark","hc") ?></option>
-                        <option value="transparent-light"><?php esc_attr_e("Transparent light","hc") ?></option>
-                        <option value="tv"><?php esc_attr_e("Tv","hc") ?></option>
-                        <option value="squares"><?php esc_attr_e("Squares","hc") ?></option>
-                    </select>
-                </li>
-                <li class="input-checkbox input-row">
-                    <p><?php esc_attr_e("Breadcrumbs","hc") ?></p>
-                    <input data-hc-setting="breadcrumbs" type="checkbox">
-                </li>
-                <li class="input-checkbox input-row">
-                    <p><?php esc_attr_e("White","hc") ?></p>
-                    <input data-hc-setting="white" type="checkbox" checked>
+                <li>
+                    <h2>Botón encabezado</h2>
+                    <p>El lector de pantalla utilizado por personas ciegas identificará esta imagen como decorativa. En el caso de que la imagen contenga información, por favor asegúrate que la misma información se brinde en otro lugar de la nota. 
+                    Asegúrate que el contraste con el título sea suficiente para una correcta lectura.
+                    </p>
                 </li>
             </ul>
         </div>
