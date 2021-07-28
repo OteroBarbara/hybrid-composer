@@ -263,24 +263,24 @@ COMPOSER POPOVER BOXES
                         <span class="sch"><?php _e("Image","hc") ?></span>
                     </div>
                 </li>
-                <li class="li-component component-hc-image-box">
+                <!-- <li class="li-component component-hc-image-box">
                     <div class="component-box" data-hc-target="hc_image_box">
                         <i class="icon-icomoon-14"></i>
-                        <span class="sch"><?php _e("Image box","hc") ?></span>
+                        <span class="sch"><?php /* _e("Image box","hc") */ ?></span>
                     </div>
-                </li>
+                </li> -->
                 <li class="li-component component-hc-icon-links">
                     <div class="component-box" data-hc-target="hc_icon_links">
                         <i class="icon-icomoon-23"></i>
                         <span class="sch"><?php _e("Icon links","hc") ?></span>
                     </div>
                 </li>
-                <li class="li-component component-hc-google-map">
+                <!-- <li class="li-component component-hc-google-map">
                     <div class="component-box" data-hc-target="hc_google_map">
                         <i class="icon-icomoon-1"></i>
-                        <span class="sch"><?php _e("Google map","hc") ?></span>
+                        <span class="sch"><?php /* _e("Google map","hc") */ ?></span>
                     </div>
-                </li>
+                </li> -->
                 <li class="li-component component-hc-quote">
                     <div class="component-box" data-hc-target="hc_quote">
                         <i class="icon-icomoon-34"></i>
