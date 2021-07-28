@@ -283,6 +283,16 @@
             console.log("id:" + id);
         </script>
         <?php hc_item_menu_accesible("Botón", "_ID") ?>
+        <div class="button-inner-options" data-width="315">
+            <i class="button-icon input-row icon-gear-setting-2"></i>
+            <ul>
+                <li>
+                    <h2>Botón</h2>
+                    <p>Aplica este botón a la estructura o el contenido de tu sitio.</p>
+		            <p>*Recuerda: es importante que etiquetes apropiadamente a cada botón según su nombre o la función que ejecutará.</p>	
+                </li>
+            </ul>
+        </div>
         <div class="flex-box">
             <i class="input-row button-icon button-icons-list icon-plus-add-2" data-hc-setting="icon" data-hc-component="value" data-value=""></i>
             <div class="button-inner-options">
@@ -1383,6 +1393,16 @@
 <div id="cnt_hc_space">
     <div data-hc-id="_ID" data-hc-component="hc_space" data-hc-setting="main_content" class="hc-space hc-cnt-component">
         <?php hc_e_composer_item_menu("Space") ?>
+        <div class="button-inner-options" data-width="315">
+            <i class="button-icon input-row icon-gear-setting-2"></i>
+            <ul>
+                <li>
+                  <h2>Espacio</h2>
+                  <p>Utiliza este elemento para asignar el grado de separación que deseas mantener entre tus contenidos gráficos y de texto.</p>
+        	      <p>*Importante: este es un elemento únicamente de estructura, por lo cual, tan solo podrás utilizarlo para separar entre sí los contenidos a lo largo del sitio, en línea con el formato y diseño que ya esté aplicado.</p>
+                </li>
+            </ul>
+        </div>
         <div class="input-row input-select only-input">
             <select data-hc-setting="size">
                 <option selected value=""><?php _e("Space","hc") ?></option>
@@ -1406,6 +1426,15 @@
 <div id="cnt_hc_breadcrumbs">
     <div data-hc-id="_ID" data-hc-component="hc_breadcrumbs" data-hc-setting="main_content" class="hc-breadcrumbs hc-cnt-component">
         <?php hc_e_composer_item_menu("Breadcrumbs") ?>
+        <div class="button-inner-options" data-width="315">
+            <i class="button-icon input-row icon-gear-setting-2"></i>
+            <ul>
+                <li>
+                    <h2>Migas de pan</h2>
+                    <p>Utiliza esta herramienta de navegación simplificada para poner a disposición de los visitantes, de forma resumida, fácil acceso desde la parte superior o inferior de la página a los distintos segmentos del sitio.</p>
+                </li>
+            </ul>
+        </div>
         <div class="input-row input-select only-input">
             <select data-hc-setting="position">
                 <option value="text-left"><?php _e("Left","hc") ?></option>
@@ -1418,6 +1447,15 @@
 <div id="cnt_hc_table">
     <div data-hc-id="_ID" data-hc-component="hc_table" data-hc-setting="main_content" class="hc-table hc-cnt-component">
         <?php hc_e_composer_item_menu("Table") ?>
+        <div class="button-inner-options" data-width="315">
+            <i class="button-icon input-row icon-gear-setting-2"></i>
+            <ul>
+                <li>
+                    <h2>Tabla</h2>
+                    <p>Utiliza esta tabla de contenidos para agrupar de forma ordenada cualquier información en formato de texto que desees poner a disposición de los visitantes.</p>
+                </li>
+            </ul>
+        </div>
         <div class="tab-box tab-hc inverse">
             <div class="panel active">
                 <div data-hc-id="sub1__ID" data-hc-component="this" data-hc-setting="table">
@@ -2008,6 +2046,15 @@
     <div data-hc-id="_ID" data-hc-component="hc_inner_menu" data-hc-setting="main_content" class="hc-inner-menu hc-cnt-component">
         <input type="hidden" class="page_setting" value="inner_menu">
         <?php hc_e_composer_item_menu("Inner menu") ?>
+        <div class="button-inner-options" data-width="315">
+            <i class="button-icon input-row icon-gear-setting-2"></i>
+            <ul>
+                <li>
+                    <h2>Menú interior</h2>
+                    <p>Habilita este elemento para enlazar, de manera ordenada, a los distintos segmentos y contenidos internos del sitio para su fácil navegación.</p>
+                </li>
+            </ul>
+        </div>
         <div class="input-text input-row input-repeater" data-value="">
             <div class="repeater-source">
                 <i class="input-row button-icon button-checkbox icon-ios-arrow-forward hc-inner-menu-child" data-hc-setting="child" data-hc-component="value" data-value=""></i>
@@ -2062,6 +2109,16 @@
         <input type="hidden" class="file_require" value="contact_form">
         <input type="hidden" class="file_require" value="datepicker">
         <?php hc_e_composer_item_menu("Contact form") ?>
+        <div class="button-inner-options" data-width="315">
+            <i class="button-icon input-row icon-gear-setting-2"></i>
+            <ul>
+                <li>
+                    <h2>Formulario de contacto</h2>
+                    <p>Inserta un formulario sencillo el cual permita a los visitantes ponerse en contacto con la persona, entidad o área a cargo de brindar atención a las comunicaciones con los propietarios del sitio.</p>
+                    <p>*Recuerda: es importante que los campos de texto estén correctamente identificados para que los usuarios sepan dónde colocar sus nombres, correo electrónico, asunto y mensaje (según corresponda).</p>
+                </li>
+            </ul>
+        </div>
         <div class="input-text input-row input-repeater" data-value="">
             <div class="repeater-source">
                 <div class="flex-box">
