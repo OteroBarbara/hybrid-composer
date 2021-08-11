@@ -230,7 +230,7 @@
                 <i class="button-icon input-row upload-hc-button icon-link" data-value=""></i>
             </div>
         <div class="button-inner-options" data-width="315">
-            <i class="button-icon input-row icon-gear-setting-2"></i>
+            <i class="button-icon input-row icon-help"></i>
             <ul>
                 <li>
                     <h2>Botón Video</h2>
@@ -284,7 +284,7 @@
         </script>
         <?php hc_item_menu_accesible("Botón", "_ID") ?>
         <div class="button-inner-options" data-width="315">
-            <i class="button-icon input-row icon-gear-setting-2"></i>
+            <i class="button-icon input-row icon-help"></i>
             <ul>
                 <li>
                     <h2>Botón</h2>
@@ -340,12 +340,70 @@
         <?php hc_get_link("_ID"); ?>
     </div>
 </div>
+<div id="cnt_hc_audio">
+    <div data-hc-id="_ID" data-hc-component="hc_button" data-hc-setting="main_content" class="hc-button hc-cnt-component">
+        <?php hc_item_menu_accesible("Audiodescripción", "_ID") ?>
+        <div class="button-inner-options" data-width="315">
+            <i class="button-icon input-row icon-help"></i>
+            <ul>
+                <h2>Botón Audiodescripción</h2>
+                <p>Herramienta para describir la información visual, en formato de audio. Se audiodescriben los contenidos de las imágenes: logos y créditos, tiempo (cuándo), espacio (dónde), personajes (quién) y acciones (qué).</p>
+            </ul>
+        </div>
+        <div class="flex-box">
+            <i class="input-row button-icon button-icons-list icon-plus-add-2" data-hc-setting="icon" data-hc-component="value" data-value=""></i>
+            <div class="button-inner-options">
+                <i class="button-icon input-row icon-gear-setting-2"></i>
+                <ul>
+                    <li class="input-row input-select">
+                        <p><?php _e("Style","hc") ?></p>
+                        <select data-hc-setting="style" data-default="circle">
+                            <option selected value="circle"><?php _e("Circle","hc") ?></option>
+                            <option value="square"><?php _e("Square","hc") ?></option>
+                            <option value="circle-border"><?php _e("Circle border","hc") ?></option>
+                            <option value="square-border"><?php _e("Square border","hc") ?></option>
+                            <option value="link"><?php _e("Link","hc") ?></option>
+                        </select>
+                    </li>
+                    <li class="input-row input-select">
+                        <p><?php _e("Size","hc") ?></p>
+                        <select data-hc-setting="size">
+                            <option selected="selected" value=""><?php _e("Default","hc") ?></option>
+                            <option value="btn-lg"><?php _e("Large","hc") ?></option>
+                            <option value="btn-sm"><?php _e("Small","hc") ?></option>
+                            <option value="btn-xs"><?php _e("Extra small","hc") ?></option>
+                        </select>
+                    </li>
+                    <li class="input-row input-select">
+                        <p><?php _e("Position","hc") ?></p>
+                        <select data-hc-setting="position" data-default="left">
+                            <option selected="selected" value="left"><?php _e("Left","hc") ?></option>
+                            <option value="right"><?php _e("Right","hc") ?></option>
+                            <option value="center"><?php _e("Center","hc") ?></option>
+                            <option value="full"><?php _e("Full","hc") ?></option>
+                        </select>
+                    </li>
+                    <li class="input-row input-checkbox">
+                        <p><?php _e("Animated","hc") ?></p>
+                        <input data-hc-setting="animation" type="checkbox">
+                    </li>
+                </ul>
+            </div>
+            <div class="input-text input-row full-only-input">
+                <input data-hc-setting="text" placeholder="Ingrese el texto del botón aquí" type="text" value="" />
+            </div>
+        </div>
+        <span><?php _e("Link","hc") ?></span>
+        <input data-hc-setting="link" class="input-link" placeholder="<?php _e("Link del MP3","hc") ?>" type="text" value="">
+        <i class="button-icon input-row upload-hc-button icon-link" data-value=""></i>
+    </div>
+</div>
 <div id="cnt_hc_title_tag">
     <div data-hc-id="_ID" data-hc-component="hc_title_tag" data-hc-setting="main_content" class="hc-title-tag hc-cnt-component">
         <?php hc_e_composer_item_menu("Título H1-H6") ?>
         <div class="flex-box">
             <div class="button-inner-options" data-width="315">
-                <i class="button-icon input-row icon-gear-setting-2"></i>
+                <i class="button-icon input-row icon-help"></i>
                 <ul>
                     <li>
                         <h2>Título</h2>
@@ -537,7 +595,7 @@
     <div data-hc-id="_ID" data-hc-component="hc_icon_links" data-hc-setting="main_content" class="hc-icon-links hc-cnt-component">
         <?php hc_e_composer_item_menu("Icon links") ?>
         <div class="button-inner-options" data-width="315">
-            <i class=" input-row icon-gear-setting-2"></i>
+            <i class=" input-row icon-help"></i>
             <ul>
                 <li>
                     <h2>Enlace de iconos</h2>
@@ -1335,7 +1393,7 @@
     <div data-hc-id="_ID" data-hc-component="hc_quote" data-hc-setting="main_content" class="hc-quote hc-cnt-component">
         <?php hc_e_composer_item_menu("Quote") ?>
         <div class="button-inner-options" data-width="315">
-            <i class=" input-row icon-gear-setting-2"></i>
+            <i class=" input-row icon-help"></i>
             <ul>
                 <li>
                     <h2>Cita</h2>
@@ -1394,7 +1452,7 @@
     <div data-hc-id="_ID" data-hc-component="hc_space" data-hc-setting="main_content" class="hc-space hc-cnt-component">
         <?php hc_e_composer_item_menu("Space") ?>
         <div class="button-inner-options" data-width="315">
-            <i class="button-icon input-row icon-gear-setting-2"></i>
+            <i class="button-icon input-row icon-help"></i>
             <ul>
                 <li>
                   <h2>Espacio</h2>
@@ -1425,9 +1483,9 @@
 </div>
 <div id="cnt_hc_breadcrumbs">
     <div data-hc-id="_ID" data-hc-component="hc_breadcrumbs" data-hc-setting="main_content" class="hc-breadcrumbs hc-cnt-component">
-        <?php hc_e_composer_item_menu("Breadcrumbs") ?>
+        <?php hc_e_composer_item_menu("Migas de pan") ?>
         <div class="button-inner-options" data-width="315">
-            <i class="button-icon input-row icon-gear-setting-2"></i>
+            <i class="button-icon input-row icon-help"></i>
             <ul>
                 <li>
                     <h2>Migas de pan</h2>
@@ -1448,7 +1506,7 @@
     <div data-hc-id="_ID" data-hc-component="hc_table" data-hc-setting="main_content" class="hc-table hc-cnt-component">
         <?php hc_e_composer_item_menu("Table") ?>
         <div class="button-inner-options" data-width="315">
-            <i class="button-icon input-row icon-gear-setting-2"></i>
+            <i class="button-icon input-row icon-help"></i>
             <ul>
                 <li>
                     <h2>Tabla</h2>
@@ -2047,7 +2105,7 @@
         <input type="hidden" class="page_setting" value="inner_menu">
         <?php hc_e_composer_item_menu("Inner menu") ?>
         <div class="button-inner-options" data-width="315">
-            <i class="button-icon input-row icon-gear-setting-2"></i>
+            <i class="button-icon input-row icon-help"></i>
             <ul>
                 <li>
                     <h2>Menú interior</h2>
@@ -2110,7 +2168,7 @@
         <input type="hidden" class="file_require" value="datepicker">
         <?php hc_e_composer_item_menu("Contact form") ?>
         <div class="button-inner-options" data-width="315">
-            <i class="button-icon input-row icon-gear-setting-2"></i>
+            <i class="button-icon input-row icon-help"></i>
             <ul>
                 <li>
                     <h2>Formulario de contacto</h2>
@@ -2208,7 +2266,7 @@
     <div data-hc-id="_ID" data-hc-component="hc_text_block" data-hc-setting="main_content" class="hc-text-block hc-cnt-component">
         <?php hc_e_composer_item_menu("Bloque de texto") ?>
         <div class="button-inner-options" data-width="315">
-                <i class="button-icon input-row icon-gear-setting-2"></i>
+                <i class="button-icon input-row icon-help"></i>
                 <ul>
                     <li>
                         <h2>Bloque de texto</h2>

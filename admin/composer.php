@@ -320,7 +320,7 @@ COMPOSER POPOVER BOXES
                 <li class="li-component component-hc-breadcrumbs">
                     <div class="component-box" data-hc-target="hc_breadcrumbs">
                         <i class="icon-icomoon-38"></i>
-                        <span class="sch"><?php _e("Breadcrumbs","hc") ?></span>
+                        <span class="sch"><?php _e("Migas de pan","hc") ?></span>
                     </div>
                 </li>
                 <!-- <li class="li-container component-hc-image-slider">
@@ -364,6 +364,12 @@ COMPOSER POPOVER BOXES
                     <div class="component-box" data-hc-target="hc_niche_content_box_call2">
                         <i class="icon-icomoon-17"></i>
                         <span class="sch"><?php _e("Intérprete en Lengua de Señas - video","hc") ?></span>
+                    </div>
+                </li>
+                <li class="li-component component-hc-button">
+                    <div class="component-box" data-hc-target="hc_audio">
+                        <i class="icon-icomoon-6"></i>
+                        <span class="sch"><?php _e("Audio - descripción","hc") ?></span>
                     </div>
                 </li>
                 <!--COLUMNS-->

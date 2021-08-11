@@ -55,7 +55,7 @@
             <input data-hc-setting="full_screen_height" placeholder="px" type="text" data-mask="number" value="" data-require="full_screen" data-require-action="hide" />
         </div>  
         <div class="button-inner-options" data-width="315">
-            <i class="button-icon input-row icon-gear-setting-2"></i>
+            <i class="button-icon input-row icon-help"></i>
             <ul>
                 <li>
                     <h2>Botón encabezado</h2>
