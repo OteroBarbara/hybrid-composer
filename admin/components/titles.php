@@ -20,7 +20,17 @@
 
 <div id="cnt_hc_title">
     <div data-hc-id="main-title" data-hc-component="hc_title" id="main-title" class="hc-title">
-        <p>*Aquí puedes diseñar el encabezado de tu sitio web</p>
+        <h2>Comienza a escribir tu artículo aquí</h2>
+        <div class="button-inner-options" data-width="315">
+            <i class="button-icon input-row icon-help"></i>
+            <ul>
+                <li>
+                    <h2>Encabezado accesibilidad</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quas, est dolorem, laborum ratione amet consequatur eaque deleniti odio quis earum ipsum voluptatem doloremque nam optio illum dolore voluptate omnis.
+                    </p>
+                </li>
+            </ul>
+        </div>
         <input class="main_title" data-hc-setting="title" type="text" placeholder="<?php esc_attr_e("Título para el encabezado","hc") ?>" value="<?php echo get_the_title() ?>" /><!--gutenberg-->
         <input class="main_subtitle" data-hc-setting="subtitle" type="text" placeholder="<?php esc_attr_e("Subtítulo del encabezado","hc") ?>" value="" /><!--gutenberg-->
         <div id="title-tab" class="tab-box inverse tab-wp">
@@ -58,7 +68,7 @@
             <i class="button-icon input-row icon-help"></i>
             <ul>
                 <li>
-                    <h2>Botón encabezado</h2>
+                    <h2>Imagen encabezado</h2>
                     <p>El lector de pantalla utilizado por personas ciegas identificará esta imagen como decorativa. En el caso de que la imagen contenga información, por favor asegúrate que la misma información se brinde en otro lugar de la nota. 
                     Asegúrate que el contraste con el título sea suficiente para una correcta lectura.
                     </p>
