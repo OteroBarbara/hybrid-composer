@@ -189,7 +189,7 @@
                 <li><p>Revisa tu nivel de contraste<a target="_blank" href="https://webaim.org/resources/contrastchecker/">aquí.</a></p></li>
                 <li class="input-row input-text">
                     <p><?php _e("Alt text","hc") ?></p>
-                    <input id="_ID" type="text" placeholder="Descripción de la imagen" data-hc-setting="alt" />
+                    <input id="_ID" type="text" placeholder="Ingresar texto alternativo aquí" data-hc-setting="alt" />
                 </li>
                 <li class="input-row input-select">
                     <!-- <p><?php _e("Image size","hc") ?></p> -->
