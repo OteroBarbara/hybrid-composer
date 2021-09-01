@@ -2441,7 +2441,7 @@
                     <li>
                         <h2>Bloque de texto</h2>
                         <p>Aquí debes insertar el contenido del texto que deseas publicar.</p>
-                        <p> *Recuerda: mientras más concreto sea el mensaje y el lenguaje que utilices sea más sencillo, mayor cantidad de personas podrán acceder, comprender y aprovechar al máximo tu contenido.
+                        <p>*Recuerda hacerlo accesible para todos: Mientras más concreto sea el mensaje que transmitas y el lenguaje que utilices sea más sencillo, mayor cantidad de personas podrán acceder, comprender y aprovechar al máximo tu contenido. ¿A quiénes ayuda esto? A una gran cantidad de personas en distintas situaciones. Desde una persona con discapacidad auditiva o discapacidad cognitiva, hasta una persona de la tercera edad o, incluso, alguien que podría no hablar tu idioma con fluidez o tenga un dialecto distinto al tuyo.
                         </p>
                     </li>
                 </ul>

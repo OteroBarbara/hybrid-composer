@@ -177,7 +177,7 @@
             <ul>
                 <li>
                     <p><strong>Texto alternativo</strong></p>
-                    <p>Es necesario que agregues texto alternativo a las imágenes. El texto alternativo permite a las personas ciegas acceder a la información sobre la imagen. Debes brindar información de forma breve y resaltar lo más importante. </p>
+                    <p>Es necesario que agregues texto alternativo a las imágenes. El texto alternativo permite a las personas con discapacidad visual acceder a la información sobre la imagen. Debes brindar información de forma breve y resaltar lo más importante. </p>
                     <p>Cuando son imágenes decorativas se puede indicar de la siguiente forma: “imagen decorativa”.</p> 
                     <p>En el caso de una imagen que contenga texto o sea informativa, asegúrate que esta información también esté en el texto alternativo. </p>
                     <p>Si es una imagen compleja, por ejemplo, una gráfica o mucho contenido, se recomienda brindar un link para acceder a mayor información en el texto alternativo.</p>
@@ -186,10 +186,10 @@
                 <p><strong>Contraste</strong></p>
                     <p>Si subes una foto con texto, asegúrate de que tenga un buen nivel de contraste entre la letra y el fondo.</p>
                 </li>
-                <li><p>Más información <a target="_blank" href="https://umuntu.uy/">aquí.</a></p></li>
+                <li><p>Revisa tu nivel de contraste<a target="_blank" href="https://webaim.org/resources/contrastchecker/">aquí.</a></p></li>
                 <li class="input-row input-text">
                     <p><?php _e("Alt text","hc") ?></p>
-                    <input id="_ID" type="text" placeholder="Descripción de la imagen" data-hc-setting="alt" />
+                    <input id="_ID" type="text" placeholder="Ingresar texto alternativo aquí" data-hc-setting="alt" />
                 </li>
                 <li class="input-row input-select">
                     <!-- <p><?php _e("Image size","hc") ?></p> -->
