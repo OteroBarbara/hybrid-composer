@@ -59,7 +59,7 @@
             <ul>
                 <li>
                     <h2>Imagen encabezado</h2>
-                    <p>El lector de pantalla utilizado por personas ciegas identificará esta imagen como decorativa. En el caso de que la imagen contenga información, por favor asegúrate que la misma información se brinde en otro lugar de la nota. 
+                    <p>El lector de pantalla utilizado por personas con discapacidad visual identificará esta imagen como decorativa. En el caso de que la imagen contenga información, por favor asegúrate que la misma información se brinde en otro lugar de la nota. 
                     Asegúrate que el contraste con el título sea suficiente para una correcta lectura.
                     </p>
                 </li>
