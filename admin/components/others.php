@@ -221,7 +221,7 @@
                     <p><strong>Subtitulado: </strong>Letra con igual o superior 16 puntos. Tipografía Sin serif. Deben convivir con la intérprete de Lengua de Señas.</p>
                     <p><strong>Audiodescripción: </strong>Herramienta para describir la información visual, en formato de audio.Se audiodescriben los contenidos de las imágenes: logos y créditos, tiempo (cuándo), espacio (dónde), personajes (quién) y acciones (qué).</p>                    
                     <p>Por más información:</p>
-                    <a href="#">Haz clic aquí</a>
+                    <a target="_blank" href="https://umuntu.uy/">Haz clic aquí</a>
                 </li>
             </ul>
          </div>

@@ -293,12 +293,12 @@ COMPOSER POPOVER BOXES
                         <span class="sch"><?php _e("Space","hc") ?></span>
                     </div>
                 </li>
-                <li class="li-component component-hc-table">
+                <!--<li class="li-component component-hc-table">
                     <div class="component-box" data-hc-target="hc_table">
                         <i class="icon-icomoon-37"></i>
-                        <span class="sch"><?php _e("Table","hc") ?></span>
+                        <span class="sch"><?php/* _e("Table","hc")*/ ?></span>
                     </div>
-                </li>
+                </li>-->
                 <li class="li-component component-hc-inner-menu">
                     <div class="component-box" data-hc-target="hc_inner_menu">
                         <i class="icon-icomoon-40"></i>
