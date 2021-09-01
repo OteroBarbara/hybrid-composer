@@ -1379,7 +1379,7 @@ function hc_get_footer_engine() {
 <footer class="default-wp-footer">
     <div class="content">
         <div class="container">
-            <div><?php echo esc_attr__("Copyright Schiocco | All Rights Reserved | Powered by","yellowbusiness") ?> <a href="<?php echo esc_url("http//wordpress.org") ?>"><?php echo esc_attr("WordPress")?></a></div>
+            <div><?php echo esc_attr__("Copyright Mercurio | All Rights Reserved | Powered by","Umuntu") ?> <a href="<?php echo esc_url("https://umuntu.uy/") ?>"><?php echo esc_attr("Umuntu")?></a></div>
         </div>
     </div>
 </footer>  

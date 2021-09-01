@@ -317,6 +317,12 @@ COMPOSER POPOVER BOXES
                         <span class="sch"><?php _e("Video","hc") ?></span>
                     </div>
                 </li>
+                <li class="li-component component-hc-button">
+                    <div class="component-box" data-hc-target="hc_audio">
+                        <i class="icon-icomoon-6"></i>
+                        <span class="sch"><?php _e("Audio","hc") ?></span>
+                    </div>
+                </li>
                 <li class="li-component component-hc-breadcrumbs">
                     <div class="component-box" data-hc-target="hc_breadcrumbs">
                         <i class="icon-icomoon-38"></i>
@@ -367,10 +373,31 @@ COMPOSER POPOVER BOXES
                     </div>
                 </li>
                 <li class="li-component component-hc-button">
-                    <div class="component-box" data-hc-target="hc_audio">
+                    <div class="component-box" data-hc-target="hc_audiodesc">
                         <i class="icon-icomoon-6"></i>
                         <span class="sch"><?php _e("Audio - descripción","hc") ?></span>
                     </div>
+                </li>
+                <li class="li-component component-hc-button">
+                    <div class="component-box" data-hc-target="hc_lfacil">
+                        <i class="icon-icomoon-16"></i>
+                        <span class="sch"><?php _e("Lectura Fácil","hc") ?></span>
+                    </div>
+                </li>
+                <li class="li-component component-hc-button">
+                    <div class="component-box" data-hc-target="hc_textsencillo">
+                        <i class="icon-icomoon-9"></i>
+                        <span class="sch"><?php _e("Texto Sencillo","hc") ?></span>
+                    </div>
+                </li>
+                <li class="divider li-component"><?php _e("Sección Umuntu Live (comunicación en vivo).","hc") ?></li>
+                <li class="li-component"><p style="padding: 0 5px 0 5px;">Accede en esta sección, a los servicios de terceros y aplicaciones ofrecidas por empresas especializadas en accesibilidad, que complementarán la experiencia de las personas con discapacidad en su acceso universal a la información y los contenidos.</p></li>
+                <li class="li-component">
+                    <ul style="padding-left: 5px;">
+                    <li><a href="https://hablalo.app/">Háblalo</a></li><br>
+                    <li><a href="https://lazarillo.app/es/">Lazarillo</a></li><br>
+                    <li><a href="https://www.redapis.cl/servicios/">Visor</a></li><br>
+                    </ul>
                 </li>
                 <!--COLUMNS-->
                 <li class="divider li-column"><?php _e("Columns","hc") ?></li>

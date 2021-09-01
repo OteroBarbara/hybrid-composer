@@ -53,27 +53,18 @@
             <div class="button-inner-options" data-width="315">
                 <i class="button-icon input-row icon-gear-setting-2"></i>
                 <ul list="<?php echo $idlink ?>">
-                    <li class="input-row input-select">
-                        <p><?php _e("Lightbox animation","hc") ?></p>
-                        <select data-hc-setting="lightbox_animation" class="animations-list">
-                            <?php hc_html_animations(); ?>
-                        </select>
-                    </li>
-                    <li class="input-row input-text">
-                        <p><?php _e("Lightbox caption","hc") ?></p>
-                        <input data-hc-setting="caption" placeholder="Ingrese un título" type="text">
-                    </li>
-                    <li class="input-row input-checkbox">
-                        <p><?php _e("Inner caption","hc") ?></p>
-                        <input data-hc-setting="inner_caption" type="checkbox">
-                    </li>
-                    <li class="input-row input-checkbox">
-                        <p><?php _e("New window","hc") ?></p>
-                        <input data-hc-setting="new_window" type="checkbox">
+                    <li>
+                        <h2>Texto descriptivo/indicativo de botón.</h2>
+                        <p>*En este campo debes insertar 1: el nombre o la etiqueta visible en el botón y, 2: después de un punto y seguido, una breve descripción de la acción que se ejecutará cuando el usuario, que podría ser una persona con discapacidad visual, hace clic o tap en el botón con el uso de un lector de pantalla.<p>
+                        <p>Te recomendamos copiar estos formatos de ejemplo, según lo requieras: [Nombre del botón. Presiona para activar el botón.] [Entrar. Presiona aquí para dirigirte a la subpágina.]</p>
                     </li>
                     <li class="input-row input-text">
                         <p><?php _e("Descripción","hc") ?></p>
                         <input id="<?php echo $idlink ?>" data-hc-setting="description" placeholder="Ingrese una descripción" type="text">
+                    </li>
+                    <li class="input-row input-checkbox">
+                        <p><?php _e("Abrir en nueva pestaña","hc") ?></p>
+                        <input data-hc-setting="new_window" type="checkbox">
                     </li>
                 </ul>
             </div>
@@ -122,27 +113,18 @@
             <div class="button-inner-options" data-width="315">
                 <i class="button-icon input-row icon-gear-setting-2"></i>
                 <ul>
-                    <li class="input-row input-select">
-                        <p><?php _e("Lightbox animation","hc") ?></p>
-                        <select data-hc-setting="lightbox_animation" class="animations-list">
-                            <?php hc_html_animations(); ?>
-                        </select>
-                    </li>
-                    <li class="input-row input-text">
-                        <p><?php _e("Lightbox caption","hc") ?></p>
-                        <input data-hc-setting="caption" placeholder="Ingrese un título" type="text">
-                    </li>
-                    <li class="input-row input-checkbox">
-                        <p><?php _e("Inner caption","hc") ?></p>
-                        <input data-hc-setting="inner_caption" type="checkbox">
-                    </li>
-                    <li class="input-row input-checkbox">
-                        <p><?php _e("New window","hc") ?></p>
-                        <input data-hc-setting="new_window" type="checkbox">
+                    <li>
+                        <h2>Texto descriptivo/indicativo de botón.</h2>
+                        <p>*En este campo debes insertar 1: el nombre o la etiqueta visible en el botón y, 2: después de un punto y seguido, una breve descripción de la acción que se ejecutará cuando el usuario, que podría ser una persona con discapacidad visual, hace clic o tap en el botón con el uso de un lector de pantalla.<p>
+                        <p>Te recomendamos copiar estos formatos de ejemplo, según lo requieras: [Nombre del botón. Presiona para activar el botón.] [Entrar. Presiona aquí para dirigirte a la subpágina.]</p>
                     </li>
                     <li class="input-row input-text">
                         <p><?php _e("Descripción","hc") ?></p>
                         <input data-hc-setting="description" placeholder="Ingrese una descripción" type="text">
+                    </li>
+                    <li class="input-row input-checkbox">
+                        <p><?php _e("Abrir en nueva pestaña","hc") ?></p>
+                        <input data-hc-setting="new_window" type="checkbox">
                     </li>
                 </ul>
             </div>
@@ -340,7 +322,195 @@
         <?php hc_get_link("_ID"); ?>
     </div>
 </div>
+<div id="cnt_hc_lfacil">
+    <div data-hc-id="_ID" data-hc-component="hc_button" data-hc-setting="main_content" class="hc-button hc-cnt-component">
+    <script> 
+            vectorAccesibilidad["_ID"] = "False";
+            var id= "_ID";
+            console.log("id:" + id);
+        </script>
+        <?php hc_item_menu_accesible("Lectura fácil", "_ID") ?>
+        <div class="button-inner-options" data-width="315">
+            <i class="button-icon input-row icon-help"></i>
+            <ul>
+                <li>
+                    <h2>Lectura Fácil</h2>
+                    <p>En esta sección, te invitamos a publicar una versión alternativa simplificada del contenido publicado en la página principal. ¿para qué? Para facilitar la comprensión del contenido por parte de personas con alguna forma de discapacidad intelectual, auditiva o adultos mayores. Toma en cuenta las siguientes recomendaciones:</p>
+		            <p>En el caso de agregar imágenes como pictogramas, no es necesario que agregues texto alternativo porque tanta información puede ser abrumadora para los usuarios de lectores de pantallas, pero sí debes indicar que son pictogramas de apoyo al texto en lectura fácil.</p>
+                    <p>Si existen palabras complicadas que no se pueden cambiar por un sinónimo más sencillo, agrega un glosario al final con su significado en texto sencillo.</p>	
+                </li>
+            </ul>
+        </div>
+        <div class="flex-box">
+            <i class="input-row button-icon button-icons-list icon-plus-add-2" data-hc-setting="icon" data-hc-component="value" data-value=""></i>
+            <div class="button-inner-options">
+                <i class="button-icon input-row icon-gear-setting-2"></i>
+                <ul>
+                    <li class="input-row input-select">
+                        <p><?php _e("Style","hc") ?></p>
+                        <select data-hc-setting="style" data-default="circle">
+                            <option selected value="circle"><?php _e("Circle","hc") ?></option>
+                            <option value="square"><?php _e("Square","hc") ?></option>
+                            <option value="circle-border"><?php _e("Circle border","hc") ?></option>
+                            <option value="square-border"><?php _e("Square border","hc") ?></option>
+                            <option value="link"><?php _e("Link","hc") ?></option>
+                        </select>
+                    </li>
+                    <li class="input-row input-select">
+                        <p><?php _e("Size","hc") ?></p>
+                        <select data-hc-setting="size">
+                            <option selected="selected" value=""><?php _e("Default","hc") ?></option>
+                            <option value="btn-lg"><?php _e("Large","hc") ?></option>
+                            <option value="btn-sm"><?php _e("Small","hc") ?></option>
+                            <option value="btn-xs"><?php _e("Extra small","hc") ?></option>
+                        </select>
+                    </li>
+                    <li class="input-row input-select">
+                        <p><?php _e("Position","hc") ?></p>
+                        <select data-hc-setting="position" data-default="left">
+                            <option selected="selected" value="left"><?php _e("Left","hc") ?></option>
+                            <option value="right"><?php _e("Right","hc") ?></option>
+                            <option value="center"><?php _e("Center","hc") ?></option>
+                            <option value="full"><?php _e("Full","hc") ?></option>
+                        </select>
+                    </li>
+                    <li class="input-row input-checkbox">
+                        <p><?php _e("Animated","hc") ?></p>
+                        <input data-hc-setting="animation" type="checkbox">
+                    </li>
+                </ul>
+            </div>
+            <div class="input-text input-row full-only-input">
+                <input data-hc-setting="text" placeholder="Ingrese el texto del botón aquí" type="text" value="" />
+            </div>
+        </div>
+
+        <?php hc_get_link("_ID"); ?>
+    </div>
+</div>
+<div id="cnt_hc_textsencillo">
+    <div data-hc-id="_ID" data-hc-component="hc_button" data-hc-setting="main_content" class="hc-button hc-cnt-component">
+    <script> 
+            vectorAccesibilidad["_ID"] = "False";
+            var id= "_ID";
+            console.log("id:" + id);
+        </script>
+        <?php hc_item_menu_accesible("Texto sencillo", "_ID") ?>
+        <div class="button-inner-options" data-width="315">
+            <i class="button-icon input-row icon-help"></i>
+            <ul>
+                <li>
+                    <h2>Texto Sencillo</h2>
+                    <p>En esta sección, te invitamos a publicar una versión alternativa simplificada del contenido publicado en la página principal. ¿para qué? Para facilitar la comprensión del contenido por parte de personas con alguna forma de discapacidad intelectual, auditiva o adultos mayores.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="flex-box">
+            <i class="input-row button-icon button-icons-list icon-plus-add-2" data-hc-setting="icon" data-hc-component="value" data-value=""></i>
+            <div class="button-inner-options">
+                <i class="button-icon input-row icon-gear-setting-2"></i>
+                <ul>
+                    <li class="input-row input-select">
+                        <p><?php _e("Style","hc") ?></p>
+                        <select data-hc-setting="style" data-default="circle">
+                            <option selected value="circle"><?php _e("Circle","hc") ?></option>
+                            <option value="square"><?php _e("Square","hc") ?></option>
+                            <option value="circle-border"><?php _e("Circle border","hc") ?></option>
+                            <option value="square-border"><?php _e("Square border","hc") ?></option>
+                            <option value="link"><?php _e("Link","hc") ?></option>
+                        </select>
+                    </li>
+                    <li class="input-row input-select">
+                        <p><?php _e("Size","hc") ?></p>
+                        <select data-hc-setting="size">
+                            <option selected="selected" value=""><?php _e("Default","hc") ?></option>
+                            <option value="btn-lg"><?php _e("Large","hc") ?></option>
+                            <option value="btn-sm"><?php _e("Small","hc") ?></option>
+                            <option value="btn-xs"><?php _e("Extra small","hc") ?></option>
+                        </select>
+                    </li>
+                    <li class="input-row input-select">
+                        <p><?php _e("Position","hc") ?></p>
+                        <select data-hc-setting="position" data-default="left">
+                            <option selected="selected" value="left"><?php _e("Left","hc") ?></option>
+                            <option value="right"><?php _e("Right","hc") ?></option>
+                            <option value="center"><?php _e("Center","hc") ?></option>
+                            <option value="full"><?php _e("Full","hc") ?></option>
+                        </select>
+                    </li>
+                    <li class="input-row input-checkbox">
+                        <p><?php _e("Animated","hc") ?></p>
+                        <input data-hc-setting="animation" type="checkbox">
+                    </li>
+                </ul>
+            </div>
+            <div class="input-text input-row full-only-input">
+                <input data-hc-setting="text" placeholder="Ingrese el texto del botón aquí" type="text" value="" />
+            </div>
+        </div>
+
+        <?php hc_get_link("_ID"); ?>
+    </div>
+</div>
 <div id="cnt_hc_audio">
+    <div data-hc-id="_ID" data-hc-component="hc_button" data-hc-setting="main_content" class="hc-button hc-cnt-component">
+        <?php hc_item_menu_accesible("Audio", "_ID") ?>
+        <div class="button-inner-options" data-width="315">
+            <i class="button-icon input-row icon-help"></i>
+            <ul>
+                <h2>Audio</h2>
+                <p>Inserta aquí un archivo de audio (preferiblemente en formato mp3/MP4) en el cual ofrezcas a las personas con alguna forma de discapacidad visual, intelectual o adultos mayores, una lectura del contenido de texto, a modo de una narración corta, sencilla y lo más clara posible.</p>
+            </ul>
+        </div>
+        <div class="flex-box">
+            <i class="input-row button-icon button-icons-list icon-plus-add-2" data-hc-setting="icon" data-hc-component="value" data-value=""></i>
+            <div class="button-inner-options">
+                <i class="button-icon input-row icon-gear-setting-2"></i>
+                <ul>
+                    <li class="input-row input-select">
+                        <p><?php _e("Style","hc") ?></p>
+                        <select data-hc-setting="style" data-default="circle">
+                            <option selected value="circle"><?php _e("Circle","hc") ?></option>
+                            <option value="square"><?php _e("Square","hc") ?></option>
+                            <option value="circle-border"><?php _e("Circle border","hc") ?></option>
+                            <option value="square-border"><?php _e("Square border","hc") ?></option>
+                            <option value="link"><?php _e("Link","hc") ?></option>
+                        </select>
+                    </li>
+                    <li class="input-row input-select">
+                        <p><?php _e("Size","hc") ?></p>
+                        <select data-hc-setting="size">
+                            <option selected="selected" value=""><?php _e("Default","hc") ?></option>
+                            <option value="btn-lg"><?php _e("Large","hc") ?></option>
+                            <option value="btn-sm"><?php _e("Small","hc") ?></option>
+                            <option value="btn-xs"><?php _e("Extra small","hc") ?></option>
+                        </select>
+                    </li>
+                    <li class="input-row input-select">
+                        <p><?php _e("Position","hc") ?></p>
+                        <select data-hc-setting="position" data-default="left">
+                            <option selected="selected" value="left"><?php _e("Left","hc") ?></option>
+                            <option value="right"><?php _e("Right","hc") ?></option>
+                            <option value="center"><?php _e("Center","hc") ?></option>
+                            <option value="full"><?php _e("Full","hc") ?></option>
+                        </select>
+                    </li>
+                    <li class="input-row input-checkbox">
+                        <p><?php _e("Animated","hc") ?></p>
+                        <input data-hc-setting="animation" type="checkbox">
+                    </li>
+                </ul>
+            </div>
+            <div class="input-text input-row full-only-input">
+                <input data-hc-setting="text" placeholder="Ingrese el texto del botón aquí" type="text" value="" />
+            </div>
+        </div>
+        <span><?php _e("Link","hc") ?></span>
+        <input data-hc-setting="link" class="input-link" placeholder="<?php _e("Link del MP3","hc") ?>" type="text" value="">
+        <i class="button-icon input-row upload-hc-button icon-link" data-value=""></i>
+    </div>
+</div>
+<div id="cnt_hc_audiodesc">
     <div data-hc-id="_ID" data-hc-component="hc_button" data-hc-setting="main_content" class="hc-button hc-cnt-component">
         <?php hc_item_menu_accesible("Audiodescripción", "_ID") ?>
         <div class="button-inner-options" data-width="315">
