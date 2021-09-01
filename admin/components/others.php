@@ -338,6 +338,7 @@
                     <p>En esta sección, te invitamos a publicar una versión alternativa simplificada del contenido publicado en la página principal. ¿para qué? Para facilitar la comprensión del contenido por parte de personas con alguna forma de discapacidad intelectual, auditiva o adultos mayores. Toma en cuenta las siguientes recomendaciones:</p>
 		            <p>En el caso de agregar imágenes como pictogramas, no es necesario que agregues texto alternativo porque tanta información puede ser abrumadora para los usuarios de lectores de pantallas, pero sí debes indicar que son pictogramas de apoyo al texto en lectura fácil.</p>
                     <p>Si existen palabras complicadas que no se pueden cambiar por un sinónimo más sencillo, agrega un glosario al final con su significado en texto sencillo.</p>	
+                    <p>Accede a un ejemplo de texto adaptado en lectura fácil <a target='_blank' href='https://umuntu.uy/2021/08/28/mercurio-lectura-facil/'>aquí.</a></p>
                 </li>
             </ul>
         </div>
