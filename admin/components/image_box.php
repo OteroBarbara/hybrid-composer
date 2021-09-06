@@ -184,7 +184,7 @@
                 <p><strong>Aviso de contraste:</strong></p>
                     <p>Si subes una foto con texto, asegúrate de que tenga un buen nivel de contraste entre la letra y el fondo.</p>
                 </li>
-                <li><p>Revisa tu nivel de contraste<a target="_blank" href="https://webaim.org/resources/contrastchecker/">aquí.</a></p></li>
+                <li><p>Revisa tu nivel de contraste <a target="_blank" href="https://webaim.org/resources/contrastchecker/">aquí.</a></p></li>
                 <li class="input-row input-text">
                     <p><?php _e("Alt text","hc") ?></p>
                     <input id="_ID" type="text" placeholder="Ingresar texto alternativo aquí" data-hc-setting="alt" />
@@ -228,7 +228,7 @@
                 <p><strong>*Aviso de contraste:</strong></p>
                     <p>Si subes una foto con texto, asegúrate de que tenga un buen nivel de contraste entre la letra y el fondo.</p>
                 </li>
-                <li><p>Revisa tu nivel de contraste<a target="_blank" href="https://webaim.org/resources/contrastchecker/">aquí.</a></p></li>
+                <li><p>Revisa tu nivel de contraste <a target="_blank" href="https://webaim.org/resources/contrastchecker/">aquí.</a></p></li>
                 <li class="input-row input-text">
                     <p><?php _e("Alt text","hc") ?></p>
                     <input id="_ID" type="text" placeholder="Ingresar texto alternativo aquí" data-hc-setting="alt" />
