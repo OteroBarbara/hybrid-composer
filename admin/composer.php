@@ -260,7 +260,13 @@ COMPOSER POPOVER BOXES
                 <li class="li-component component-hc-image">
                     <div class="component-box" data-hc-target="hc_image">
                         <i class="icon-icomoon-14"></i>
-                        <span class="sch"><?php _e("Image","hc") ?></span>
+                        <span class="sch"><?php _e("Imágen Gráfica","hc") ?></span>
+                    </div>
+                </li>
+                <li class="li-component component-hc-image">
+                    <div class="component-box" data-hc-target="hc_image2">
+                        <i class="icon-icomoon-14"></i>
+                        <span class="sch"><?php _e("Imágen Infográfica","hc") ?></span>
                     </div>
                 </li>
                 <!-- <li class="li-component component-hc-image-box">

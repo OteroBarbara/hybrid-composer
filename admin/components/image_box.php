@@ -176,14 +176,56 @@
             <i class="button-icon input-row icon-gear-setting-2"></i>
             <ul>
                 <li>
-                    <p><strong>Texto alternativo</strong></p>
-                    <p>Es necesario que agregues texto alternativo a las imágenes. El texto alternativo permite a las personas con discapacidad visual acceder a la información sobre la imagen. Debes brindar información de forma breve y resaltar lo más importante. </p>
-                    <p>Cuando son imágenes decorativas se puede indicar de la siguiente forma: “imagen decorativa”.</p> 
-                    <p>En el caso de una imagen que contenga texto o sea informativa, asegúrate que esta información también esté en el texto alternativo. </p>
-                    <p>Si es una imagen compleja, por ejemplo, una gráfica o mucho contenido, se recomienda brindar un link para acceder a mayor información en el texto alternativo.</p>
+                    <p><strong>Imágen Gráfica:</strong></p>
+                    <p>Esta clase de imagen, que puede estar compuesta por una fotografía o una ilustración, sirve de apoyo visual a tu contenido de texto. </p>
+                    <p>*Es necesario que agregues una descripción de texto a las imágenes. El texto alternativo permite a las personas con discapacidad visual acceder a la información sobre la imagen. Debes brindar información de forma breve y resaltar lo más importante.</p> 
                 </li>
                 <li>
-                <p><strong>Contraste</strong></p>
+                <p><strong>Aviso de contraste:</strong></p>
+                    <p>Si subes una foto con texto, asegúrate de que tenga un buen nivel de contraste entre la letra y el fondo.</p>
+                </li>
+                <li><p>Revisa tu nivel de contraste<a target="_blank" href="https://webaim.org/resources/contrastchecker/">aquí.</a></p></li>
+                <li class="input-row input-text">
+                    <p><?php _e("Alt text","hc") ?></p>
+                    <input id="_ID" type="text" placeholder="Ingresar texto alternativo aquí" data-hc-setting="alt" />
+                </li>
+                <li class="input-row input-select">
+                    <!-- <p><?php _e("Image size","hc") ?></p> -->
+                    <p>Tamaño de imagen.</p>
+                    <select data-hc-setting="thumb_size">
+                        <?php hc_thumb_sizes(); ?>
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="cnt_hc_image2">
+    <div data-hc-id="_ID" data-hc-component="hc_image" data-hc-setting="main_content" class="hc-image-box hc-image hc-cnt-component">
+        <script> 
+            vectorAccesibilidad["_ID"] = "False";
+            var id= "_ID";
+            console.log("id:" + id);
+        </script>
+        <?php hc_e_composer_item_menu("Imágen") ?>
+        <div class="upload-box upload-row full-input">
+            <span class="close-button"></span>
+            <div class="upload-container">
+                <div data-hc-setting="image" data-hc-component="upload" data-upload-link="" data-upload-height="" data-upload-width="" class="upload-btn upload-img-box"></div>
+            </div>
+        </div>
+        <div class="button-inner-options btn-inner">
+            <i class="button-icon input-row icon-gear-setting-2"></i>
+            <ul>
+                <li>
+                    <p><strong>Imágen Infográfica:</strong></p>
+                    <p>Esta clase de imagen sirve para presentar, de forma ordenada y resumida, contenido informativo, datos, cifras o estadísticas (entre otros). </p>
+                    <p>En el caso de una imagen que contenga texto o sea informativa, asegúrate que esta información también esté en el texto alternativo.</p> 
+                    <p>*Atención: Sin embargo, lo más recomendable si necesitas compartir una gran cantidad de información en texto es que evites hacerlo a través de una imagen. ¿Por qué? Porque los lectores de pantalla que utilizan las personas con discapacidad visual para navegar en la web podrían tener dificultades para acceder a esta clase de contenido.</p>
+                    <p>Si es una imagen compleja, por ejemplo, una gráfica o mucho contenido, se recomienda brindar un enlace para acceder a mayor información en el texto alternativo.</p>
+                </li>
+                <li>
+                <p><strong>*Aviso de contraste:</strong></p>
                     <p>Si subes una foto con texto, asegúrate de que tenga un buen nivel de contraste entre la letra y el fondo.</p>
                 </li>
                 <li><p>Revisa tu nivel de contraste<a target="_blank" href="https://webaim.org/resources/contrastchecker/">aquí.</a></p></li>
