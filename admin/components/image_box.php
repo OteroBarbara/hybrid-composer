@@ -191,7 +191,7 @@
                 </li>
                 <li class="input-row input-select">
                     <!-- <p><?php _e("Image size","hc") ?></p> -->
-                    <p>Tamaño de imagen.</p>
+                    <p>Tamaño de imagen</p>
                     <select data-hc-setting="thumb_size">
                         <?php hc_thumb_sizes(); ?>
                     </select>
@@ -235,7 +235,7 @@
                 </li>
                 <li class="input-row input-select">
                     <!-- <p><?php _e("Image size","hc") ?></p> -->
-                    <p>Tamaño de imagen.</p>
+                    <p>Tamaño de imagen</p>
                     <select data-hc-setting="thumb_size">
                         <?php hc_thumb_sizes(); ?>
                     </select>
