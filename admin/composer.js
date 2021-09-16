@@ -1770,7 +1770,7 @@ function faltaAccesibilidad() {
     if(document.getElementById("tvesModal")){
         abrirModal();
     }else{
-        document.body.innerHTML += '<div id="tvesModal" class="modalContainer"><div class="modal-content" style="position: fixed; top: 0px; background: yellow; display: block;"><span class="close" onclick="cerrarModal()">×</span> <h2>Modal</h2><p>Se ha desplegado el modal!</p> </div></div>';
+        document.body.innerHTML += '<div id="tvesModal" class="modalContainer"><div class="modal-content" style="position: fixed; top: 0px; background: yellow; display: block; margin:100px; padding:100px; height: 400px; overflow: scroll; border: black 3px solid;"><button class="close" onclick="cerrarModal()">Cerrar X</button> <h2>Atención, error de accesibilidad</h2><p>Chequea los componentes de tu contenido marcados en rojo y verifica que hayas completado los campos de accesibilidad, accediendo al icono.<br>*Recuerda que las imágenes, los enlaces, iconos y botones deben estar correctamente etiquetados y contar con la debida descripción del elemento, ya sea un texto alternativo o una indicación para los lectores de pantalla.<br>Compruébalo con las imágenes de ejemplo que te compartimos a continuación.<br></p><img src="../wp-content/plugins/hybrid-composer/admin/images/capturas-modal.png"><br><button class="close" onclick="cerrarModal()">Ok, entiendo.</button></div></div>';
     }
 
 }
