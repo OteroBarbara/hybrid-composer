@@ -19,7 +19,6 @@ var update_interval; //gutenberg
 //Crear arreglo
 let vectorAccesibilidad = [];
 
-
 (function($) {
     var myTether;
     var current_source;
@@ -1767,7 +1766,23 @@ function faltaAccesibilidad() {
         }
 
     });
-    alert(mensaje);
+    //Existe modal?
+    if(document.getElementById("tvesModal")){
+        abrirModal();
+    }else{
+        document.body.innerHTML += '<div id="tvesModal" class="modalContainer"><div class="modal-content" style="position: fixed; top: 0px; background: yellow; display: block; margin:100px; padding:100px; height: 400px; overflow: scroll; border: black 3px solid;"><button class="close" onclick="cerrarModal()">Cerrar X</button> <h2>Atención, error de accesibilidad</h2><p>Chequea los componentes de tu contenido marcados en rojo y verifica que hayas completado los campos de accesibilidad, accediendo al icono.<br>*Recuerda que las imágenes, los enlaces, iconos y botones deben estar correctamente etiquetados y contar con la debida descripción del elemento, ya sea un texto alternativo o una indicación para los lectores de pantalla.<br>Compruébalo con las imágenes de ejemplo que te compartimos a continuación.<br></p><img src="../wp-content/plugins/hybrid-composer/admin/images/capturas-modal.png"><br><button class="close" onclick="cerrarModal()">Ok, entiendo.</button></div></div>';
+    }
+
+}
+//Agrego funciones para abrir y cerrar el modal
+let abrirModal = ()=> {
+    var modal = document.getElementById("tvesModal");
+    modal.style.display = "block";
+}
+
+let cerrarModal = ()=> {
+    var modal = document.getElementById("tvesModal");
+    modal.style.display = "none";
 }
 
 function generatePageContentArr() {
