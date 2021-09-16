@@ -19,7 +19,6 @@ var update_interval; //gutenberg
 //Crear arreglo
 let vectorAccesibilidad = [];
 
-
 (function($) {
     var myTether;
     var current_source;
@@ -1767,7 +1766,23 @@ function faltaAccesibilidad() {
         }
 
     });
-    alert(mensaje);
+    //Existe modal?
+    if(document.getElementById("tvesModal")){
+        abrirModal();
+    }else{
+        document.body.innerHTML += '<div id="tvesModal" class="modalContainer"><div class="modal-content" style="position: fixed; top: 0px; background: yellow; display: block;"><span class="close" onclick="cerrarModal()">×</span> <h2>Modal</h2><p>Se ha desplegado el modal!</p> </div></div>';
+    }
+
+}
+//Agrego funciones para abrir y cerrar el modal
+let abrirModal = ()=> {
+    var modal = document.getElementById("tvesModal");
+    modal.style.display = "block";
+}
+
+let cerrarModal = ()=> {
+    var modal = document.getElementById("tvesModal");
+    modal.style.display = "none";
 }
 
 function generatePageContentArr() {
