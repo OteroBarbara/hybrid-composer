@@ -28,7 +28,7 @@
         <div class="column-content">
             <div data-hc-setting="main_content" data-hc-id="main_content" data-hc-container="repeater" class="row">
                 <div class="clear"></div>
-                <div title="Add component" class="hc-add-component column-add column-empty">
+                <div title="Agregar componente" class="hc-add-component column-add column-empty">
                     <i class="icon-plus-add-2"></i>
                 </div>
             </div>

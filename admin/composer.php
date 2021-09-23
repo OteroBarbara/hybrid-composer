@@ -92,9 +92,9 @@ function hc_e_composer_item_menu($name) {
 <i class="button-move-complete button-move-down"></i>
 <div id= 'bcierre' class="hc-menu-component">
     <p><?php echo esc_attr($name) ?></p>
-    <i title="Duplicate" class="button-copy icon-files"></i>
-    <i title="Move" class="button-move icon-arrow-move"></i>
-    <i title="Settings" class="button-css fa icon-gear-setting-2" data-hc-setting="css_classes" data-hc-component="value" data-value="">
+    <i title="Duplicar" class="button-copy icon-files"></i>
+    <i title="Mover" class="button-move icon-arrow-move"></i>
+    <i title="Ajustes" class="button-css fa icon-gear-setting-2" data-hc-setting="css_classes" data-hc-component="value" data-value="">
         <input type="hidden" data-hc-setting="custom_css_classes" class="custom-css-classes" value="">
         <input type="hidden" data-hc-setting="custom_css_styles" class="custom-css-styles" value="">
     </i>
@@ -108,9 +108,9 @@ function hc_item_menu_accesible($name, $idmenu) {
     <i class="button-move-complete button-move-down"></i>
     <div id= 'bcierre' class="hc-menu-component">
         <p><?php echo esc_attr($name) ?></p>
-        <i title="Duplicate" class="button-copy icon-files"></i>
-        <i title="Move" class="button-move icon-arrow-move"></i>
-        <i title="Settings" class="button-css fa icon-gear-setting-2" data-hc-setting="css_classes" data-hc-component="value" data-value="">
+        <i title="Duplicar" class="button-copy icon-files"></i>
+        <i title="Mover" class="button-move icon-arrow-move"></i>
+        <i title="Ajustes" class="button-css fa icon-gear-setting-2" data-hc-setting="css_classes" data-hc-component="value" data-value="">
             <input type="hidden" data-hc-setting="custom_css_classes" class="custom-css-classes" value="">
             <input type="hidden" data-hc-setting="custom_css_styles" class="custom-css-styles" value="">
         </i>
