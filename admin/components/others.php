@@ -764,9 +764,14 @@
 </div>
 <div id="cnt_hc_icon_links">
     <div data-hc-id="_ID" data-hc-component="hc_icon_links" data-hc-setting="main_content" class="hc-icon-links hc-cnt-component">
+    <script> 
+            vectorAccesibilidad["_ID"] = "False";
+            var id= "_ID";
+            console.log("id:" + id);
+    </script>    
         <?php hc_e_composer_item_menu("Icon links") ?>
         <div class="button-inner-options" data-width="315">
-            <i class=" input-row icon-help"></i>
+            <i class="button-icon input-row icon-help"></i>
             <ul>
                 <li>
                     <h2>Enlace de iconos</h2>
@@ -775,11 +780,12 @@
                 </li>
             </ul>
         </div>
+  
         <div class="input-text input-row input-repeater" data-value="">
             <div class="repeater-source">
                 <div class="flex-box">
                     <i class="input-row button-icon button-icons-list icon-plus-add-2" data-hc-setting="icon" data-hc-component="value" data-value=""></i>
-                    <input type="text" data-hc-setting="text" />
+                    <?php hc_get_link("_ID"); ?>
                 </div>
             </div>
             <div class="repeater-container" data-hc-setting="rows" data-hc-id="rows" data-hc-container="repeater"></div>
@@ -789,7 +795,7 @@
         <div class="input-row input-select">
             <p class="sch"><?php _e("Style","hc") ?></p>
             <select class="social-type" data-hc-setting="type" data-require-file="yes">
-                <option selected value="classic"><?php _e("Classic","hc") ?></option>
+                <option selected value="clásico"><?php _e("Classic","hc") ?></option>
                 <option value="classic_big"><?php _e("Classic big","hc") ?></option>
                 <option value="circle_tt" data-require-file="toolstip"><?php _e("Circle toolstip","hc") ?></option>
                 <option value="circle_tt_big" data-require-file="toolstip"><?php _e("Circle toolstip big","hc") ?></option>
