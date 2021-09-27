@@ -795,7 +795,7 @@
         <div class="input-row input-select">
             <p class="sch"><?php _e("Style","hc") ?></p>
             <select class="social-type" data-hc-setting="type" data-require-file="yes">
-                <option selected value="clásico"><?php _e("Classic","hc") ?></option>
+                <option selected value="classic"><?php _e("Classic","hc") ?></option>
                 <option value="classic_big"><?php _e("Classic big","hc") ?></option>
                 <option value="circle_tt" data-require-file="toolstip"><?php _e("Circle toolstip","hc") ?></option>
                 <option value="circle_tt_big" data-require-file="toolstip"><?php _e("Circle toolstip big","hc") ?></option>
