@@ -378,6 +378,12 @@ COMPOSER POPOVER BOXES
                         <span class="sch"><?php _e("Intérprete en Lengua de Señas - video","hc") ?></span>
                     </div>
                 </li>
+                <li class="li-component component-hc-video">
+                    <div class="component-box" data-hc-target="hc_videoLS">
+                        <i class="icon-icomoon-6"></i>
+                        <span class="sch"><?php _e("Video Accesible","hc") ?></span>
+                    </div>
+                </li>
                 <li class="li-component component-hc-button">
                     <div class="component-box" data-hc-target="hc_audiodesc">
                         <i class="icon-icomoon-6"></i>
@@ -396,6 +402,7 @@ COMPOSER POPOVER BOXES
                         <span class="sch"><?php _e("Texto Sencillo","hc") ?></span>
                     </div>
                 </li>
+                
                 <li class="divider li-component"><?php _e("Sección Umuntu Live (comunicación en vivo).","hc") ?></li>
                 <li class="li-component"><p style="padding: 0 5px 0 5px;">Accede en esta sección, a los servicios de terceros y aplicaciones ofrecidas por empresas especializadas en accesibilidad, que complementarán la experiencia de las personas con discapacidad en su acceso universal a la información y los contenidos.</p></li>
                 <li class="li-component">

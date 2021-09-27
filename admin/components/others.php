@@ -257,6 +257,68 @@
         </div>
     </div>
 </div>
+<div id="cnt_hc_videoLS">
+    <div data-hc-id="_ID" data-hc-component="hc_video" data-hc-setting="main_content" class="hc-video hc-cnt-component">
+        <?php hc_e_composer_item_menu("Video") ?>
+        <div class="flex-box">
+            <div class="input-text input-row link-field">
+                <p><?php _e("Link","hc") ?></p>
+                <input data-hc-setting="link" class="input-link" placeholder="<?php _e("Youtube or MP4 link","hc") ?>" type="text" value="">
+                <i class="button-icon input-row upload-hc-button icon-link" data-value=""></i>
+            </div>
+        <div class="button-inner-options" data-width="315">
+            <i class="button-icon input-row icon-help"></i>
+            <ul>
+                <li>
+                    <h2>Botón Video Accesible</h2>
+                    <p>Aquí puedes incrustar (mediante un enlace o código fuente) un video accesible para los usuarios con discapacidad auditiva el cual contenga subtítulos e interpretación del contenido en la Lengua de Señas de su país.</p>
+                    <p>
+                    Añadir subtítulos a nuestros videos beneficia tanto a las personas sordas como a cualquier otro usuario que esté reproduciendo el contenido en un ambiente con mucho ruido o, en el que deba guardar silencio.
+                    </p>
+                    <p>
+                    A la hora de crear los subtítulos se debe tener en cuenta la fidelidad del texto con el diálogo y el tiempo de quien está hablando en la pantalla, y que la tipografía sea fácil de leer, con un tamaño de fuente mediano y un contraste bien definido con el fondo del video.
+                    </p>
+                    <p>
+                    Nota: Toma en cuenta que los subtítulos no sustituyen a la Lengua de Señas. Mientras algunas personas con discapacidad auditiva pueden leer y comprender lo que se está transmitiendo a través de un texto, la Lengua de Señas tiene la capacidad, como lengua materna, de transmitir los matices, las emociones y las entonaciones de un diálogo.
+                    </p>
+                    <p>
+                    <b>Importante:</b> El intérprete de Lengua de Señas, cuyas gesticulaciones y movimientos son tridimensionales, debe estar claramente visible y ocupar al menos un sexto (1/6) de la pantalla.</p>
+                    </p>
+                </li>
+            </ul>
+         </div>
+            <div class="button-inner-options">
+                <i class="button-icon input-row icon-gear-setting-2"></i>
+                <ul>
+                    <li class="input-text input-row small-input">
+                        <p><?php _e("Width","hc") ?></p>
+                        <input data-hc-setting="width" placeholder="100%" type="text" data-mask="number" value="" />
+                    </li>
+                    <li class="input-text input-row small-input">
+                        <p><?php _e("Height","hc") ?></p>
+                        <input data-hc-setting="height" type="text" data-mask="number" value="350" />
+                    </li>
+                    <li class="input-row input-checkbox">
+                        <p><?php _e("Autoplay","hc") ?></p>
+                        <input data-hc-setting="autoplay" type="checkbox">
+                    </li>
+                    <li class="input-row input-checkbox">
+                        <p><?php _e("Loop","hc") ?></p>
+                        <input data-hc-setting="loop" type="checkbox">
+                    </li>
+                    <li class="input-row input-checkbox">
+                        <p><?php _e("Controls","hc") ?></p>
+                        <input data-hc-setting="controls" checked type="checkbox">
+                    </li>
+                    <li class="input-row input-checkbox">
+                        <p><?php _e("Muted","hc") ?></p>
+                        <input data-hc-setting="muted" type="checkbox">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 <div id="cnt_hc_button">
     <div data-hc-id="_ID" data-hc-component="hc_button" data-hc-setting="main_content" class="hc-button hc-cnt-component">
     <script> 
