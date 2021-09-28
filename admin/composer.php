@@ -281,6 +281,12 @@ COMPOSER POPOVER BOXES
                         <span class="sch"><?php _e("Icon links","hc") ?></span>
                     </div>
                 </li>
+                <li class="li-component component-hc-icon-links">
+                    <div class="component-box" data-hc-target="hc_icon_links_2">
+                        <i class="icon-icomoon-23"></i>
+                        <span class="sch"><?php _e("Icon links 2","hc") ?></span>
+                    </div>
+                </li>
                 <!-- <li class="li-component component-hc-google-map">
                     <div class="component-box" data-hc-target="hc_google_map">
                         <i class="icon-icomoon-1"></i>
