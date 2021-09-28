@@ -132,7 +132,7 @@ function hc_include_hc_icon_list_simple(&$Y_NOW,$EXTRA) {
     <?php
     $arr = $Y_NOW["rows"];
     for ($i = 0; $i < count($arr); $i++) {
-        if ($Y_NOW["alignment"] == "text-right") echo '<li>' . wp_kses(hc_json($arr[$i]["text"]),array('b' => array())) . ' <i class="fa-li ' . esc_attr($arr[$i]["icon"]) . '"></i></li>';
+        if ($Y_NOW["alignment"] == "text-right") echo '<li>' . wp_kses(hc_json($arr[$i]["text"]),array('b' => array())) . ' <i aria-hidden="true" class="fa-li ' . esc_attr($arr[$i]["icon"]) . '"></i></li>';
         else echo '<li><i aria-hidden="true" class="fa-li ' . esc_attr($arr[$i]["icon"]) . '"></i> ' . hc_json($arr[$i]["text"]) . '</li>';
     }
     ?>
