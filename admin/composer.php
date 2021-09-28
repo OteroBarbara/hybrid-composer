@@ -197,8 +197,8 @@ COMPOSER CONTENT CONTAINER
             <th class="add-init add-col-3" data-target="hc_section" data-index="3"><span></span><span></span><span></span></th>
             <th class="add-init add-col-4" data-target="hc_section" data-index="4"><span></span><span></span><span></span><span></span></th>
             <th class="add-init add-col-6" data-target="hc_section" data-index="6"><span></span><span></span><span></span><span></span><span></span><span></span></th>
-            <th class="add-init add-two-blocks" data-target="hc_section_two_blocks" data-index="1"><span></span></th>
-            <th class="add-init add-map" data-target="hc_section_map" data-index="1"><span></span></th>
+            <!-- <th class="add-init add-two-blocks" data-target="hc_section_two_blocks" data-index="1"><span></span></th>
+            <th class="add-init add-map" data-target="hc_section_map" data-index="1"><span></span></th> -->
             <th class="composer-item-paste section-add"><i class="icon-send-to-back"></i></th>
         </tr>
     </table>

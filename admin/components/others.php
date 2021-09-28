@@ -347,8 +347,9 @@
                         <select data-hc-setting="style" data-default="circle">
                             <option selected value="circle"><?php _e("Circle","hc") ?></option>
                             <option value="square"><?php _e("Square","hc") ?></option>
-                            <option value="circle-border"><?php _e("Circle border","hc") ?></option>
-                            <option value="square-border"><?php _e("Square border","hc") ?></option>
+                            <!-- estas opciones no son accesibles -->
+                            <!-- <option value="circle-border"><?php _e("Circle border","hc") ?></option>
+                            <option value="square-border"><?php _e("Square border","hc") ?></option> -->
                             <option value="link"><?php _e("Link","hc") ?></option>
                         </select>
                     </li>
@@ -2399,10 +2400,10 @@
         </div>
         <div class="input-text input-row input-repeater" data-value="">
             <div class="repeater-source">
-                <i class="input-row button-icon button-checkbox icon-ios-arrow-forward hc-inner-menu-child" data-hc-setting="child" data-hc-component="value" data-value=""></i>
+                <i class="input-row button-icon button-checkbox icon-ios-arrow-forward hc-inner-menu-child" title="Nombre activo" data-hc-setting="child" data-hc-component="value" data-value=""></i>
                 <div class="flex-box">
-                    <i class="input-row button-icon button-icons-list icon-plus-add-2" data-hc-setting="icon" data-hc-component="value" data-value=""></i>
-                    <input class="hc-inner-menu-item-name" type="text" data-hc-setting="text" placeholder="<?php _e("Menu item name","hc") ?>" />
+                    <i class="input-row button-icon button-icons-list icon-plus-add-2" title="Seleccionar Ícono" data-hc-setting="icon" data-hc-component="value" data-value=""></i>
+                    <input class="hc-inner-menu-item-name" type="text" data-hc-setting="text" placeholder="<?php _e("Nombre del elemento de menú","hc") ?>" />
                 </div>
                 <div class="input-row full-input" data-dependence-show="one_page">
                     <input type="text" data-hc-setting="link" placeholder="<?php _e("Link","hc") ?>" />
@@ -2426,7 +2427,8 @@
                     <p><?php _e("Style","hc") ?></p>
                     <select data-hc-setting="style">
                         <option value="" selected><?php _e("Clásico","hc") ?></option>
-                        <option value="ms-rounded"><?php _e("Redondeado","hc") ?></option>
+                        <!-- Opcion no accesible -->
+                        <!-- <option value="ms-rounded"><?php _e("Redondeado","hc") ?></option> -->
                         <option value="ms-minimal"><?php _e("Mínimo","hc") ?></option>
                     </select>
                 </li>
@@ -2438,10 +2440,10 @@
                         <option value="nav-center"><?php _e("Center","hc") ?></option>
                     </select>
                 </li>
-                <li class="input-row input-checkbox">
+                <!-- <li class="input-row input-checkbox">
                     <p><?php _e("Automatic","hc") ?></p>
                     <input data-hc-setting="one_page" data-dependence-trigger="hide" type="checkbox">
-                </li>
+                </li> -->
             </ul>
         </div>
     </div>
