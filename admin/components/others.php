@@ -777,7 +777,7 @@
 </div>
 <div id="cnt_hc_icon_list_simple">
     <div data-hc-id="_ID" data-hc-component="hc_icon_list_simple" data-hc-setting="main_content" class="hc-icon-list-simple hc-cnt-component">
-        <?php hc_e_composer_item_menu("Icon list") ?>
+        <?php hc_e_composer_item_menu("Lista de íconos") ?>
         <div class="input-text input-row input-repeater" data-value="">
             <div class="repeater-source">
                 <div class="flex-box">
@@ -1675,9 +1675,9 @@
 </div>
 <div id="cnt_hc_quote">
     <div data-hc-id="_ID" data-hc-component="hc_quote" data-hc-setting="main_content" class="hc-quote hc-cnt-component">
-        <?php hc_e_composer_item_menu("Quote") ?>
+        <?php hc_e_composer_item_menu("Cita") ?>
         <div class="button-inner-options" data-width="315">
-            <i class=" input-row icon-help"></i>
+            <i class="button-icon input-row icon-help"></i>
             <ul>
                 <li>
                     <h2>Cita</h2>
@@ -1734,7 +1734,7 @@
 </div>
 <div id="cnt_hc_space">
     <div data-hc-id="_ID" data-hc-component="hc_space" data-hc-setting="main_content" class="hc-space hc-cnt-component">
-        <?php hc_e_composer_item_menu("Space") ?>
+        <?php hc_e_composer_item_menu("Espacio") ?>
         <div class="button-inner-options" data-width="315">
             <i class="button-icon input-row icon-help"></i>
             <ul>
@@ -2259,7 +2259,7 @@
                             <input type="hidden" data-hc-setting="icon_style" class="icon-style" value="">
                             <input type="hidden" data-hc-setting="icon_image" class="icon-image" value="">
                         </i>
-                        <input type="text" data-hc-setting="text" placeholder="<?php _e("Menu item name","hc") ?>" />
+                        <input type="text" data-hc-setting="text" placeholder="<?php _e("Nombre del elemento del Menú","hc") ?>" />
                     </div>
                 </div>
                 <?php } ?>
@@ -2387,7 +2387,7 @@
 <div id="cnt_hc_inner_menu">
     <div data-hc-id="_ID" data-hc-component="hc_inner_menu" data-hc-setting="main_content" class="hc-inner-menu hc-cnt-component">
         <input type="hidden" class="page_setting" value="inner_menu">
-        <?php hc_e_composer_item_menu("Inner menu") ?>
+        <?php hc_e_composer_item_menu("Menú interior") ?>
         <div class="button-inner-options" data-width="315">
             <i class="button-icon input-row icon-help"></i>
             <ul>
@@ -2425,9 +2425,9 @@
                 <li class="input-row input-select">
                     <p><?php _e("Style","hc") ?></p>
                     <select data-hc-setting="style">
-                        <option value="" selected><?php _e("Classic","hc") ?></option>
-                        <option value="ms-rounded"><?php _e("Rounded","hc") ?></option>
-                        <option value="ms-minimal"><?php _e("Minimal","hc") ?></option>
+                        <option value="" selected><?php _e("Clásico","hc") ?></option>
+                        <option value="ms-rounded"><?php _e("Redondeado","hc") ?></option>
+                        <option value="ms-minimal"><?php _e("Mínimo","hc") ?></option>
                     </select>
                 </li>
                 <li class="input-row input-select">
@@ -2450,7 +2450,7 @@
     <div data-hc-id="_ID" data-hc-component="hc_contact_form" data-hc-setting="main_content" class="hc-contact-form hc-cnt-component">
         <input type="hidden" class="file_require" value="contact_form">
         <input type="hidden" class="file_require" value="datepicker">
-        <?php hc_e_composer_item_menu("Contact form") ?>
+        <?php hc_e_composer_item_menu("Formulario de contacto") ?>
         <div class="button-inner-options" data-width="315">
             <i class="button-icon input-row icon-help"></i>
             <ul>
@@ -2489,7 +2489,7 @@
                         <input data-hc-setting="required" type="checkbox">
                     </div>
                     <div class="input-text input-row full-only-input">
-                        <input data-hc-setting="text" placeholder="Name" type="text" value="" />
+                        <input data-hc-setting="text" placeholder="Nombre" type="text" value="" />
                     </div>
                 </div>
             </div>
