@@ -786,7 +786,7 @@ let vectorAccesibilidad = [];
                 //25
                 if (css.indexOf("popover-inner-save") > -1) {
                     if ($(this).hasClass("popover-big-inner-save")) t = $("#popover-box-empty-big");
-                    else if ($(this).hasClass("popover-inner-save-2")) t = $("#popover-box-empty-2");
+                    else if ($(this).hasClass("popover-info-inner-save")) t = $("#popover-box-empty-info");
                     else t = $("#popover-box-empty");
                     $(t).find("ul").html($(this).find("ul").html())
                     $(t).find("[data-hc-setting]").each(function() {
