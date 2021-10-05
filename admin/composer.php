@@ -777,13 +777,19 @@ COMPOSER POPOVER BOXES
         <span class="close-button"></span>
         <ul class="list"></ul>
         <div class="clear"></div>
-        <a class="button button-primary button-large popover-inner-save"> <?php _e("GUARDAR CAMBIOS","hc") ?></a>
+        <a class="button button-primary button-large popover-inner-save"> <?php _e("Guardar cambios","hc") ?></a>
     </div>
     <div id="popover-box-empty-big" class="popover-box popover-list" style="display: none">
         <span class="close-button"></span>
         <ul class="list"></ul>
         <div class="clear"></div>
         <a class="button button-primary button-large popover-inner-save popover-big-inner-save"><?php _e("GUARDAR CAMBIOS","hc") ?></a>
+    </div>
+    <div id="popover-box-empty-info" class="popover-box popover-list" style="display: none">
+        <span class="close-button"></span>
+        <ul class="list"></ul>
+        <div class="clear"></div>
+        <a class="button button-primary button-large popover-inner-save popover-info-inner-save"><?php _e("Cerrar","hc") ?></a>
     </div>
 </div>
 

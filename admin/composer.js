@@ -760,7 +760,10 @@ let vectorAccesibilidad = [];
                             height: '385px',
                             size: '4px'
                         });
-                    } else t = $("#popover-box-empty");
+                    }else if ($(this).hasClass("info-inner-options")) {
+                        t = $("#popover-box-empty-info");
+                    }
+                    else t = $("#popover-box-empty");
                     var w = $(this).attr("data-width");
                     $(t).css("max-width", "");
                     if (!isEmpty(w)) $(t).css("max-width", w + "px");
@@ -783,6 +786,7 @@ let vectorAccesibilidad = [];
                 //25
                 if (css.indexOf("popover-inner-save") > -1) {
                     if ($(this).hasClass("popover-big-inner-save")) t = $("#popover-box-empty-big");
+                    else if ($(this).hasClass("popover-inner-save-2")) t = $("#popover-box-empty-2");
                     else t = $("#popover-box-empty");
                     $(t).find("ul").html($(this).find("ul").html())
                     $(t).find("[data-hc-setting]").each(function() {

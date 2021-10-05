@@ -54,7 +54,7 @@
             <p><?php esc_attr_e("Offset","hc") ?></p>
             <input data-hc-setting="full_screen_height" placeholder="px" type="text" data-mask="number" value="" data-require="full_screen" data-require-action="hide" />
         </div>  
-        <div class="button-inner-options" data-width="315">
+        <div class="button-inner-options info-inner-options" data-width="315">
             <i class="button-icon input-row icon-help"></i>
             <ul>
                 <li>
