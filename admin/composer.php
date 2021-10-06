@@ -121,16 +121,17 @@ function hc_item_menu_accesible($name, $idmenu) {
 function hc_button_options($hidden = false) {
 ?>
 <li class="input-row input-text">
-    <p><?php _e("Button text","hc") ?></p>
+    <p><?php _e("Texto del Botón","hc") ?></p>
     <input type="text" data-hc-setting="button_text" />
 </li>
 <li class="input-row input-select">
-    <p><?php _e("Button style","hc") ?></p>
+    <p><?php _e("Estilo del Botón","hc") ?></p>
     <select data-hc-setting="button_style" data-default="circle">
         <option selected value="circle"><?php _e("Circle","hc") ?></option>
         <option value="square"><?php _e("Square","hc") ?></option>
-        <option value="circle-border"><?php _e("Circle border","hc") ?></option>
-        <option value="square-border"><?php _e("Square border","hc") ?></option>
+        <!-- Opciones que no son accesibles -->
+        <!-- <option value="circle-border"><?php _e("Circle border","hc") ?></option>
+        <option value="square-border"><?php _e("Square border","hc") ?></option> -->
         <option value="link"><?php _e("Link","hc") ?></option>
         <?php if ($hidden) echo '<option value="hidden">' . __("Hidden","hc") . '</option>'; ?>
     </select>
@@ -145,7 +146,7 @@ function hc_button_options($hidden = false) {
     </select>
 </li>
 <li class="input-row input-checkbox">
-    <p><?php _e("Animated button","hc") ?></p>
+    <p><?php _e("Botón animado","hc") ?></p>
     <input data-hc-setting="button_animation" type="checkbox">
 </li>
 <?php
@@ -187,7 +188,7 @@ COMPOSER CONTENT CONTAINER
 -->
 <div id="hybrid_composer_content">
 </div>
-<p>*Aquí  puedes diseñar el contenido de tu sitio web. Selecciona la cantidad de columnas para comenzar.</p>
+<h1>*Aquí  puedes diseñar el contenido de tu sitio web. Selecciona la cantidad de columnas para comenzar.</h1>
 <div class="clear"></div>
 <div class="hc-start-button">
     <table>
@@ -590,7 +591,7 @@ COMPOSER POPOVER BOXES
     </div>
     <div id="popover-box-code" class="popover-box popover-list search-filter" data-search-class="sch" style="display: none">
         <span class="close-button"></span>
-        <div class="popover-title"><h4><?php _e("Settings","hc") ?></h4></div>
+        <div class="popover-title"><h4><?php _e("Ajustes","hc") ?></h4></div>
         <div class="scroll-content" data-height="300">
             <ul class="list css-class-list">
                 <?php

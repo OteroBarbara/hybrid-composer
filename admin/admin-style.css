@@ -52,7 +52,7 @@ body:not(.editor-mode-classic) #hc-publish {
 }
 
 #hc-publish {
-    background: #9C5DF0;
+    background: #2271b1;
     border-color: #006a95 #00648c #00648c;
     box-shadow: inset 0 -1px 0 #00648c;
     color: #fff;
@@ -612,7 +612,7 @@ body.template-fullpage #popover-box-components.only-columns li.li-level-2.fp-com
 }
 
 .hc-start-button th:hover span {
-    background-color: #9C5DF0;
+    background-color: #2271b1;
     color: #fff;
     cursor: pointer;
 }
@@ -624,7 +624,7 @@ body.template-fullpage #popover-box-components.only-columns li.li-level-2.fp-com
 }
 
 .hc-start-button .composer-item-paste:hover i {
-    color: #9C5DF0;
+    color: #2271b1;
 }
 
 .flex-box {

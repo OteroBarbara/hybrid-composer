@@ -55,7 +55,7 @@ let vectorAccesibilidad = [];
                 editor_selector = ".wp-block-freeform > p";
                 setTimeout(function() {
                     var html
-                    $(".edit-post-header__settings").prepend('<div id="hc-preview" class="hc-preview button">Preview</div>' + (is_new_page ? '<div id="hc-publish" class="hc-publish button is-primary">Publish</div>' : ''));
+                    $(".edit-post-header__settings").prepend('<div id="hc-preview" class="hc-preview button">Vista previa</div>' + (is_new_page ? '<div id="hc-publish" class="hc-publish button is-primary">Publicar</div>' : ''));
                 }, 300);
 
                 //get post content
@@ -1420,7 +1420,7 @@ let vectorAccesibilidad = [];
                                     }).always(function(response) {
                                         if (!isEmpty(response.responseText)) response = response.responseText;
                                         var status = "notice-success";
-                                        var text = "Update completed!";
+                                        var text = "¡Actualización completada!";
                                         if (!response) {
                                             status = "notice-error";
                                             text = "Error :(";
@@ -1485,7 +1485,7 @@ let vectorAccesibilidad = [];
                     setTimeout(function() {
                         var autosave = localStorage.getItem("hc-autosave-" + post_id);
                         if (!isEmpty(autosave)) {
-                            showNoticeBox("notice-warning", "The backup of this post in your browser is different from the version below. <a class='is-link' id='hc-restore-backup' href='#'>Restore backup</a>");
+                            showNoticeBox("notice-warning", "La copia de seguridad de esta publicación en su navegador es diferente a la versión siguiente. <a class='is-link' id='hc-restore-backup' href='#'>Restaurar copia de seguridad</a>");
                         }
                         last_saved_page_content = stringifyPageContentArr();
                     }, 1000);
@@ -1513,7 +1513,7 @@ let vectorAccesibilidad = [];
                     PAGE_CONTENT_ARR = JSON.parse(autosave);
                     applyHTMLContentArr();
                     applyContentArr();
-                    showNoticeBox("notice-success", "Backup restored!");
+                    showNoticeBox("notice-success", "¡Copia de seguridad restaurada!");
                 });
             }
         } else $("#postdivrich").show();

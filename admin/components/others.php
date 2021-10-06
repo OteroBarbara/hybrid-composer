@@ -204,7 +204,7 @@
 </div>
 <div id="cnt_hc_video">
     <div data-hc-id="_ID" data-hc-component="hc_video" data-hc-setting="main_content" class="hc-video hc-cnt-component">
-        <?php hc_e_composer_item_menu("Video") ?>
+        <?php hc_e_composer_item_menu("Botón Video") ?>
         <div class="flex-box">
             <div class="input-text input-row link-field">
                 <p><?php _e("Link","hc") ?></p>
@@ -259,7 +259,7 @@
 </div>
 <div id="cnt_hc_videoLS">
     <div data-hc-id="_ID" data-hc-component="hc_video" data-hc-setting="main_content" class="hc-video hc-cnt-component">
-        <?php hc_e_composer_item_menu("Video") ?>
+        <?php hc_e_composer_item_menu("Video Accesible(Embebido)") ?>
         <div class="flex-box">
             <div class="input-text input-row link-field">
                 <p><?php _e("Link","hc") ?></p>
@@ -270,7 +270,7 @@
             <i class="button-icon input-row icon-help"></i>
             <ul>
                 <li>
-                    <h2>Botón Video Accesible</h2>
+                    <h2>Video Accesible</h2>
                     <p>Aquí puedes incrustar (mediante un enlace o código fuente) un video accesible para los usuarios con discapacidad auditiva el cual contenga subtítulos e interpretación del contenido en la Lengua de Señas de su país.</p>
                     <p>
                     Añadir subtítulos a nuestros videos beneficia tanto a las personas sordas como a cualquier otro usuario que esté reproduciendo el contenido en un ambiente con mucho ruido o, en el que deba guardar silencio.
@@ -2503,8 +2503,8 @@
             <i class="button-icon input-row icon-gear-setting-2"></i>
             <ul>
                 <li class="input-text input-row">
-                    <p><?php _e("Recipient's email","hc") ?></p>
-                    <input data-hc-setting="recipient_email" placeholder="<?php _e("your-email@domain.com","hc") ?>" type="text" value="">
+                    <p><?php _e("Correo de destino","hc") ?></p>
+                    <input data-hc-setting="recipient_email" placeholder="<?php _e("tu-correo@dominio.com","hc") ?>" type="text" value="">
                 </li>
                 <li class="input-text input-row">
                     <p><?php _e("Subject","hc") ?></p>
@@ -2533,16 +2533,16 @@
                     <input data-hc-setting="button_icon" placeholder="fa fa-icon" type="text" value="">
                 </li>
                 <li class="input-text input-row">
-                    <p><?php _e("Checkbox message","hc") ?></p>
+                    <p><?php _e("Message del Checkbox","hc") ?></p>
                     <input data-hc-setting="checkbox" placeholder="" type="text" value="">
                 </li>
                 <li class="input-text input-row">
-                    <p><?php _e("Success message","hc") ?></p>
-                    <input data-hc-setting="success_message" placeholder="" type="text" value="Congratulations. Your message has been sent successfully.">
+                    <p><?php _e("Mensaje de éxito","hc") ?></p>
+                    <input data-hc-setting="success_message" placeholder="" type="text" value="Felicidades. Tu mensaje ha sido enviado exitosamente.">
                 </li>
                 <li class="input-text input-row">
                     <p><?php _e("Error message","hc") ?></p>
-                    <input data-hc-setting="error_message" placeholder="" type="text" value="Error, please retry. Your message has not been sent.">
+                    <input data-hc-setting="error_message" placeholder="" type="text" value="Error, vuelva a intentarlo. Su mensaje no ha sido enviado.">
                 </li>
             </ul>
         </div>

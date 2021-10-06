@@ -23,6 +23,9 @@
         <h1>Comienza a escribir tu artículo aquí</h1>
         <input class="main_title" data-hc-setting="title" type="text" placeholder="<?php esc_attr_e("Título para el encabezado","hc") ?>" value="<?php echo get_the_title() ?>" /><!--gutenberg-->
         <input class="main_subtitle" data-hc-setting="subtitle" type="text" placeholder="<?php esc_attr_e("Subtítulo del encabezado","hc") ?>" value="" /><!--gutenberg-->
+        <div>
+            <p>Nota: Las limitaciones en este editor para ajustar el tamaño de fuente y las opciones de tipografía por defecto están pensadas para asegurar que el contenido de texto que se refleje en la página tenga un formato accesible para la mayor cantidad posible de usuarios.</p>
+        </div>  
         <div id="title-tab" class="tab-box inverse tab-wp">
             <div class="panel active">
                 <div data-hc-setting="title_content" class="row"></div>
@@ -59,12 +62,12 @@
             <ul>
                 <li>
                     <h2>Imagen encabezado</h2>
-                    <p>El lector de pantalla utilizado por personas con discapacidad visual identificará esta imagen como decorativa. En el caso de que la imagen contenga información, por favor asegúrate que la misma información se brinde en otro lugar de la nota. 
-                    Asegúrate que el contraste con el título sea suficiente para una correcta lectura.
+                    <p>*Atención: Esta imagen de encabezado es meramente decorativa. Debido a su función como parte de la estructura visual del sitio, no corresponde la utilización de texto alternativo.
+                        Puedes aprovechar este campo para, por ejemplo, dejar una nota de referencia. Recuerda que los lectores de pantalla no detectarán la descripción que insertes en esta imagen en específico. ¡Pero no olvides añadir el texto alternativo al resto de imágenes que insertes en el contenido de la web!
                     </p>
                 </li>
             </ul>
-        </div>
+        </div>   
     </div>
 </div>
 <div id="cnt_hc_title_slider">
@@ -73,7 +76,7 @@
         <div class="upload-box upload-multi upload-row" data-hc-setting="slides" data-hc-id="slides" data-hc-container="repeater">
             <span class="close-button"></span>
             <div class="upload-container upload-add">
-                <div data-hc-component="upload" class="upload-btn"></div>
+                <div data-hc-component="upload" class="upload-btn" title="Añadir imagen"></div>
             </div>
         </div>
         <hr class="space s" />
