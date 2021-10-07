@@ -46,8 +46,6 @@
         <div class="input-text input-row link-field">
             <select data-hc-setting="link_type" class="link-type" data-require-file="yes">
                 <option selected value="classic"><?php _e("Link","hc") ?></option>
-                <option value="lightbox" data-require-file="lightbox"><?php _e("Lightbox","hc") ?></option>
-                <option value="custom" data-require-file="lightbox"><?php _e("Custom","hc") ?></option>
             </select>
             <i class="button-icon input-row upload-hc-button icon-link" data-value=""></i>
             <div class="button-inner-options" data-width="315">
@@ -68,7 +66,7 @@
                     </li>
                 </ul>
             </div>
-            <input data-hc-setting="link" class="input-link" placeholder="<?php _e("Link","hc") ?>" type="text" value="" /> 
+            <input data-hc-setting="link" class="input-link" placeholder="<?php _e("Ingrese su enlace aquí","hc") ?>" type="text" value="" /> 
 
             <a class="preview button link-content-btn" href="#"><?php _e("Edit content","hc") ?></a>
         </div>
@@ -211,20 +209,20 @@
                 <input data-hc-setting="link" class="input-link" placeholder="<?php _e("Youtube or MP4 link","hc") ?>" type="text" value="">
                 <i class="button-icon input-row upload-hc-button icon-link" data-value=""></i>
             </div>
-        <div class="button-inner-options info-inner-options" data-width="315">
-            <i class="button-icon input-row icon-help"></i>
-            <ul>
-                <li>
-                    <h2>Botón Video</h2>
-                    <p>Recuerda que tus contenidos deben ser accesibles, en el caso de un video asegúrate de que tenga intérprete de Lengua de Señas, subtítulos y audiodescripción.</p>
-                    <p><strong>Intérprete: </strong>Ubicada del lado inferior derecho (desde el espectador) con un tamaño mínimo de 1/8 de la pantalla.</p>
-                    <p><strong>Subtitulado: </strong>Letra con igual o superior 16 puntos. Tipografía Sin serif. Deben convivir con la intérprete de Lengua de Señas.</p>
-                    <p><strong>Audiodescripción: </strong>Herramienta para describir la información visual, en formato de audio.Se audiodescriben los contenidos de las imágenes: logos y créditos, tiempo (cuándo), espacio (dónde), personajes (quién) y acciones (qué).</p>                    
-                    <p>Por más información:</p>
-                    <a target="_blank" href="https://umuntu.uy/">Haz clic aquí</a>
-                </li>
-            </ul>
-         </div>
+            <div class="button-inner-options info-inner-options" data-width="315">
+                <i class="button-icon input-row icon-help"></i>
+                <ul>
+                    <li>
+                        <h2>Botón Video</h2>
+                        <p>Recuerda que tus contenidos deben ser accesibles, en el caso de un video asegúrate de que tenga intérprete de Lengua de Señas, subtítulos y audiodescripción.</p>
+                        <p><strong>Intérprete: </strong>Ubicada del lado inferior derecho (desde el espectador) con un tamaño mínimo de 1/8 de la pantalla.</p>
+                        <p><strong>Subtitulado: </strong>Letra con igual o superior 16 puntos. Tipografía Sin serif. Deben convivir con la intérprete de Lengua de Señas.</p>
+                        <p><strong>Audiodescripción: </strong>Herramienta para describir la información visual, en formato de audio.Se audiodescriben los contenidos de las imágenes: logos y créditos, tiempo (cuándo), espacio (dónde), personajes (quién) y acciones (qué).</p>                    
+                        <p>Por más información:</p>
+                        <a target="_blank" href="https://umuntu.uy/">Haz clic aquí</a>
+                    </li>
+                </ul>
+            </div>
             <div class="button-inner-options">
                 <i class="button-icon input-row icon-gear-setting-2"></i>
                 <ul>
@@ -254,6 +252,9 @@
                     </li>
                 </ul>
             </div>
+        </div>
+        <div>
+            <p>*Atención: Este video va embebido en el sitio web. Ten en cuenta la relación del tamaño de las columnas con el tamaño que ocupará en la página. Si seleccionas 1/12(100%), el video se visualizará muy pequeño.</p>
         </div>
     </div>
 </div>
@@ -266,27 +267,27 @@
                 <input data-hc-setting="link" class="input-link" placeholder="<?php _e("Youtube or MP4 link","hc") ?>" type="text" value="">
                 <i class="button-icon input-row upload-hc-button icon-link" data-value=""></i>
             </div>
-        <div class="button-inner-options info-inner-options" data-width="315">
-            <i class="button-icon input-row icon-help"></i>
-            <ul>
-                <li>
-                    <h2>Video Accesible</h2>
-                    <p>Aquí puedes incrustar (mediante un enlace o código fuente) un video accesible para los usuarios con discapacidad auditiva el cual contenga subtítulos e interpretación del contenido en la Lengua de Señas de su país.</p>
-                    <p>
-                    Añadir subtítulos a nuestros videos beneficia tanto a las personas sordas como a cualquier otro usuario que esté reproduciendo el contenido en un ambiente con mucho ruido o, en el que deba guardar silencio.
-                    </p>
-                    <p>
-                    A la hora de crear los subtítulos se debe tener en cuenta la fidelidad del texto con el diálogo y el tiempo de quien está hablando en la pantalla, y que la tipografía sea fácil de leer, con un tamaño de fuente mediano y un contraste bien definido con el fondo del video.
-                    </p>
-                    <p>
-                    Nota: Toma en cuenta que los subtítulos no sustituyen a la Lengua de Señas. Mientras algunas personas con discapacidad auditiva pueden leer y comprender lo que se está transmitiendo a través de un texto, la Lengua de Señas tiene la capacidad, como lengua materna, de transmitir los matices, las emociones y las entonaciones de un diálogo.
-                    </p>
-                    <p>
-                    <b>Importante:</b> El intérprete de Lengua de Señas, cuyas gesticulaciones y movimientos son tridimensionales, debe estar claramente visible y ocupar al menos un sexto (1/6) de la pantalla.</p>
-                    </p>
-                </li>
-            </ul>
-         </div>
+            <div class="button-inner-options info-inner-options" data-width="315">
+                <i class="button-icon input-row icon-help"></i>
+                <ul>
+                    <li>
+                        <h2>Video Accesible</h2>
+                        <p>Aquí puedes incrustar (mediante un enlace o código fuente) un video accesible para los usuarios con discapacidad auditiva el cual contenga subtítulos e interpretación del contenido en la Lengua de Señas de su país.</p>
+                        <p>
+                        Añadir subtítulos a nuestros videos beneficia tanto a las personas sordas como a cualquier otro usuario que esté reproduciendo el contenido en un ambiente con mucho ruido o, en el que deba guardar silencio.
+                        </p>
+                        <p>
+                        A la hora de crear los subtítulos se debe tener en cuenta la fidelidad del texto con el diálogo y el tiempo de quien está hablando en la pantalla, y que la tipografía sea fácil de leer, con un tamaño de fuente mediano y un contraste bien definido con el fondo del video.
+                        </p>
+                        <p>
+                        Nota: Toma en cuenta que los subtítulos no sustituyen a la Lengua de Señas. Mientras algunas personas con discapacidad auditiva pueden leer y comprender lo que se está transmitiendo a través de un texto, la Lengua de Señas tiene la capacidad, como lengua materna, de transmitir los matices, las emociones y las entonaciones de un diálogo.
+                        </p>
+                        <p>
+                        <b>Importante:</b> El intérprete de Lengua de Señas, cuyas gesticulaciones y movimientos son tridimensionales, debe estar claramente visible y ocupar al menos un sexto (1/6) de la pantalla.</p>
+                        </p>
+                    </li>
+                </ul>
+            </div>
             <div class="button-inner-options">
                 <i class="button-icon input-row icon-gear-setting-2"></i>
                 <ul>
@@ -317,11 +318,14 @@
                 </ul>
             </div>
         </div>
+        <div>
+            <p>*Atención: Este video va embebido en el sitio web. Ten en cuenta la relación del tamaño de las columnas con el tamaño que ocupará en la página. Si seleccionas 1/12(100%), el video se visualizará muy pequeño.</p>
+        </div>
     </div>
 </div>
 <div id="cnt_hc_button">
     <div data-hc-id="_ID" data-hc-component="hc_button" data-hc-setting="main_content" class="hc-button hc-cnt-component">
-    <script> 
+        <script> 
             vectorAccesibilidad["_ID"] = "False";
             var id= "_ID";
             console.log("id:" + id);
@@ -347,9 +351,7 @@
                         <select data-hc-setting="style" data-default="circle">
                             <option selected value="circle"><?php _e("Circle","hc") ?></option>
                             <option value="square"><?php _e("Square","hc") ?></option>
-                            <!-- estas opciones no son accesibles -->
-                            <!-- <option value="circle-border"><?php _e("Circle border","hc") ?></option>
-                            <option value="square-border"><?php _e("Square border","hc") ?></option> -->
+
                             <option value="link"><?php _e("Link","hc") ?></option>
                         </select>
                     </li>

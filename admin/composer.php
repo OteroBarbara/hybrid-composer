@@ -376,13 +376,13 @@ COMPOSER POPOVER BOXES
                 <li class="li-component component-hc-niche-content-box-call">
                     <div class="component-box" data-hc-target="hc_niche_content_box_call">
                         <i class="icon-icomoon-17"></i>
-                        <span class="sch"><?php _e("Intérprete en Lengua de Señas - online","hc") ?></span>
+                        <span class="sch"><?php _e("Botón de intérprete en Lengua de Señas - online","hc") ?></span>
                     </div>
                 </li>
                 <li class="li-component component-hc-niche-content-box-call">
                     <div class="component-box" data-hc-target="hc_niche_content_box_call2">
                         <i class="icon-icomoon-17"></i>
-                        <span class="sch"><?php _e("Intérprete en Lengua de Señas - video","hc") ?></span>
+                        <span class="sch"><?php _e("Botón de intérprete en Lengua de Señas - video","hc") ?></span>
                     </div>
                 </li>
                 <li class="li-component component-hc-video">
