@@ -680,7 +680,7 @@ function hc_include_hc_contact_form(&$Y_NOW,$EXTRA) {
         <?php
     $button = "";
     $button_text = hc_json($Y_NOW["button_text"]);
-    if ($button_text == "") $button_text = __("Send message");
+    if ($button_text == "") $button_text = __("Enviar Mensaje");
     $button =  hc_get_button_style($Y_NOW["button_style"]);
     $icon = false;
     if ($Y_NOW["button_style"] != "link") {
@@ -702,13 +702,13 @@ function hc_include_hc_contact_form(&$Y_NOW,$EXTRA) {
             <hr class="space xs" />
             <?php
         if (hc_true($Y_NOW["label"])) echo '<p>' . $text . '</p>';
-        if ($arr[$i]["input_type"] == "text") echo '<input id="' . $id . '" name="' . $text . '" ' . $placeholder . ' type="text" class="form-control form-value" ' . $required . '>';
-        if ($arr[$i]["input_type"] == "email") echo '<input id="' . $id . '" name="' . $text . '" ' . $placeholder . ' type="email" class="form-control form-value" ' . $required . '>';
-        if ($arr[$i]["input_type"] == "number") echo '<input id="' . $id . '" name="' . $text . '" ' . $placeholder . ' type="number" class="form-control form-value" ' . $required . '>';
-        if ($arr[$i]["input_type"] == "link") echo '<input id="' . $id . '" name="' . $text . '" ' . $placeholder . ' type="url" class="form-control form-value" ' . $required . '>';
-        if ($arr[$i]["input_type"] == "textarea") echo '<textarea id="' . $id . '" name="' . $text . '" ' . $placeholder . ' class="form-control form-value" ' . $required . '></textarea>';
-        if ($arr[$i]["input_type"] == "select") echo '<select id="' . $id . '" name="' . $text . '" class="form-control form-value" ' . $required . '><option value="" label="--">--</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10+">10+</option></select>';
-        if ($arr[$i]["input_type"] == "calendar") echo '<input id="' . $id . '" name="' . $text . '" ' . $placeholder . ' type="text" data-toggle="datepicker" class="form-control form-value" ' . $required . '>';
+        if ($arr[$i]["input_type"] == "text") echo '<input style= "border-radius: 5px;border: 1px solid #616161;" id="' . $id . '" name="' . $text . '" ' . $placeholder . ' type="text" class="form-control form-value" ' . $required . '>';
+        if ($arr[$i]["input_type"] == "email") echo '<input style= "border-radius: 5px;border: 1px solid #616161;" id="' . $id . '" name="' . $text . '" ' . $placeholder . ' type="email" class="form-control form-value" ' . $required . '>';
+        if ($arr[$i]["input_type"] == "number") echo '<input style= "border-radius: 5px;border: 1px solid #616161;" id="' . $id . '" name="' . $text . '" ' . $placeholder . ' type="number" class="form-control form-value" ' . $required . '>';
+        if ($arr[$i]["input_type"] == "link") echo '<input style= "border-radius: 5px;border: 1px solid #616161;" id="' . $id . '" name="' . $text . '" ' . $placeholder . ' type="url" class="form-control form-value" ' . $required . '>';
+        if ($arr[$i]["input_type"] == "textarea") echo '<textarea style= "border-radius: 5px;border: 1px solid #616161;" id="' . $id . '" name="' . $text . '" ' . $placeholder . ' class="form-control form-value" ' . $required . '></textarea>';
+        if ($arr[$i]["input_type"] == "select") echo '<select style= "border-radius: 5px;border: 1px solid #616161;" id="' . $id . '" name="' . $text . '" class="form-control form-value" ' . $required . '><option value="" label="--">--</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10+">10+</option></select>';
+        if ($arr[$i]["input_type"] == "calendar") echo '<input style= "border-radius: 5px;border: 1px solid #616161;" id="' . $id . '" name="' . $text . '" ' . $placeholder . ' type="text" data-toggle="datepicker" class="form-control form-value" ' . $required . '>';
             ?>
         </div>
         <?php }

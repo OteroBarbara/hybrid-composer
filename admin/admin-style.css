@@ -991,19 +991,19 @@ a.input-button {
 }
 
 ::-webkit-input-placeholder {
-    color: #b6b6b6;
+    color: #6b6b6b;
 }
 
 :-moz-placeholder {
-    color: #b6b6b6;
+    color: #6b6b6b;
 }
 
 ::-moz-placeholder {
-    color: #b6b6b6;
+    color: #6b6b6b;
 }
 
 :-ms-input-placeholder {
-    color: #b6b6b6;
+    color: #616161;
 }
 
 .input-row input:focus,
