@@ -680,7 +680,7 @@ function hc_include_hc_contact_form(&$Y_NOW,$EXTRA) {
         <?php
     $button = "";
     $button_text = hc_json($Y_NOW["button_text"]);
-    if ($button_text == "") $button_text = __("Enviar Mensaje");
+    if ($button_text == "") $button_text = __("Enviar mensaje");
     $button =  hc_get_button_style($Y_NOW["button_style"]);
     $icon = false;
     if ($Y_NOW["button_style"] != "link") {
