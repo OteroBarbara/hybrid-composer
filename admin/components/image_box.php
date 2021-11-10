@@ -173,16 +173,15 @@
             </div>
         </div>
         <div class="button-inner-options btn-inner">
-            <i class="button-icon input-row icon-gear-setting-2"></i>
+            <i class="button-icon input-row icon-help"></i>
             <ul>
                 <li>
                     <p><strong>Imágen Gráfica:</strong></p>
-                    <p>Esta clase de imagen, que puede estar compuesta por una fotografía o una ilustración, sirve de apoyo visual a tu contenido de texto. </p>
-                    <p>*Es necesario que agregues una descripción de texto a las imágenes. El texto alternativo permite a las personas con discapacidad visual acceder a la información sobre la imagen. Debes brindar información de forma breve y resaltar lo más importante.</p> 
+                    <p>Esta clase de imagen, que puede estar compuesta por una fotografía o una ilustración, sirve de apoyo visual a tu contenido de texto.</p>
+                    <p><strong>Accesibilidad:</strong> es necesario que agregues texto alternativo a estas imágenes. Se trata de una descripción que será leída por el lector de pantalla que utilizan las personas ciegas para acceder a la información. Este texto debe ser breve y resaltar lo más relevante de la imagen.</p> 
                 </li>
                 <li>
-                <p><strong>Aviso de contraste:</strong></p>
-                    <p>Si subes una foto con texto, asegúrate de que tenga un buen nivel de contraste entre la letra y el fondo.</p>
+                <p><strong>Aviso de contraste:</strong> si subes una foto con texto, asegúrate de que tenga un buen nivel de contraste entre la letra y el fondo.</p>
                 </li>
                 <li><p>Revisa tu nivel de contraste <a target="_blank" href="https://webaim.org/resources/contrastchecker/">aquí.</a></p></li>
                 <li class="input-row input-text">
@@ -215,18 +214,13 @@
             </div>
         </div>
         <div class="button-inner-options btn-inner">
-            <i class="button-icon input-row icon-gear-setting-2"></i>
+            <i class="button-icon input-row icon-help"></i>
             <ul>
                 <li>
-                    <p><strong>Imágen Infográfica:</strong></p>
-                    <p>Esta clase de imagen sirve para presentar, de forma ordenada y resumida, contenido informativo, datos, cifras o estadísticas (entre otros). </p>
-                    <p>En el caso de una imagen que contenga texto o sea informativa, asegúrate que esta información también esté en el texto alternativo.</p> 
-                    <p>*Atención: Sin embargo, lo más recomendable si necesitas compartir una gran cantidad de información en texto es que evites hacerlo a través de una imagen. ¿Por qué? Porque los lectores de pantalla que utilizan las personas con discapacidad visual para navegar en la web podrían tener dificultades para acceder a esta clase de contenido.</p>
-                    <p>Si es una imagen compleja, por ejemplo, una gráfica o mucho contenido, se recomienda brindar un enlace para acceder a mayor información en el texto alternativo.</p>
-                </li>
-                <li>
-                <p><strong>*Aviso de contraste:</strong></p>
-                    <p>Si subes una foto con texto, asegúrate de que tenga un buen nivel de contraste entre la letra y el fondo.</p>
+                    <p><strong>Imágen Infográfica:</strong></p> 
+                    <p>Esta clase de imagen sirve para presentar, de forma ordenada y resumida, contenido informativo, datos, cifras o estadísticas, entre otros</p>
+                    <p><strong>Accesibilidad:</strong> si la imagen contiene texto o es  informativa, asegúrate que esta información también esté en el campo de texto alternativo. Si es una imagen compleja (una gráfica con mucho contenido, por ejemplo), se recomienda -en el campo de texto alternativo- brindar un enlace para acceder a mayor información.</p>
+                    <p><Strong>Aviso de contraste:</strong> si subes una foto con texto, asegúrate de que tenga un buen nivel de contraste entre la letra y el fondo. Revisa tu nivel de contraste</p>
                 </li>
                 <li><p>Revisa tu nivel de contraste <a target="_blank" href="https://webaim.org/resources/contrastchecker/">aquí.</a></p></li>
                 <li class="input-row input-text">

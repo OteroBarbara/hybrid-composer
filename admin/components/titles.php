@@ -24,7 +24,7 @@
         <input class="main_title" data-hc-setting="title" type="text" placeholder="<?php esc_attr_e("Título para el encabezado","hc") ?>" value="<?php echo get_the_title() ?>" /><!--gutenberg-->
         <input class="main_subtitle" data-hc-setting="subtitle" type="text" placeholder="<?php esc_attr_e("Subtítulo del encabezado","hc") ?>" value="" /><!--gutenberg-->
         <div>
-            <p>Nota: Las limitaciones en este editor para ajustar el tamaño de fuente y las opciones de tipografía por defecto están pensadas para asegurar que el contenido de texto que se refleje en la página tenga un formato accesible para la mayor cantidad posible de usuarios.</p>
+            <p>Nota: al crear contenido en Mercurio encontrarás algunas limitaciones para ajustar el tamaño de fuente y las opciones de tipografía. Esto sucede para asegurar que el texto que se refleja en la página tenga un formato accesible para la mayor cantidad posible de usuarios.</p>
         </div>  
         <div id="title-tab" class="tab-box inverse tab-wp">
             <div class="panel active">
@@ -62,8 +62,7 @@
             <ul>
                 <li>
                     <h2>Imagen encabezado</h2>
-                    <p>*Atención: Esta imagen de encabezado es meramente decorativa. Debido a su función como parte de la estructura visual del sitio, no corresponde la utilización de texto alternativo.
-                        Puedes aprovechar este campo para, por ejemplo, dejar una nota de referencia. Recuerda que los lectores de pantalla no detectarán la descripción que insertes en esta imagen en específico. ¡Pero no olvides añadir el texto alternativo al resto de imágenes que insertes en el contenido de la web!
+                    <p>La imagen del encabezado es decorativa. Debido a su función como parte de la estructura visual del sitio, no corresponde la utilización de texto alternativo. Los lectores de pantalla no detectarán la descripción que insertes en esta imagen en específico. ¡Pero no olvides añadir el texto alternativo al resto de imágenes que insertes en el contenido de la web!
                     </p>
                 </li>
             </ul>

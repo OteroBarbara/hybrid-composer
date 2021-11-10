@@ -53,8 +53,9 @@
                 <ul list="<?php echo $idlink ?>">
                     <li>
                         <h2>Texto descriptivo/indicativo de botón.</h2>
-                        <p>*En este campo debes insertar 1: el nombre o la etiqueta visible en el botón y, 2: después de un punto y seguido, una breve descripción de la acción que se ejecutará cuando el usuario, que podría ser una persona con discapacidad visual, hace clic o tap en el botón con el uso de un lector de pantalla.<p>
-                        <p>Te recomendamos copiar estos formatos de ejemplo, según lo requieras: [Nombre del botón. Presiona para activar el botón.] [Entrar. Presiona aquí para dirigirte a la subpágina.]</p>
+                        <p>*Accesibilidad: el botón debe estar etiquetado con un nombre claro, que corresponda a la función que ejecutará.<p>
+                        <p>En el campo que está debajo, ingresa el  texto descriptivo de la acción que ejecutará el usuario. Esto es fundamental para personas ciegas que utilizan lectores de pantalla.</p>
+                        <p>Formato ejemplo: [Nombre del botón. Presiona para activar el botón.]</p>
                     </li>
                     <li class="input-row input-text">
                         <p><?php _e("Descripción","hc") ?></p>
@@ -113,8 +114,9 @@
                 <ul>
                     <li>
                         <h2>Texto descriptivo/indicativo de botón.</h2>
-                        <p>*En este campo debes insertar 1: el nombre o la etiqueta visible en el botón y, 2: después de un punto y seguido, una breve descripción de la acción que se ejecutará cuando el usuario, que podría ser una persona con discapacidad visual, hace clic o tap en el botón con el uso de un lector de pantalla.<p>
-                        <p>Te recomendamos copiar estos formatos de ejemplo, según lo requieras: [Nombre del botón. Presiona para activar el botón.] [Entrar. Presiona aquí para dirigirte a la subpágina.]</p>
+                        <p>*Accesibilidad: el botón debe estar etiquetado con un nombre claro, que corresponda a la función que ejecutará.<p>
+                        <p>En el campo que está debajo, ingresa el  texto descriptivo de la acción que ejecutará el usuario. Esto es fundamental para personas ciegas que utilizan lectores de pantalla. </p>
+                        <P>Formato ejemplo: [Nombre del botón. Presiona para activar el botón.]</P>
                     </li>
                     <li class="input-row input-text">
                         <p><?php _e("Descripción","hc") ?></p>
@@ -214,12 +216,14 @@
                 <ul>
                     <li>
                         <h2>Botón Video</h2>
-                        <p>Recuerda que tus contenidos deben ser accesibles, en el caso de un video asegúrate de que tenga intérprete de Lengua de Señas, subtítulos y audiodescripción.</p>
-                        <p><strong>Intérprete: </strong>Ubicada del lado inferior derecho (desde el espectador) con un tamaño mínimo de 1/8 de la pantalla.</p>
-                        <p><strong>Subtitulado: </strong>Letra con igual o superior 16 puntos. Tipografía Sin serif. Deben convivir con la intérprete de Lengua de Señas.</p>
-                        <p><strong>Audiodescripción: </strong>Herramienta para describir la información visual, en formato de audio.Se audiodescriben los contenidos de las imágenes: logos y créditos, tiempo (cuándo), espacio (dónde), personajes (quién) y acciones (qué).</p>                    
-                        <p>Por más información:</p>
-                        <a target="_blank" href="https://umuntu.uy/">Haz clic aquí</a>
+                        <p>Los contenidos audiovisuales también deben ser accesibles, de modo que puedan ser consumidos por la mayor cantidad de personas posible. Para lograrlo, contamos con diferentes herramientas:</p>
+                        <p><strong>Intérprete de Lengua de Señas: </strong>quien interprete debe estar ubicado/a del lado inferior derecho (desde el espectador) con un tamaño mínimo de 1/8 de la pantalla.</p>
+                        <p><strong>Subtitulado: </strong>tamaño de letra igual o superior a 16 puntos. Tipografía Sin serif.</p>
+                        <p><i>Importante: intérprete de Lengua de Señas y subtitulado son herramientas complementarias, no excluyentes.</i></p>
+                        <p><strong>Audiodescripción: </strong>audio mediante el cual se describe la información visual a la que no acceden personas ciegas o con baja visión. Se audiodescriben los contenidos de las imágenes: logos y créditos, tiempo (cuándo), espacio (dónde), personajes (quién) y acciones (qué).</p>                    
+                        <p>¿Necesitas más información para elaborar tu video accesible? Ingresa a nuestra</p>
+                        <a target="_blank" href="https://umuntu.uy/2021/11/03/guia-accesibilidad-audiovisual-mercurio-by-umuntu/">Guía accesibilidad audiovisual</a>
+                        <p>o escribenos a <i>somos@umuntu.uy</i></p>
                     </li>
                 </ul>
             </div>
@@ -337,7 +341,7 @@
                 <li>
                     <h2>Botón</h2>
                     <p>Aplica este botón a la estructura o el contenido de tu sitio.</p>
-		            <p>*Recuerda: es importante que etiquetes apropiadamente a cada botón según su nombre o la función que ejecutará.</p>	
+		            <p>*Accesibilidad: el botón debe estar etiquetado con un nombre claro, que corresponda a la función que ejecutará.</p>	
                 </li>
             </ul>
         </div>
@@ -525,7 +529,8 @@
             <i class="button-icon input-row icon-help"></i>
             <ul>
                 <h2>Audio</h2>
-                <p>Inserta aquí un archivo de audio (preferiblemente en formato mp3/MP4) en el cual ofrezcas a las personas con alguna forma de discapacidad visual, intelectual o adultos mayores, una lectura del contenido de texto, a modo de una narración corta, sencilla y lo más clara posible.</p>
+                <p>Inserta aquí un archivo de audio (preferiblemente en formato mp3/MP4)</p>
+                <p>*Accesibilidad: una lectura del texto que publicas a modo de narración corta, sencilla, y lo más clara posible, permitirá a personas con discapacidad intelectual, discapacidad visual o personas mayores, acceder a tu contenido de mejor forma.</p>
             </ul>
         </div>
         <div class="flex-box">
@@ -644,8 +649,7 @@
                     <li>
                         <h2>Título</h2>
                         <p>Escribe aquí el título que utilizarás como encabezado de tu contenido</p>
-                        <p>* Atención: es importante que tengas en cuenta si este título tiene un nivel de importancia principal o secundario en lo que quieres transmitir o, incluso, si tienes más de un título, cuál es el orden de los títulos en que los visitantes deben leer el contenido.
-                        Aquí debes indicar el nivel de importancia u orden de tu título en la escala de H1 (principal) a H6 (secundarios), según corresponda
+                        <p>* Accesibilidad: para que el contenido sea accesible, debes definir el nivel de importancia del título y de este modo indicar el orden en que debe ser leído. En el recuadro de la derecha debes señalar el nivel de importancia u orden del título en la escala de H1 (principal) a H6 (secundarios), según corresponda.
                         </p>
                     </li>
                 </ul>
@@ -1776,7 +1780,7 @@
             <ul>
                 <li>
                     <h2>Migas de pan</h2>
-                    <p>Utiliza esta herramienta de navegación simplificada para poner a disposición de los visitantes, de forma resumida, fácil acceso desde la parte superior o inferior de la página a los distintos segmentos del sitio.</p>
+                    <p>Utiliza esta herramienta de navegación simplificada para poner a disposición de los visitantes, de forma resumida, un fácil acceso desde la parte superior o inferior de la página a los distintos segmentos del sitio.</p>
                 </li>
             </ul>
         </div>
@@ -2460,8 +2464,8 @@
             <ul>
                 <li>
                     <h2>Formulario de contacto</h2>
-                    <p>Inserta un formulario sencillo el cual permita a los visitantes ponerse en contacto con la persona, entidad o área a cargo de brindar atención a las comunicaciones con los propietarios del sitio.</p>
-                    <p>*Recuerda: es importante que los campos de texto estén correctamente identificados para que los usuarios sepan dónde colocar sus nombres, correo electrónico, asunto y mensaje (según corresponda).</p>
+                    <p>Inserta un formulario sencillo que permita a tus clientes o consumidores  ponerse en contacto con la persona, entidad o área a cargo de brindar atención a usuarios y clientes.</p>
+                    <p>*Accesibilidad: los campos de texto deben estar correctamente identificados para que los usuarios sepan dónde colocar sus nombres, correo electrónico, asunto y mensaje, o el campo que corresponda.</p>
                 </li>
             </ul>
         </div>
@@ -2559,7 +2563,7 @@
                     <li>
                         <h2>Bloque de texto</h2>
                         <p>Aquí debes insertar el contenido del texto que deseas publicar.</p>
-                        <p>*Recuerda hacerlo accesible para todos: Mientras más concreto sea el mensaje que transmitas y el lenguaje que utilices sea más sencillo, mayor cantidad de personas podrán acceder, comprender y aprovechar al máximo tu contenido. ¿A quiénes ayuda esto? A una gran cantidad de personas en distintas situaciones. Desde una persona con discapacidad auditiva o discapacidad cognitiva, hasta una persona de la tercera edad o, incluso, alguien que podría no hablar tu idioma con fluidez o tenga un dialecto distinto al tuyo.
+                        <p>*Accesibilidad:  escribe oraciones cortas y con un lenguaje sencillo. Los textos con estas características son más fáciles de comprender para personas con discapacidad auditiva y discapacidad cognitiva.
                         </p>
                     </li>
                 </ul>
