@@ -49,7 +49,7 @@
             </select>
             <i class="button-icon input-row upload-hc-button icon-link" data-value=""></i>
             <div class="button-inner-options" data-width="315">
-                <i class="button-icon input-row icon-gear-setting-2"></i>
+                <i class="button-icon input-row icon-help"></i>
                 <ul list="<?php echo $idlink ?>">
                     <li>
                         <h2>Texto descriptivo/indicativo de botón.</h2>
@@ -264,7 +264,7 @@
 </div>
 <div id="cnt_hc_videoLS">
     <div data-hc-id="_ID" data-hc-component="hc_video" data-hc-setting="main_content" class="hc-video hc-cnt-component">
-        <?php hc_e_composer_item_menu("Video Accesible(Embebido)") ?>
+        <?php hc_e_composer_item_menu("Video accesible (embebido)") ?>
         <div class="flex-box">
             <div class="input-text input-row link-field">
                 <p><?php _e("Link","hc") ?></p>
@@ -276,19 +276,19 @@
                 <ul>
                     <li>
                         <h2>Video Accesible</h2>
-                        <p>Aquí puedes incrustar (mediante un enlace o código fuente) un video accesible para los usuarios con discapacidad auditiva el cual contenga subtítulos e interpretación del contenido en la Lengua de Señas de su país.</p>
+                        <p>Aquí puedes incrustar (mediante un enlace o código fuente) un video accesible para los usuarios con discapacidad auditiva y visual. <br>Este video contendrá diferentes herramientas de accesibilidad:</p>
                         <p>
-                        Añadir subtítulos a nuestros videos beneficia tanto a las personas sordas como a cualquier otro usuario que esté reproduciendo el contenido en un ambiente con mucho ruido o, en el que deba guardar silencio.
+                        Intérprete de Lengua de Señas: quien interprete debe estar ubicado del lado inferior derecho (desde el espectador) con un tamaño mínimo de 1/8 de la pantalla.
                         </p>
                         <p>
-                        A la hora de crear los subtítulos se debe tener en cuenta la fidelidad del texto con el diálogo y el tiempo de quien está hablando en la pantalla, y que la tipografía sea fácil de leer, con un tamaño de fuente mediano y un contraste bien definido con el fondo del video.
+                        Subtitulado: tamaño de letra igual o superior a 16 puntos. Tipografía sin serif.
                         </p>
                         <p>
-                        Nota: Toma en cuenta que los subtítulos no sustituyen a la Lengua de Señas. Mientras algunas personas con discapacidad auditiva pueden leer y comprender lo que se está transmitiendo a través de un texto, la Lengua de Señas tiene la capacidad, como lengua materna, de transmitir los matices, las emociones y las entonaciones de un diálogo.
-                        </p>
-                        <p>
-                        <b>Importante:</b> El intérprete de Lengua de Señas, cuyas gesticulaciones y movimientos son tridimensionales, debe estar claramente visible y ocupar al menos un sexto (1/6) de la pantalla.</p>
-                        </p>
+                        <b>Importante:</b> intérprete de Lengua de Señas y subtitulado son herramientas complementarias, no excluyentes.</p>
+                        <p>Audiodescripción: audio mediante el cual se describe la información visual a la que no acceden personas ciegas o con baja visión.Se audiodescriben los contenidos de las imágenes: logos y créditos, tiempo (cuándo), espacio (dónde), personajes (quién) y acciones (qué)</p>        
+                        <p>¿Necesitas más información para elaborar tu video accesible? Ingresa a nuestra <a target="_blank" href="https://umuntu.uy/2021/11/03/guia-accesibilidad-audiovisual-mercurio-by-umuntu/">Guía accesibilidad audiovisual</a>
+                        o escribenos a <i>somos@umuntu.uy</i>
+                        </p>    
                     </li>
                 </ul>
             </div>
@@ -404,10 +404,10 @@
             <ul>
                 <li>
                     <h2>Lectura Fácil</h2>
-                    <p>En esta sección, te invitamos a publicar una versión alternativa simplificada del contenido publicado en la página principal. ¿para qué? Para facilitar la comprensión del contenido por parte de personas con alguna forma de discapacidad intelectual, auditiva o adultos mayores. Toma en cuenta las siguientes recomendaciones:</p>
-		            <p>En el caso de agregar imágenes como pictogramas, no es necesario que agregues texto alternativo porque tanta información puede ser abrumadora para los usuarios de lectores de pantallas, pero sí debes indicar que son pictogramas de apoyo al texto en lectura fácil.</p>
-                    <p>Si existen palabras complicadas que no se pueden cambiar por un sinónimo más sencillo, agrega un glosario al final con su significado en texto sencillo.</p>	
-                    <p>Accede a un ejemplo de texto adaptado en lectura fácil <a target='_blank' href='https://umuntu.uy/2021/08/28/mercurio-lectura-facil/'>aquí.</a></p>
+                    <p>En esta sección, te invitamos a publicar una versión alternativa en Lectura Fácil. Se trata de una versión más corta, simplificada del contenido publicado que facilitará el acceso a tu contenido para muchas personas, entre ellas las personas con discapacidad intelectual. Hay distintos niveles de lectura fácil, en algunas ocasiones el texto se complementa con  imágenes, pictogramas o dibujos.</p>	
+                    <p>¿Necesitas más información para elaborar la versión de tu contenido en Lectura Fácil? Ingresa a nuestra<a target='_blank' href='https://umuntu.uy/2021/08/28/mercurio-lectura-facil/'>Guía para creación de contenidos en lectura fácil</a>
+                        o escribenos a <i>somos@umuntu.uy </i>
+                    </p>
                 </li>
             </ul>
         </div>
@@ -471,7 +471,11 @@
             <ul>
                 <li>
                     <h2>Texto Sencillo</h2>
-                    <p>En esta sección, te invitamos a publicar una versión alternativa simplificada del contenido publicado en la página principal. ¿para qué? Para facilitar la comprensión del contenido por parte de personas con alguna forma de discapacidad intelectual, auditiva o adultos mayores.</p>
+                    <p>En esta sección, te invitamos a publicar una versión alternativa simplificada del texto publicado, esto facilitará que muchas personas puedan comprender mejor tu contenido, entre ellas las personas con discapacidad intelectual, personas sordas, personas mayores o personas que no dominen el idioma.</p>
+                    <p>¿Necesitas más información para elaborar la versión de tu contenido en Texto Sencillo? Ingresa a nuestra 
+                    <a taarget="_blank" href="https://umuntu.uy/2021/08/28/mercurio-lectura-facil/">Guía para creación de contenidos en texto sencillo</a>   
+                    o escribenos a <i>somos@umuntu.uy</i>
+                    </p>    
                 </li>
             </ul>
         </div>

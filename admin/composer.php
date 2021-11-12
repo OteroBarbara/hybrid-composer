@@ -373,12 +373,7 @@ COMPOSER POPOVER BOXES
                     </div>
                 </li> -->
                 <li class="divider li-component"><?php _e("Herramientas de accesibilidad","hc") ?></li>
-                <li class="li-component component-hc-niche-content-box-call">
-                    <div class="component-box" data-hc-target="hc_niche_content_box_call">
-                        <i class="icon-icomoon-17"></i>
-                        <span class="sch"><?php _e("Botón de intérprete en Lengua de Señas - online","hc") ?></span>
-                    </div>
-                </li>
+
                 <li class="li-component component-hc-niche-content-box-call">
                     <div class="component-box" data-hc-target="hc_niche_content_box_call2">
                         <i class="icon-icomoon-17"></i>
@@ -411,12 +406,17 @@ COMPOSER POPOVER BOXES
                 </li>
                 
                 <li class="divider li-component"><?php _e("Sección Umuntu Live (comunicación en vivo).","hc") ?></li>
-                <li class="li-component"><p style="padding: 0 5px 0 5px;">Accede en esta sección, a los servicios de terceros y aplicaciones ofrecidas por empresas especializadas en accesibilidad, que complementarán la experiencia de las personas con discapacidad en su acceso universal a la información y los contenidos.</p></li>
+                <li class="li-component"><p style="padding: 0 5px 0 5px;">A continuación dejamos algunas opciones para que puedas brindar un servicio accesible e inclusivo a tus clientes o usuarios en vivo. De este modo podrás brindar una atención cercana, personalizada, accesible e inclusiva.
+                </p></li>
                 <li class="li-component">
                     <ul style="padding-left: 5px;">
-                    <li><a href="https://hablalo.app/">Háblalo</a></li><br>
-                    <li><a href="https://lazarillo.app/es/">Lazarillo</a></li><br>
-                    <li><a href="https://www.redapis.cl/servicios/">Visor</a></li><br>
+                        <li class="li-component component-hc-niche-content-box-call">
+                            <div class="component-box" data-hc-target="hc_niche_content_box_call">
+                                <i class="icon-icomoon-17"></i>
+                                <span class="sch"><?php _e("Botón de intérprete en Lengua de Señas - online","hc") ?></span>
+                            </div>
+                        </li>
+                        <li>NUEVO COMPONENTE</li>
                     </ul>
                 </li>
                 <!--COLUMNS-->

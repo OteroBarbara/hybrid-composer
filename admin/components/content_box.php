@@ -387,10 +387,11 @@
         <div>
         <?php hc_get_link("_ID"); ?>
         <p>
-        *Aquí puedes enlazar a los usuarios con discapacidad auditiva a una interpretación del contenido en la Lengua de Señas de su país a través de un contenido de video pre grabado y alojado en un servicio de streaming o en la nube (ejemplo: YouTube o Google Drive).
+        Utiliza este enlace para que los lectores, usuarios o consumidores con discapacidad auditiva puedan acceder a tu contenido en Lengua de Señas.
         </p>
         <p>
-       *Asegúrate de subir un material de buena calidad, que permita ver de forma correcta el movimiento de las manos y la expresión facial de la intérprete.
+        ¿Cómo hacer un video en Lengua de Señas que cumpla con los estándares de accesibilidad? Ingresa a nuestra <a target="_blank" href="https://umuntu.uy/2021/11/03/guia-accesibilidad-audiovisual-mercurio-by-umuntu/">Guía accesibilidad audiovisual</a>
+        o escribenos a <i>somos@umuntu.uy</i>
        </p>
        <p>
        *El video debe contar con subtítulos.
